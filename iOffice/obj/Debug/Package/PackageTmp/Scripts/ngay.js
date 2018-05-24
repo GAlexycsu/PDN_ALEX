@@ -1,0 +1,4 @@
+﻿$(function () {
+   
+    SetDatepicker("txtNgay");
+});

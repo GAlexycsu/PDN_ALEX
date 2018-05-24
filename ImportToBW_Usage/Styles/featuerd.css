@@ -1,0 +1,13 @@
+/* Featered*/
+#featured figure{
+	float: right;
+	border: 2px solid #eee;
+}
+#featured h2{
+	color: #C74451;font-size: 1.714em;
+}
+#featured h3{ font-size: 1.429em;}
+#featured h3 a:link,#featured h3 a:visited{
+	color: #000305;text-decoration: none;
+}
+#featured h3 a:hover, #featured h3 a:active{color: #fff;}

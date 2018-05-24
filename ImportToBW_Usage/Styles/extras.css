@@ -1,0 +1,66 @@
+/*
+	Extras
+*****************/
+#extras {margin:3em auto; overflow: hidden;}
+#extras ul {list-style: none; margin: 0px; padding:0px;}
+#extras li {border-bottom: 1px solid #fff; margin: 0px;}
+#extras h2 {
+	color: #C74350;
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding:3px;
+}
+#extras a{
+	display: block;
+	padding: .3em .25em;
+	text-decoration: none;
+	color: #444;
+}
+
+#extras a:hover, #extras a:active {color: #fff;}
+
+	/* Blogroll */
+	#extras .blogroll {
+		float: left;
+		width: 615px;
+	}
+	#extras .blogroll li {
+		margin-right:20px; 
+		width: 185px;}
+	#extras .blogroll ul
+		 { 
+		  	-webkit-column-count:3;
+		 	-webkit-column-width:185px;
+			-webkit-column-rule: 1px solid #ddccb5; 
+		  	-webkit-column-gap:29px;
+		} 
+	/* Social */	
+	#extras .social{
+ 			float:right;
+ 			width: 160px; 
+ 	}
+ 	
+ 	/*
+ 	 #extras div[class='social'] a {}
+ 	 #extras div.social a{}
+ 	 
+ 	 background-position:
+ 	 	Xpos Ypos --> (3px 6px)
+		left top
+		left center
+		left bottom
+		right top
+		right center
+		right bottom
+		center top
+		center center
+		center bottom
+ 	 */
+ 	#extras .social a{
+		background-repeat: no-repeat;
+		background-position: 3px 6px; /* xpos ypos */
+		background-size:16px 16px;
+		padding-left:25px;
+	}
+	.social a[href*='facebook.com'] {background-image: url('../Images/facebook.png');}
+ 	

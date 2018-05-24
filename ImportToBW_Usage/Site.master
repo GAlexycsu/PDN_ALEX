@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <%--<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />--%>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Site1.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <header id="pageHeader">
+                   <h1 id="logoText">
+                   <strong>  Ty Hung Company</strong>
+                    
+                   </h1>
+            </div>
+             <div class="loginDisplay"  style="float:right;margin-top:10px;">
+             
+                    
+           <span style="color:White;">Welcome:  <asp:Label ID="lblName" runat="server" Text=""></asp:Label> </span>   &nbsp; &nbsp;
+                         <a href="http://portal.footgear.com.vn/" ID="HeadLoginStatus" runat="server" style="color:White">Log Out</a> 
+                  
+            </div>
+           <nav id="mainMenu">
+				   <%-- <a class="act"href="http://portal.footgear.com.vn/MainPage.aspx">Home</a>--%>
+				    <a><asp:LinkButton ID="LinkHome" runat="server" 
+                onclick="LinkHome_Click">Home</asp:LinkButton> </a>
+				  
+				    <a href="WF_Contact.aspx">Contact</a>
+                   
+			    </nav>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

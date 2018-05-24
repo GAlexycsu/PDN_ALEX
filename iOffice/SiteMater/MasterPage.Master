@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="iOffice.SiteMater.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <link href="../Style/formatMain1.css" rel="stylesheet" />
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/jquery-ui.min.js"></script>
+    <script src="../Scripts/jquery-1.8.3.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    
+    <script src="../Scripts/jquery-ui-1.8.19.custom.min.js"></script>
+    <script src="../Scripts/jquery-1.7.2.min.js"></script>
+    <script src="../Scripts/JScriptabc.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #idDate1 {
+            width: 159px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+           <div  style="height: 35px; background: #cecece; width:100%;  padding: 7px 7px 7px 7px;border: 1px solid #cecece; text-align:center;overflow:hidden">
+       
+               
+        <div class="clock" style="height:74px; margin-top: 0px; width: 100%;">
+             <div id="divHome">
+                <asp:LinkButton ID="linkHome" runat="server" Font-Size="XX-Large" OnClick="linkHome_Click"><img src="../Images/home.jpg" width="55px" height="40px" /> </asp:LinkButton>
+            </div>
+           
+           <%-- <div id="idDate1" >Date: 
+                <asp:TextBox ID="txtDate" runat="server" Width="106px"></asp:TextBox>
+            </div>--%>
+         
+            
+             <div id="webp1" >
+                 <asp:Label ID="L1" runat="server" Text="<" ForeColor="White"></asp:Label>
+                 <asp:Label ID="L2" runat="server" Text="Web Portal"></asp:Label>
+                 <asp:Label ID="L3" runat="server" Text=">" ForeColor="White"></asp:Label>
+              
+        </div>
+     
+        <%-- <div>
+             <asp:LinkButton ID="linkGoogle" runat="server" onclick="linkGoogle_Click">Google Translate</asp:LinkButton>
+         </div>--%>
+         <div id="login"> Login: <asp:Label ID="lblNhanVien" runat="server" Text=""></asp:Label></div>
+             <asp:LinkButton ID="LinkButton1" runat="server"  OnClick="LinkButton1_Click" ValidationGroup="logout"><img src="<%=ResolveClientUrl("../Images/") %>Turn-off.png" /> Logout</asp:LinkButton>
+        </div>
+       
+    </div>
+    <div class="main">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div class="clear">
+        </div>
+         
+    </form>
+     <div class="footer">
+    </div>
+     <div id="divWaiting"  style="visibility:hidden" >Form </div>
+</body>
+</html>

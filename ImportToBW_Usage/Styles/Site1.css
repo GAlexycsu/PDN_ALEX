@@ -1,0 +1,123 @@
+﻿@import url("menu.css");
+@import url("featuerd.css");
+@import url("content.css");
+@import url("extras.css");
+/*
+	GLObal
+*/
+body {
+	background: #F5F4EF;color: #000305;
+	font-family: 'trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Sans',Arial;
+	font-size: 0.875em;
+	padding: 0px;
+	line-height: 1.429;
+}
+/*Heading*/
+h1,h2,h3{
+	margin: 0px;
+}
+/*Anchors*/
+a:link,a:visited{
+	color: #C74350;padding: 0px 1px;text-decoration: underline;
+}
+a:hover,a:active{
+	color: #fff;background-color: #C74350;text-decoration:none;text-shadow: 1px 1px 1px #333;
+}
+/* Container*/
+#mainContainer{width: 800px;margin: 0px auto}
+#mainContainer>aside,#mainContainer>article,#mainContainer>footer address{
+	background: #fff;margin-bottom: 2em;padding: 20px;-webkit-border-radius: 10px;
+	overflow: hidden;/*giau nhung cai lo ra ben ngoai*/
+}
+/*Header*/
+#pageHeader{margin-top:30px;margin-bottom: 30px;}
+#logoText{
+	font-size: 3.571em;line-height: 0.6;text-shadow: 2px 2px 3px #ff3300;
+}
+#logoText a:link,#logoText a:visited{
+	color:#000305;font-weight: bold;margin: 0 0 .6em .2em;
+	text-decoration: none;
+}
+#logoText a:hover,#logoText a:active{
+	background: none; color: #C74350; text-shadow: none;
+}
+#logoText strong{
+	font-size: 0.36em; font-weight: normal;
+}
+/*FOOTER*/
+.page
+{
+   width:1024;
+    height:1000px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid white;
+}
+#GridView1 th
+{
+  border-width:1px;
+  border-style:solid;
+  border-color:Black; 
+}
+#GridView1 td
+{
+  border-width:1px;
+ border-style:dotted;
+  border-color:Black; 
+}
+
+#GridView2 th
+{
+  border-width:1px;
+  border-style:solid;
+  border-color:Black; 
+}
+#GridView2 td
+{
+  border-width:1px;
+   border-style:dotted;
+  border-color:Black; 
+}
+#GridView3 td
+{
+  border-width:1px;
+   border-style:dotted;
+  border-color:Black; 
+}
+#GridView4 td
+{
+  border-width:1px;
+   border-style:dotted;
+  border-color:Black; 
+}
+
+#ShowGrid td
+{
+  border-width:1px;
+  border-style:dotted;
+  border-color:Black; 
+}
+#ShowGrid th
+{
+  border-width:1px;
+  border-style:dotted;
+  border-color:Black; 
+  color:White;
+  background-color:#507CD1;
+  font-weight:bold;
+}
+#ShowGrid1 td
+{
+  border-width:1px;
+  border-style:dotted;
+  border-color:Black; 
+}
+#ShowGrid1 th
+{
+  border-width:1px;
+  border-style:dotted;
+  border-color:Black; 
+  color:White;
+  background-color:#507CD1;
+  font-weight:bold;
+}

@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AlexLoginModelStoreContainer" CdmEntityContainer="AlexLoginEntities">
+    <EntitySetMapping Name="aABCs">
+      <EntityTypeMapping TypeName="AlexLoginModel.aABC">
+        <MappingFragment StoreEntitySet="aABC">
+          <ScalarProperty Name="ABC" ColumnName="ABC" />
+          <ScalarProperty Name="NameABC" ColumnName="NameABC" />
+          <ScalarProperty Name="NameABCTW" ColumnName="NameABCTW" />
+          <ScalarProperty Name="NameABCEng" ColumnName="NameABCEng" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Abcons">
+      <EntityTypeMapping TypeName="AlexLoginModel.Abcon">
+        <MappingFragment StoreEntitySet="Abcon">
+          <ScalarProperty Name="Gsbh" ColumnName="Gsbh" />
+          <ScalarProperty Name="abtype" ColumnName="abtype" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="Abstep" ColumnName="Abstep" />
+          <ScalarProperty Name="abps" ColumnName="abps" />
+          <ScalarProperty Name="IDCT" ColumnName="IDCT" />
+          <ScalarProperty Name="Auditor" ColumnName="Auditor" />
+          <ScalarProperty Name="abrult" ColumnName="abrult" />
+          <ScalarProperty Name="abmomo" ColumnName="abmomo" />
+          <ScalarProperty Name="Password2" ColumnName="Password2" />
+          <ScalarProperty Name="Userdate" ColumnName="Userdate" />
+          <ScalarProperty Name="Yn" ColumnName="Yn" />
+          <ScalarProperty Name="Maintitle" ColumnName="Maintitle" />
+          <ScalarProperty Name="ABC" ColumnName="ABC" />
+          <ScalarProperty Name="from_depart" ColumnName="from_depart" />
+          <ScalarProperty Name="from_user" ColumnName="from_user" />
+          <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+          <ScalarProperty Name="cothutu" ColumnName="cothutu" />
+          <ScalarProperty Name="received" ColumnName="received" />
+          <ScalarProperty Name="ABJOB" ColumnName="ABJOB" />
+          <ScalarProperty Name="Id_VB_CD" ColumnName="Id_VB_CD" />
+          <ScalarProperty Name="signatue" ColumnName="signatue" />
+          <ScalarProperty Name="Nhom" ColumnName="Nhom" />
+          <ScalarProperty Name="kytoanbo" ColumnName="kytoanbo" />
+          <ScalarProperty Name="IDChiTiet" ColumnName="IDChiTiet" />
+          <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+          <ScalarProperty Name="boqua" ColumnName="boqua" />
+          <ScalarProperty Name="lydokhongduyet" ColumnName="lydokhongduyet" />
+          <ScalarProperty Name="ncancel" ColumnName="ncancel" />
+          <ScalarProperty Name="Donvithongqua" ColumnName="Donvithongqua" />
+          <ScalarProperty Name="QA" ColumnName="QA" />
+          <ScalarProperty Name="QAmemo" ColumnName="QAmemo" />
+          <ScalarProperty Name="QAmemo2" ColumnName="QAmemo2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbDepartmentTypes">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbDepartmentType">
+        <MappingFragment StoreEntitySet="AbDepartmentType">
+          <ScalarProperty Name="DepartmentTypeID" ColumnName="DepartmentTypeID" />
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="DepartmentTypeName" ColumnName="DepartmentTypeName" />
+          <ScalarProperty Name="DepartmentTypeNameTW" ColumnName="DepartmentTypeNameTW" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="abills">
+      <EntityTypeMapping TypeName="AlexLoginModel.abill">
+        <MappingFragment StoreEntitySet="abill">
+          <ScalarProperty Name="abtype" ColumnName="abtype" />
+          <ScalarProperty Name="abname" ColumnName="abname" />
+          <ScalarProperty Name="maintable" ColumnName="maintable" />
+          <ScalarProperty Name="abnameTW" ColumnName="abnameTW" />
+          <ScalarProperty Name="abnameEng" ColumnName="abnameEng" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbillCusers">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbillCuser">
+        <MappingFragment StoreEntitySet="AbillCuser">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="abtype" ColumnName="abtype" />
+          <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+          <ScalarProperty Name="isCQ" ColumnName="isCQ" />
+          <ScalarProperty Name="isAllUser" ColumnName="isAllUser" />
+          <ScalarProperty Name="updateuser" ColumnName="updateuser" />
+          <ScalarProperty Name="Updatetime" ColumnName="Updatetime" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="abills1">
+      <EntityTypeMapping TypeName="AlexLoginModel.abill1">
+        <MappingFragment StoreEntitySet="abills">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="abtype" ColumnName="abtype" />
+          <ScalarProperty Name="ABDepId" ColumnName="ABDepId" />
+          <ScalarProperty Name="Defuserid" ColumnName="Defuserid" />
+          <ScalarProperty Name="ABJOB" ColumnName="ABJOB" />
+          <ScalarProperty Name="Abstep" ColumnName="Abstep" />
+          <ScalarProperty Name="Abde" ColumnName="Abde" />
+          <ScalarProperty Name="DESC" ColumnName="DESC" />
+          <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+          <ScalarProperty Name="Nhom" ColumnName="Nhom" />
+          <ScalarProperty Name="KyToanBo" ColumnName="KyToanBo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbNghiPheps">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbNghiPhep">
+        <MappingFragment StoreEntitySet="AbNghiPhep">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="IDNguoiDuyet" ColumnName="IDNguoiDuyet" />
+          <ScalarProperty Name="tennguoiuyquyen" ColumnName="tennguoiuyquyen" />
+          <ScalarProperty Name="IDNguoiDuocUyQuyen" ColumnName="IDNguoiDuocUyQuyen" />
+          <ScalarProperty Name="tennguoithaythe" ColumnName="tennguoithaythe" />
+          <ScalarProperty Name="ThongQua" ColumnName="ThongQua" />
+          <ScalarProperty Name="TenThongQua" ColumnName="TenThongQua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbNguoiDiches">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbNguoiDich">
+        <MappingFragment StoreEntitySet="AbNguoiDich">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+          <ScalarProperty Name="TenNguoiDich" ColumnName="TenNguoiDich" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TenNguoiDichTiengHoa" ColumnName="TenNguoiDichTiengHoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbScreens">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbScreen">
+        <MappingFragment StoreEntitySet="AbScreen">
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="UrlScreen" ColumnName="UrlScreen" />
+          <ScalarProperty Name="AliasScreen" ColumnName="AliasScreen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbTrangThaiDuyets">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbTrangThaiDuyet">
+        <MappingFragment StoreEntitySet="AbTrangThaiDuyet">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+          <ScalarProperty Name="Yn" ColumnName="Yn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbVangMats">
+      <EntityTypeMapping TypeName="AlexLoginModel.AbVangMat">
+        <MappingFragment StoreEntitySet="AbVangMat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameVietNam" ColumnName="NameVietNam" />
+          <ScalarProperty Name="NameTaiwan" ColumnName="NameTaiwan" />
+          <ScalarProperty Name="NameEnglish" ColumnName="NameEnglish" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ABYns">
+      <EntityTypeMapping TypeName="AlexLoginModel.ABYn">
+        <MappingFragment StoreEntitySet="ABYn">
+          <ScalarProperty Name="Yn" ColumnName="Yn" />
+          <ScalarProperty Name="YnName" ColumnName="YnName" />
+          <ScalarProperty Name="YnNameTW" ColumnName="YnNameTW" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttactFilePDNs">
+      <EntityTypeMapping TypeName="AlexLoginModel.AttactFilePDN">
+        <MappingFragment StoreEntitySet="AttactFilePDN">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USID" ColumnName="USID" />
+          <ScalarProperty Name="FileNameA" ColumnName="FileNameA" />
+          <ScalarProperty Name="PathNameA" ColumnName="PathNameA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BDepartments">
+      <EntityTypeMapping TypeName="AlexLoginModel.BDepartment">
+        <MappingFragment StoreEntitySet="BDepartment">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="CKBH" ColumnName="CKBH" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DepName" ColumnName="DepName" />
+          <ScalarProperty Name="DepName_C" ColumnName="DepName_C" />
+          <ScalarProperty Name="DepMemo" ColumnName="DepMemo" />
+          <ScalarProperty Name="ProYN" ColumnName="ProYN" />
+          <ScalarProperty Name="Worker_Qty" ColumnName="Worker_Qty" />
+          <ScalarProperty Name="NQty" ColumnName="NQty" />
+          <ScalarProperty Name="tsQty" ColumnName="tsQty" />
+          <ScalarProperty Name="H7Qty" ColumnName="H7Qty" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserDate" ColumnName="UserDate" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="PlanYN" ColumnName="PlanYN" />
+          <ScalarProperty Name="GXLB" ColumnName="GXLB" />
+          <ScalarProperty Name="ULID" ColumnName="ULID" />
+          <ScalarProperty Name="EMPSYSID" ColumnName="EMPSYSID" />
+          <ScalarProperty Name="useYN" ColumnName="useYN" />
+          <ScalarProperty Name="Dclass" ColumnName="Dclass" />
+          <ScalarProperty Name="mainyn" ColumnName="mainyn" />
+          <ScalarProperty Name="STDworkers" ColumnName="STDworkers" />
+          <ScalarProperty Name="PCworkers" ColumnName="PCworkers" />
+          <ScalarProperty Name="Porder1" ColumnName="Porder1" />
+          <ScalarProperty Name="ULSEQ" ColumnName="ULSEQ" />
+          <ScalarProperty Name="DsDepid" ColumnName="DsDepid" />
+          <ScalarProperty Name="IdUserChuQuan" ColumnName="IdUserChuQuan" />
+          <ScalarProperty Name="DepartmentTypeID" ColumnName="DepartmentTypeID" />
+          <ScalarProperty Name="CQuserid" ColumnName="CQuserid" />
+          <ScalarProperty Name="CQUserid2" ColumnName="CQUserid2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOfSupplies">
+      <EntityTypeMapping TypeName="AlexLoginModel.BOfSupply">
+        <MappingFragment StoreEntitySet="BOfSupplies">
+          <ScalarProperty Name="IDOfSupplies" ColumnName="IDOfSupplies" />
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="OfSuppliesName" ColumnName="OfSuppliesName" />
+          <ScalarProperty Name="BUnit" ColumnName="BUnit" />
+          <ScalarProperty Name="BNumber" ColumnName="BNumber" />
+          <ScalarProperty Name="BCommnent" ColumnName="BCommnent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Buser_Securety">
+      <EntityTypeMapping TypeName="AlexLoginModel.Buser_Securety">
+        <MappingFragment StoreEntitySet="Buser_Securety">
+          <ScalarProperty Name="IDBaoMat" ColumnName="IDBaoMat" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="MyKey" ColumnName="MyKey" />
+          <ScalarProperty Name="ngay" ColumnName="ngay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Busers">
+      <EntityTypeMapping TypeName="AlexLoginModel.Buser">
+        <MappingFragment StoreEntitySet="Busers">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LASTDATETIME" ColumnName="LASTDATETIME" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+          <ScalarProperty Name="Password2" ColumnName="Password2" />
+          <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+          <ScalarProperty Name="IdUserQuanLyTT" ColumnName="IdUserQuanLyTT" />
+          <ScalarProperty Name="USERNAMETW" ColumnName="USERNAMETW" />
+          <ScalarProperty Name="pwdlevel" ColumnName="pwdlevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Busers2">
+      <EntityTypeMapping TypeName="AlexLoginModel.Busers2">
+        <MappingFragment StoreEntitySet="Busers2">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PWD" ColumnName="PWD" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LASTDATETIME" ColumnName="LASTDATETIME" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="depid" ColumnName="depid" />
+          <ScalarProperty Name="JOB" ColumnName="JOB" />
+          <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+          <ScalarProperty Name="Password2" ColumnName="Password2" />
+          <ScalarProperty Name="signatue" ColumnName="signatue" />
+          <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+          <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+          <ScalarProperty Name="isSep" ColumnName="isSep" />
+          <ScalarProperty Name="Maisenhan" ColumnName="Maisenhan" />
+          <ScalarProperty Name="abstep" ColumnName="abstep" />
+          <ScalarProperty Name="abde" ColumnName="abde" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="IDChucVu" ColumnName="IDChucVu" />
+          <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+          <ScalarProperty Name="IdUserQuanLyTT" ColumnName="IdUserQuanLyTT" />
+          <ScalarProperty Name="USERNAMETW" ColumnName="USERNAMETW" />
+          <ScalarProperty Name="PWDlevel" ColumnName="PWDlevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietBuocKies">
+      <EntityTypeMapping TypeName="AlexLoginModel.ChiTietBuocKy">
+        <MappingFragment StoreEntitySet="ChiTietBuocKy">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="abstep" ColumnName="abstep" />
+          <ScalarProperty Name="ABPS" ColumnName="ABPS" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Yn" ColumnName="Yn" />
+          <ScalarProperty Name="IdNguoiDuyet" ColumnName="IdNguoiDuyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChucVus">
+      <EntityTypeMapping TypeName="AlexLoginModel.ChucVu">
+        <MappingFragment StoreEntitySet="ChucVu">
+          <ScalarProperty Name="IDChucVu" ColumnName="IDChucVu" />
+          <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="TenChucVuTiengHoa" ColumnName="TenChucVuTiengHoa" />
+          <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clzls">
+      <EntityTypeMapping TypeName="AlexLoginModel.clzl">
+        <MappingFragment StoreEntitySet="clzl">
+          <ScalarProperty Name="cldh" ColumnName="cldh" />
+          <ScalarProperty Name="clbm" ColumnName="clbm" />
+          <ScalarProperty Name="cllb" ColumnName="cllb" />
+          <ScalarProperty Name="dycldh" ColumnName="dycldh" />
+          <ScalarProperty Name="ysbh" ColumnName="ysbh" />
+          <ScalarProperty Name="yszwsm" ColumnName="yszwsm" />
+          <ScalarProperty Name="ysywsm" ColumnName="ysywsm" />
+          <ScalarProperty Name="zwpm" ColumnName="zwpm" />
+          <ScalarProperty Name="ywpm" ColumnName="ywpm" />
+          <ScalarProperty Name="dwbh" ColumnName="dwbh" />
+          <ScalarProperty Name="dwzwsm" ColumnName="dwzwsm" />
+          <ScalarProperty Name="dwywsm" ColumnName="dwywsm" />
+          <ScalarProperty Name="clzmlb" ColumnName="clzmlb" />
+          <ScalarProperty Name="lycc" ColumnName="lycc" />
+          <ScalarProperty Name="xhcl" ColumnName="xhcl" />
+          <ScalarProperty Name="jkcl" ColumnName="jkcl" />
+          <ScalarProperty Name="gjlb" ColumnName="gjlb" />
+          <ScalarProperty Name="ckcldh" ColumnName="ckcldh" />
+          <ScalarProperty Name="dzzhl" ColumnName="dzzhl" />
+          <ScalarProperty Name="xxbh" ColumnName="xxbh" />
+          <ScalarProperty Name="kfdh" ColumnName="kfdh" />
+          <ScalarProperty Name="cqdh" ColumnName="cqdh" />
+          <ScalarProperty Name="cltd" ColumnName="cltd" />
+          <ScalarProperty Name="tyjh" ColumnName="tyjh" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+          <ScalarProperty Name="pumadh" ColumnName="pumadh" />
+          <ScalarProperty Name="zsdh" ColumnName="zsdh" />
+          <ScalarProperty Name="trandate" ColumnName="trandate" />
+          <ScalarProperty Name="leadtime" ColumnName="leadtime" />
+          <ScalarProperty Name="DCYN" ColumnName="DCYN" />
+          <ScalarProperty Name="PDYN" ColumnName="PDYN" />
+          <ScalarProperty Name="MOQ" ColumnName="MOQ" />
+          <ScalarProperty Name="MatTestNo" ColumnName="MatTestNo" />
+          <ScalarProperty Name="MatTestPF" ColumnName="MatTestPF" />
+          <ScalarProperty Name="SkinYn" ColumnName="SkinYn" />
+          <ScalarProperty Name="RiskColYn" ColumnName="RiskColYn" />
+          <ScalarProperty Name="RSLTestNo" ColumnName="RSLTestNo" />
+          <ScalarProperty Name="RSLTestPF" ColumnName="RSLTestPF" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="warept" ColumnName="warept" />
+          <ScalarProperty Name="PlanPT" ColumnName="PlanPT" />
+          <ScalarProperty Name="CLFJ" ColumnName="CLFJ" />
+          <ScalarProperty Name="cltd2" ColumnName="cltd2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContentMails">
+      <EntityTypeMapping TypeName="AlexLoginModel.ContentMail">
+        <MappingFragment StoreEntitySet="ContentMail">
+          <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="Pdno" ColumnName="Pdno" />
+          <ScalarProperty Name="conten" ColumnName="conten" />
+          <ScalarProperty Name="aproved" ColumnName="aproved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GUI_Language">
+      <EntityTypeMapping TypeName="AlexLoginModel.GUI_Language">
+        <MappingFragment StoreEntitySet="GUI_Language">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="lblID" ColumnName="lblID" />
+          <ScalarProperty Name="lbl_EN" ColumnName="lbl_EN" />
+          <ScalarProperty Name="lbl_VN" ColumnName="lbl_VN" />
+          <ScalarProperty Name="lbl_TW" ColumnName="lbl_TW" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pdnas">
+      <EntityTypeMapping TypeName="AlexLoginModel.pdna">
+        <MappingFragment StoreEntitySet="pdna">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="pdDate" ColumnName="pdDate" />
+          <ScalarProperty Name="pdLX" ColumnName="pdLX" />
+          <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ZSBH" ColumnName="ZSBH" />
+          <ScalarProperty Name="CFMID1" ColumnName="CFMID1" />
+          <ScalarProperty Name="CFMDate1" ColumnName="CFMDate1" />
+          <ScalarProperty Name="CFMID2" ColumnName="CFMID2" />
+          <ScalarProperty Name="CFMDate2" ColumnName="CFMDate2" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="SB" ColumnName="SB" />
+          <ScalarProperty Name="PMARK" ColumnName="PMARK" />
+          <ScalarProperty Name="CFMID0" ColumnName="CFMID0" />
+          <ScalarProperty Name="CFMDate0" ColumnName="CFMDate0" />
+          <ScalarProperty Name="pduser" ColumnName="pduser" />
+          <ScalarProperty Name="pddepid" ColumnName="pddepid" />
+          <ScalarProperty Name="pdyyid" ColumnName="pdyyid" />
+          <ScalarProperty Name="yymemo" ColumnName="yymemo" />
+          <ScalarProperty Name="shmemo" ColumnName="shmemo" />
+          <ScalarProperty Name="mytitle" ColumnName="mytitle" />
+          <ScalarProperty Name="pdmemovn" ColumnName="pdmemovn" />
+          <ScalarProperty Name="pdmemoch" ColumnName="pdmemoch" />
+          <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+          <ScalarProperty Name="LevelDoing" ColumnName="LevelDoing" />
+          <ScalarProperty Name="ABC" ColumnName="ABC" />
+          <ScalarProperty Name="NoiDungDich" ColumnName="NoiDungDich" />
+          <ScalarProperty Name="trangthaidich" ColumnName="trangthaidich" />
+          <ScalarProperty Name="IdnguoiDich" ColumnName="IdnguoiDich" />
+          <ScalarProperty Name="Abtype" ColumnName="Abtype" />
+          <ScalarProperty Name="CFMDate4" ColumnName="CFMDate4" />
+          <ScalarProperty Name="dagui" ColumnName="dagui" />
+          <ScalarProperty Name="oldpdno" ColumnName="oldpdno" />
+          <ScalarProperty Name="UseIntent" ColumnName="UseIntent" />
+          <ScalarProperty Name="pdnsubject" ColumnName="pdnsubject" />
+          <ScalarProperty Name="pdmemovn1" ColumnName="pdmemovn1" />
+          <ScalarProperty Name="isPause" ColumnName="isPause" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pdnaS1">
+      <EntityTypeMapping TypeName="AlexLoginModel.pdna1">
+        <MappingFragment StoreEntitySet="pdnaS">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="pdNO" ColumnName="pdNO" />
+          <ScalarProperty Name="Xh" ColumnName="Xh" />
+          <ScalarProperty Name="CLBH" ColumnName="CLBH" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="CKBH" ColumnName="CKBH" />
+          <ScalarProperty Name="ZMLB" ColumnName="ZMLB" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="USPrice" ColumnName="USPrice" />
+          <ScalarProperty Name="USACC" ColumnName="USACC" />
+          <ScalarProperty Name="CWHL" ColumnName="CWHL" />
+          <ScalarProperty Name="VNPrice" ColumnName="VNPrice" />
+          <ScalarProperty Name="VNACC" ColumnName="VNACC" />
+          <ScalarProperty Name="Memo0" ColumnName="Memo0" />
+          <ScalarProperty Name="CLmemo" ColumnName="CLmemo" />
+          <ScalarProperty Name="CostID" ColumnName="CostID" />
+          <ScalarProperty Name="BJNO" ColumnName="BJNO" />
+          <ScalarProperty Name="YQDate" ColumnName="YQDate" />
+          <ScalarProperty Name="CFMDate" ColumnName="CFMDate" />
+          <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="CLPrice" ColumnName="CLPrice" />
+          <ScalarProperty Name="CLACC" ColumnName="CLACC" />
+          <ScalarProperty Name="FKZT" ColumnName="FKZT" />
+          <ScalarProperty Name="pdACC" ColumnName="pdACC" />
+          <ScalarProperty Name="VNPpd10" ColumnName="VNPpd10" />
+          <ScalarProperty Name="DDtp" ColumnName="DDtp" />
+          <ScalarProperty Name="DDBH" ColumnName="DDBH" />
+          <ScalarProperty Name="cycle" ColumnName="cycle" />
+          <ScalarProperty Name="CGNO" ColumnName="CGNO" />
+          <ScalarProperty Name="ZSBH" ColumnName="ZSBH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PDNLinks">
+      <EntityTypeMapping TypeName="AlexLoginModel.PDNLink">
+        <MappingFragment StoreEntitySet="PDNLink">
+          <ScalarProperty Name="Gsbh" ColumnName="Gsbh" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Cancel" ColumnName="Cancel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PDNLusers">
+      <EntityTypeMapping TypeName="AlexLoginModel.PDNLuser">
+        <MappingFragment StoreEntitySet="PDNLuser">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="pdno" ColumnName="pdno" />
+          <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="SENTDATIME" ColumnName="SENTDATIME" />
+          <ScalarProperty Name="RECVDATIME" ColumnName="RECVDATIME" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projectms">
+      <EntityTypeMapping TypeName="AlexLoginModel.Projectm">
+        <MappingFragment StoreEntitySet="Projectm">
+          <ScalarProperty Name="gsbh" ColumnName="gsbh" />
+          <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+          <ScalarProperty Name="sysname" ColumnName="sysname" />
+          <ScalarProperty Name="sysmemo" ColumnName="sysmemo" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="sLeaderid" ColumnName="sLeaderid" />
+          <ScalarProperty Name="edates" ColumnName="edates" />
+          <ScalarProperty Name="edatee" ColumnName="edatee" />
+          <ScalarProperty Name="Spercent" ColumnName="Spercent" />
+          <ScalarProperty Name="sysnamevn" ColumnName="sysnamevn" />
+          <ScalarProperty Name="sysmemovn" ColumnName="sysmemovn" />
+          <ScalarProperty Name="LinkFile" ColumnName="LinkFile" />
+          <ScalarProperty Name="LinkFile2" ColumnName="LinkFile2" />
+          <ScalarProperty Name="LinkFile3" ColumnName="LinkFile3" />
+          <ScalarProperty Name="Share" ColumnName="Share" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projectns">
+      <EntityTypeMapping TypeName="AlexLoginModel.Projectn">
+        <MappingFragment StoreEntitySet="Projectn">
+          <ScalarProperty Name="gsbh" ColumnName="gsbh" />
+          <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+          <ScalarProperty Name="jsubid" ColumnName="jsubid" />
+          <ScalarProperty Name="jsubname" ColumnName="jsubname" />
+          <ScalarProperty Name="jsubmemo" ColumnName="jsubmemo" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="sLeaderid" ColumnName="sLeaderid" />
+          <ScalarProperty Name="edates" ColumnName="edates" />
+          <ScalarProperty Name="edatee" ColumnName="edatee" />
+          <ScalarProperty Name="Spercent" ColumnName="Spercent" />
+          <ScalarProperty Name="PDNO" ColumnName="PDNO" />
+          <ScalarProperty Name="jsubnamevn" ColumnName="jsubnamevn" />
+          <ScalarProperty Name="jsubmemovn" ColumnName="jsubmemovn" />
+          <ScalarProperty Name="Linkfile" ColumnName="Linkfile" />
+          <ScalarProperty Name="Linkfile2" ColumnName="Linkfile2" />
+          <ScalarProperty Name="Linkfile3" ColumnName="Linkfile3" />
+          <ScalarProperty Name="Share" ColumnName="Share" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="AlexLoginModel.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="gsbh" ColumnName="gsbh" />
+          <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+          <ScalarProperty Name="jsubid" ColumnName="jsubid" />
+          <ScalarProperty Name="jobid" ColumnName="jobid" />
+          <ScalarProperty Name="ticketid" ColumnName="ticketid" />
+          <ScalarProperty Name="jobname" ColumnName="jobname" />
+          <ScalarProperty Name="jobmemo" ColumnName="jobmemo" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="Jleaderid" ColumnName="Jleaderid" />
+          <ScalarProperty Name="edates" ColumnName="edates" />
+          <ScalarProperty Name="edatee" ColumnName="edatee" />
+          <ScalarProperty Name="jpercent" ColumnName="jpercent" />
+          <ScalarProperty Name="PDNO" ColumnName="PDNO" />
+          <ScalarProperty Name="jobnamevn" ColumnName="jobnamevn" />
+          <ScalarProperty Name="jobmemovn" ColumnName="jobmemovn" />
+          <ScalarProperty Name="Linkfile" ColumnName="Linkfile" />
+          <ScalarProperty Name="Linkfile2" ColumnName="Linkfile2" />
+          <ScalarProperty Name="Linkfile3" ColumnName="Linkfile3" />
+          <ScalarProperty Name="Share" ColumnName="Share" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projectus">
+      <EntityTypeMapping TypeName="AlexLoginModel.Projectu">
+        <MappingFragment StoreEntitySet="Projectu">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="Jsysid" ColumnName="Jsysid" />
+          <ScalarProperty Name="Jsubid" ColumnName="Jsubid" />
+          <ScalarProperty Name="Jodid" ColumnName="Jodid" />
+          <ScalarProperty Name="Juserid" ColumnName="Juserid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="juadate" ColumnName="juadate" />
+          <ScalarProperty Name="juamemo" ColumnName="juamemo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PSworkms">
+      <EntityTypeMapping TypeName="AlexLoginModel.PSworkm">
+        <MappingFragment StoreEntitySet="PSworkm">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="pdates" ColumnName="pdates" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="pdatee" ColumnName="pdatee" />
+          <ScalarProperty Name="wkmemo" ColumnName="wkmemo" />
+          <ScalarProperty Name="wklink" ColumnName="wklink" />
+          <ScalarProperty Name="modidate" ColumnName="modidate" />
+          <ScalarProperty Name="jobpercent" ColumnName="jobpercent" />
+          <ScalarProperty Name="cfmdate" ColumnName="cfmdate" />
+          <ScalarProperty Name="cfmuser" ColumnName="cfmuser" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="wslink2" ColumnName="wslink2" />
+          <ScalarProperty Name="wslink3" ColumnName="wslink3" />
+          <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+          <ScalarProperty Name="jsubid" ColumnName="jsubid" />
+          <ScalarProperty Name="jobid" ColumnName="jobid" />
+          <ScalarProperty Name="ticketid" ColumnName="ticketid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PSworks">
+      <EntityTypeMapping TypeName="AlexLoginModel.PSwork">
+        <MappingFragment StoreEntitySet="PSworks">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="pdates" ColumnName="pdates" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="xh" ColumnName="xh" />
+          <ScalarProperty Name="PSmemo" ColumnName="PSmemo" />
+          <ScalarProperty Name="pslink" ColumnName="pslink" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="pslink2" ColumnName="pslink2" />
+          <ScalarProperty Name="pslink3" ColumnName="pslink3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuyTrinhXetDuyets">
+      <EntityTypeMapping TypeName="AlexLoginModel.QuyTrinhXetDuyet">
+        <MappingFragment StoreEntitySet="QuyTrinhXetDuyet">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="abtype" ColumnName="abtype" />
+          <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+          <ScalarProperty Name="ABstep" ColumnName="ABstep" />
+          <ScalarProperty Name="ABPS" ColumnName="ABPS" />
+          <ScalarProperty Name="IDQuyTrinh" ColumnName="IDQuyTrinh" />
+          <ScalarProperty Name="NguoiDuyet" ColumnName="NguoiDuyet" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="IDChucVu" ColumnName="IDChucVu" />
+          <ScalarProperty Name="TenChucVuTiengHoa" ColumnName="TenChucVuTiengHoa" />
+          <ScalarProperty Name="abtypenameTW" ColumnName="abtypenameTW" />
+          <ScalarProperty Name="tendonviTW" ColumnName="tendonviTW" />
+          <ScalarProperty Name="DonViThongQua" ColumnName="DonViThongQua" />
+          <ScalarProperty Name="tendonvithongqua" ColumnName="tendonvithongqua" />
+          <ScalarProperty Name="IDLoaiDonVi" ColumnName="IDLoaiDonVi" />
+          <ScalarProperty Name="DepartmentTypeNameTW" ColumnName="DepartmentTypeNameTW" />
+          <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AlexLoginModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TheSystems">
+      <EntityTypeMapping TypeName="AlexLoginModel.TheSystem">
+        <MappingFragment StoreEntitySet="TheSystems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StartPage" ColumnName="StartPage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TheUsers">
+      <EntityTypeMapping TypeName="AlexLoginModel.TheUser">
+        <MappingFragment StoreEntitySet="TheUsers">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ActiveCode" ColumnName="ActiveCode" />
+          <ScalarProperty Name="SEmail" ColumnName="SEmail" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ugroups">
+      <EntityTypeMapping TypeName="AlexLoginModel.Ugroup">
+        <MappingFragment StoreEntitySet="Ugroup">
+          <ScalarProperty Name="GSBh" ColumnName="GSBh" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="ugno" ColumnName="ugno" />
+          <ScalarProperty Name="userid2" ColumnName="userid2" />
+          <ScalarProperty Name="UGtitle" ColumnName="UGtitle" />
+          <ScalarProperty Name="UGmemo" ColumnName="UGmemo" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_Systems">
+      <EntityTypeMapping TypeName="AlexLoginModel.Users_Systems">
+        <MappingFragment StoreEntitySet="Users_Systems">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="ActiveCode" ColumnName="ActiveCode" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UShares">
+      <EntityTypeMapping TypeName="AlexLoginModel.UShare">
+        <MappingFragment StoreEntitySet="UShare">
+          <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="USID" ColumnName="USID" />
+          <ScalarProperty Name="UGno" ColumnName="UGno" />
+          <ScalarProperty Name="UStitle" ColumnName="UStitle" />
+          <ScalarProperty Name="USmemo" ColumnName="USmemo" />
+          <ScalarProperty Name="LinkFile" ColumnName="LinkFile" />
+          <ScalarProperty Name="sdate" ColumnName="sdate" />
+          <ScalarProperty Name="edate" ColumnName="edate" />
+          <ScalarProperty Name="userdate" ColumnName="userdate" />
+          <ScalarProperty Name="yn" ColumnName="yn" />
+          <ScalarProperty Name="LinkFile2" ColumnName="LinkFile2" />
+          <ScalarProperty Name="LinkFile3" ColumnName="LinkFile3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zszls">
+      <EntityTypeMapping TypeName="AlexLoginModel.zszl">
+        <MappingFragment StoreEntitySet="zszl">
+          <ScalarProperty Name="zsdh" ColumnName="zsdh" />
+          <ScalarProperty Name="zsqm" ColumnName="zsqm" />
+          <ScalarProperty Name="zsjc" ColumnName="zsjc" />
+          <ScalarProperty Name="zsywjc" ColumnName="zsywjc" />
+          <ScalarProperty Name="tybh" ColumnName="tybh" />
+          <ScalarProperty Name="fpdz" ColumnName="fpdz" />
+          <ScalarProperty Name="yjdz" ColumnName="yjdz" />
+          <ScalarProperty Name="dh" ColumnName="dh" />
+          <ScalarProperty Name="cz" ColumnName="cz" />
+          <ScalarProperty Name="fzr" ColumnName="fzr" />
+          <ScalarProperty Name="bb" ColumnName="bb" />
+          <ScalarProperty Name="llr2" ColumnName="llr2" />
+          <ScalarProperty Name="llr" ColumnName="llr" />
+          <ScalarProperty Name="dybh" ColumnName="dybh" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+          <ScalarProperty Name="TYJH" ColumnName="TYJH" />
+          <ScalarProperty Name="YN" ColumnName="YN" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="MZsdh" ColumnName="MZsdh" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="Shippingleadtime" ColumnName="Shippingleadtime" />
+          <ScalarProperty Name="Shippingleadtimes" ColumnName="Shippingleadtimes" />
+          <ScalarProperty Name="Customclearanceday" ColumnName="Customclearanceday" />
+          <ScalarProperty Name="Samplepurchaser" ColumnName="Samplepurchaser" />
+          <ScalarProperty Name="Prodpurchaser" ColumnName="Prodpurchaser" />
+          <ScalarProperty Name="Groupname" ColumnName="Groupname" />
+          <ScalarProperty Name="Zsdh_TW" ColumnName="Zsdh_TW" />
+          <ScalarProperty Name="Sample_void" ColumnName="Sample_void" />
+          <ScalarProperty Name="TRANDATE" ColumnName="TRANDATE" />
+          <ScalarProperty Name="fktj" ColumnName="fktj" />
+          <ScalarProperty Name="fktj1" ColumnName="fktj1" />
+          <ScalarProperty Name="scd" ColumnName="scd" />
+          <ScalarProperty Name="fzr_mail" ColumnName="fzr_mail" />
+          <ScalarProperty Name="llr2_mail" ColumnName="llr2_mail" />
+          <ScalarProperty Name="llr_mail" ColumnName="llr_mail" />
+          <ScalarProperty Name="pass0" ColumnName="pass0" />
+          <ScalarProperty Name="pass1" ColumnName="pass1" />
+          <ScalarProperty Name="pass2" ColumnName="pass2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="AlexLoginModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="AlexLoginModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="AlexLoginModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="AlexLoginModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AlexLoginModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="AlexLoginModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AlexLoginModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="AlexLoginModel.Store.sp_renamediagram" />
+  </EntityContainerMapping>
+</Mapping>

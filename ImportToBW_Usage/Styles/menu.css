@@ -1,0 +1,70 @@
+#mainMenu{
+	background: #000305;
+	font-size: 1.143em;
+	height: 60px;
+	line-height: 30px;
+	margin: 0 auto 2em auto;
+	padding: 0;
+	text-align: left;
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px #c0c0c0 inset;
+}
+#mainMenu a{
+	margin: 0px;
+	position: relative;
+	border-right: 1px solid #676767;
+	border-bottom-right-radius: 45px;
+}
+#mainMenu a:link,#mainMenu a:visited{
+	color: #fff;
+	height: 30px;
+	padding: 5px 1.5em;
+	display: inline-block;
+	text-decoration: none;
+}
+#mainMenu a:hover,#mainMenu a:active{
+	background: #C74350;
+	color: #fff;
+	text-shadow: none!important;
+	box-shadow: 0px 3px 5px #c0c0c0 inset;
+	border-top-left-radius: 54px;
+	border-bottom-right-radius: 54px;
+}
+#mainMenu:hover a.act{
+	background: #000305;
+	color: #fff;
+	border-right: 1px solid #676767;
+	box-shadow: 0px 2px 5px #c0c0c0 inset;
+}
+#mainMenu a.act{
+	background: #F5F4EF;
+	color: #151515;
+	text-shadow: none!important;
+	box-shadow: 0px 0px 5px #c0c0c0 ;
+	border-top-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+}
+#mainMenu a:hover{
+	-webkit-animation: DaoDong 0.5s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: 10;
+}
+@-webkit-keyframes DaoDong
+{
+	from{left: 4px;top: 8px;}
+	to{left: 5px;top: 2px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

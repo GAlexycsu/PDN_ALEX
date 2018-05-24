@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site8S.master.cs" Inherits="iOffice.SiteMater.Site8S" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+       <link href="../Style/formatMain3.css" rel="stylesheet" />
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/jquery-ui.min.js"></script>
+    <script src="../Scripts/jquery-ui-1.8.19.custom.min.js"></script>
+    <script src="../Scripts/jquery-1.7.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <style type="text/css">
+        #div1 {
+            height: 53px;
+        }
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+           <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+             <div style="width:100%; height:30px; float:left; background: #cecece; margin-bottom: 10px; margin-top:20px">
+            <div id="div1">
+                  
+                     <div id="divTaoPhieu">
+                        <asp:LinkButton ID="linkHome" runat="server"  OnClick="linkHome_Click"><img src="../Images/home.jpg" width="35px" height="28px" />  </asp:LinkButton>
+                    </div>
+                    <div id="divLinkNhap" >
+                        <asp:Label ID="L1" runat="server" Text="<" ForeColor="White"></asp:Label>
+                         <asp:LinkButton ID="link8S" runat="server" OnClick="link8S_Click"><img src="../Images/People.png" /> 8 S Item</asp:LinkButton>
+                         <asp:Label ID="L3" runat="server" Text=">" ForeColor="White"></asp:Label>
+                    </div>
+                    <div  id="divlinkPhieuchua">
+                       <asp:Label ID="Label1" runat="server" Text="<" ForeColor="White"></asp:Label>
+                       <asp:LinkButton ID="link8SDetail" runat="server" OnClick="link8SDetail_Click"><img src="../Images/Message.png" /> 8 S Records</asp:LinkButton>
+                       <asp:Label ID="Label2" runat="server" Text=">" ForeColor="White"></asp:Label>
+                    </div>
+                    <div id="divDich" >
+                         <asp:Label ID="Label3" runat="server" Text="<" ForeColor="White"></asp:Label>
+                 <asp:LinkButton ID="LinkNews8S" runat="server" OnClick="LinkNews8S_Click"><img src="../Images/Message.png" /> 8 S List  </asp:LinkButton>
+                 <asp:Label ID="Label4" runat="server" Text=">" ForeColor="White"></asp:Label>
+                    </div>
+                    <div id="divDaGui"  >
+                        <asp:LinkButton ID="LinkScore" runat="server" OnClick="LinkScore_Click">Score In Week</asp:LinkButton> 
+                    </div>
+                 <div id="divDaKy" >
+                     <asp:DropDownList ID="dropDowLanguege" runat="server" AutoPostBack="True" OnSelectedIndexChanged="dropDowLanguege_SelectedIndexChanged">
+                           <asp:ListItem Value="select">Select languege</asp:ListItem>
+                          <asp:ListItem Value="lbl_TW">Taiwan</asp:ListItem>
+                          <asp:ListItem Value="lbl_VN">VietNam</asp:ListItem>
+                           <asp:ListItem Value="lbl_EN" >English</asp:ListItem>
+                     </asp:DropDownList>
+                 </div>
+                  <div id="login"style="text-align:left" >  Login: <asp:Label ID="lblNhanVien" runat="server" Text=""></asp:Label>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="linkLogout" runat="server" OnClick="linkLogout_Click" ValidationGroup="logout"><img src="<%=ResolveClientUrl("../Images/") %>Turn-off.png" /> Logout</asp:LinkButton></div>
+                    
+                </div>
+               
+          
+        </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

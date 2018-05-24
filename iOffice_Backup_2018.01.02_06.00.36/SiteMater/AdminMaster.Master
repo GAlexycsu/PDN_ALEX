@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="iOffice.SiteMater.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="../Style/formatMain.css" rel="stylesheet" />
+    <link href="../Style/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+    <script src="<%=ResolveUrl("~/Scripts/") %>jquery.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/") %>jquery-ui.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/") %>jquery-ui-1.8.19.custom.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/") %>formatdate1.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <%--  <div id="idBaner" >
+
+          </div>--%>
+
+          <div  style="height: 80px; background: #cecece; width:1160px;  padding: 7px 7px 7px 7px;border: 1px solid #cecece; text-align:center;overflow:hidden">
+        <style>
+                    .cnMatKhau{list-style: none; margin: 0px; padding: 0px 0px 0px 0px;font-size:medium}
+                    .cnMatKhau li{display: inline-block; }
+                    .cnMatKhau li a{text-decoration: none; color: #000; text-transform: uppercase;}
+                    .sub{position: absolute;  background: #0088ca; list-style: none; display:none;width:350px; text-align:left}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; width:500px; }
+                    .cnMatKhau > li:hover > .sub{display: block;}
+               </style>
+        <div class="clock" style="height:35px; margin-top: 0px; width: 1151px;">
+           
+              <div id="divHome">
+                <asp:LinkButton ID="linkHome" runat="server" Font-Size="XX-Large" OnClick="linkHome_Click"><img src="<%=ResolveClientUrl("../Images/") %>home.jpg" width="55px" height="40px" />  </asp:LinkButton>
+            </div>
+             <div id="webp" >
+            Web Admin
+        </div>
+        <ul class="cnMatKhau">
+
+            <li>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="">HyperLink
+                    <ul class="sub">
+                        <li style="text-align:left; color:#fff">
+                            <asp:HyperLink ID="HyperLinkForgotPass" runat="server" NavigateUrl="~/presentationLayer/FrmQuenmatkhauxetduyet.aspx">Forgot Password Aprroval</asp:HyperLink></li>
+                        <li style="text-align:left; color:#fff">
+                            <asp:HyperLink ID="HyperChangePass" runat="server" NavigateUrl="~/presentationLayer/frmDoiMatKhauXetDuyet.aspx">Change Password Aprroval</asp:HyperLink></li>
+                        <li style="text-align:left; color:#fff">
+                            <asp:HyperLink ID="HyperChangeSig" runat="server" NavigateUrl="~/presentationLayer/changesignature.aspx">Change Signature</asp:HyperLink></li>
+                   </ul>
+                </asp:HyperLink>
+            </li>
+        </ul>
+        <div id="login" style="text-align:left" > Login: <asp:Label ID="lblNhanVien" runat="server" Text=""></asp:Label>
+            &nbsp;
+            <asp:LinkButton ID="LinkButton1" runat="server"  OnClick="LinkButton1_Click" ValidationGroup="logout"><img src="<%=ResolveClientUrl("../Images/") %>Turn-off.png" /> Logout</asp:LinkButton>
+
+        </div>
+           <div id="divLang">
+             <asp:DropDownList ID="dropDowLanguege" runat="server" AutoPostBack="True" OnSelectedIndexChanged="dropDowLanguege_SelectedIndexChanged">
+                   <asp:ListItem Value="select">Select languege</asp:ListItem>
+                  <asp:ListItem Value="lbl_TW">Taiwan</asp:ListItem>
+                  <asp:ListItem Value="lbl_VN">VietNam</asp:ListItem>
+                   <asp:ListItem Value="lbl_EN" >English</asp:ListItem>
+             </asp:DropDownList>
+         </div>
+        </div>
+          <div style="width:1024px;height:50px; float:left; margin-bottom: 0px;">
+            <table style="width: 1156px;  margin-bottom: 0px;text-align:left; height: 50px;">
+                <tr>
+                    <%--<td style="width:120px">
+                       
+                    </td>--%>
+                    <td style="width:150px">
+                        
+                        <asp:LinkButton ID="LinkQuyTrinh" runat="server" ValidationGroup="groupMenu" OnClick="LinkQuyTrinh_Click">Quy Trinh</asp:LinkButton>
+                    </td>
+                    
+                    <td style="width:190px">
+                        
+                        <asp:LinkButton ID="LinkNghiPhep" runat="server" ValidationGroup="groupMenu"  OnClick="LinkNghiPhep_Click">Nghi Phep</asp:LinkButton>
+                    </td>
+                    <td style="width:180px">
+                        
+                        <asp:LinkButton ID="LinkNhanVien" runat="server" ValidationGroup="groupMenu" OnClick="LinkNhanVien_Click">Nhan vien</asp:LinkButton>
+                    </td>
+                    <td style="width:160px">
+                       
+                        <asp:LinkButton ID="LinkDonVi" runat="server" ValidationGroup="groupMenu" OnClick="LinkDonVi_Click">Don vi</asp:LinkButton>
+                    </td>
+                    <td style="width:220px">
+                        
+                        <asp:LinkButton ID="LinkLoaiPhieu" runat="server" ValidationGroup="groupMenu" OnClick="LinkLoaiPhieu_Click">Loai Phieu</asp:LinkButton>
+                    </td>
+                  <td>
+                      <asp:LinkButton ID="LinkButton2" runat="server"  OnClick="LinkButton2_Click">6.PDN Query</asp:LinkButton>
+                  </td>
+                </tr>
+             
+            </table>
+            
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <p style="color:white;">
+             Day la site admin
+        </p>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e9da0dfb18e741a3b5c18757a487c216" Name="圖表1" DisplayType="true" ShowGrid="false" ZoomLevel="100">
+        <EntityTypeShape EntityType="AlexLoginModel.aABC" Width="1.5" PointX="5.875" PointY="1.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Abcon" Width="1.5" PointX="3" PointY="1.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbDepartmentType" Width="1.5" PointX="2.875" PointY="6.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.abill" Width="1.5" PointX="5.875" PointY="2.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbillCuser" Width="1.5" PointX="2.875" PointY="7.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.abill1" Width="1.5" PointX="2.875" PointY="8.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbNghiPhep" Width="1.5" PointX="2.875" PointY="10.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbNguoiDich" Width="1.5" PointX="2.875" PointY="9.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbScreen" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbTrangThaiDuyet" Width="1.5" PointX="5.875" PointY="4.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AbVangMat" Width="1.5" PointX="2.875" PointY="11.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.ABYn" Width="1.5" PointX="2.75" PointY="4" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.AttactFilePDN" Width="1.5" PointX="2.875" PointY="5.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.BDepartment" Width="1.5" PointX="5.875" PointY="6.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.BOfSupply" Width="1.5" PointX="2.875" PointY="9.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Buser_Securety" Width="1.5" PointX="5.75" PointY="12" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Buser" Width="1.5" PointX="2.875" PointY="12" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Busers2" Width="1.5" PointX="5.75" PointY="10.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.ChiTietBuocKy" Width="1.5" PointX="6" PointY="5.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.ChucVu" Width="1.5" PointX="5.75" PointY="11.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.clzl" Width="1.5" PointX="0.5" PointY="5.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.ContentMail" Width="1.5" PointX="5.875" PointY="9.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.GUI_Language" Width="1.5" PointX="2.875" PointY="0.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.pdna" Width="1.5" PointX="5.875" PointY="3.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.pdna1" Width="1.5" PointX="5.75" PointY="8.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.PDNLink" Width="1.5" PointX="0.5" PointY="6.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.PDNLuser" Width="1.5" PointX="0.5" PointY="8.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Projectm" Width="1.5" PointX="0.5" PointY="2.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Projectn" Width="1.5" PointX="5.75" PointY="7.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Project" Width="1.5" PointX="5.75" PointY="12.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Projectu" Width="1.5" PointX="0.5" PointY="7.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.PSworkm" Width="1.5" PointX="0.5" PointY="10.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.PSwork" Width="1.5" PointX="5.875" PointY="7" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.QuyTrinhXetDuyet" Width="1.5" PointX="5.75" PointY="9.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.sysdiagram" Width="1.5" PointX="0.5" PointY="13.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.TheSystem" Width="1.5" PointX="2.75" PointY="13.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.TheUser" Width="1.5" PointX="5.75" PointY="13.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Ugroup" Width="1.5" PointX="0.5" PointY="7.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.Users_Systems" Width="1.5" PointX="0.5" PointY="9.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.UShare" Width="1.5" PointX="0.5" PointY="10.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="AlexLoginModel.zszl" Width="1.5" PointX="5.75" PointY="0.5" IsExpanded="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_Abcon_ABC" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_pdna_ABC" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_Abcon_ABtype" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_Abcon_Yn" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_abill_abill" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_pdna_Abtype" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_GUI_Language_AbScreen" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_AbTrangThaiDuyet_AbTrangThaiDuyet" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_AbTrangThaiDuyet_YN" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_ChiTietBuocKy_YN" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_pdna_YN" ManuallyRouted="false" />
+        <AssociationConnector Association="AlexLoginModel.FK_pdna_pdna" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

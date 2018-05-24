@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="testPage.master.cs" Inherits="iOffice.SiteMater.testPage" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <link href="../Style/jquery-ui.css" rel="stylesheet" />
+    <link href="../Style/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+    <script src="../../Scripts/jquery.min.js"></script>
+    <script src="../../Scripts/jquery-ui.min.js"></script>
+    <script src="../../Scripts/jquery-ui-1.8.19.custom.min.js"></script>
+    <script src="../../Scripts/formatDate1.js"></script>
+          <style type="text/css">
+        #Date { font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; font-size:20px; text-align:center; text-shadow:0 0 5px #00c6ff; }
+
+        ul { width:260px; margin:0 auto; padding:0px; list-style:none; text-align:center; }
+        ul li { display:inline; font-size:1.5em; text-align:center; font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; text-shadow:0 0 5px #00c6ff; }
+
+        #point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; padding-left:10px; padding-right:10px; }
+
+        @-webkit-keyframes mymove 
+        {
+        0% {opacity:1.0; text-shadow:0 0 10px #00c6ff;}
+        50% {opacity:0; text-shadow:none; }
+        100% {opacity:1.0; text-shadow:0 0 10px #00c6ff; }	
+        }
+
+
+        @-moz-keyframes mymove 
+        {
+        0% {opacity:1.0; text-shadow:0 0 10px #00c6ff;}
+        50% {opacity:0; text-shadow:none; }
+        100% {opacity:1.0; text-shadow:0 0 10px #00c6ff; }	
+        }
+
+</style>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Tao 2 mang chua ten ngay thang
+            var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+            // Tao moi doi tuong Date()
+            var newDate = new Date();
+            // Lay gia tri thoi gian hien tai
+            newDate.setDate(newDate.getDate());
+            // Xuat ngay thang, nam
+            $('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+            setInterval(function () {
+                // lay gia tri giay trong doi tuong Date()
+                var seconds = new Date().getSeconds();
+                // Chen so 0 vao dang truoc gia tri giay
+                $("#sec").html((seconds < 10 ? "0" : "") + seconds);
+            }, 1000);
+
+            setInterval(function () {
+                // Tuong tu lay gia tri phut
+                var minutes = new Date().getMinutes();
+                // Chen so 0 vao dang truoc gia tri phut neu gia tri hien tai nho hon 10
+                $("#min").html((minutes < 10 ? "0" : "") + minutes);
+            }, 1000);
+
+            setInterval(function () {
+                // Lay gia tri gio hien tai
+                var hours = new Date().getHours();
+                // Chen so 0 vao truoc gia tri gio neu gia tri nho hon 10
+                $("#hours").html((hours < 10 ? "0" : "") + hours);
+            }, 1000);
+        });
+</script>
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+                  <div id="idBaner" >
+
+          </div>
+
+    <div  style="height: 130px; background: #cecece; width:1160px;  padding: 7px 7px 7px 7px;border: 1px solid #cecece; text-align:center;overflow:hidden">
+         <style>
+                    .cnMatKhau{list-style: none; margin: 0px; padding: 0px 0px 0px 0px;font-size:xx-small}
+                    .cnMatKhau li{display: inline-block; }
+                    .cnMatKhau li a{text-decoration: none; color: #000; text-transform: uppercase;}
+                    .sub{position: absolute;  background: #0088ca; list-style: none; display:none;width:500px;}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; width:500px; }
+                    .cnMatKhau > li:hover > .sub{display: block;}
+             
+                    
+      
+           
+      
+               </style>
+        <div class="clock" style="height:35px">
+            <div id="idDate" >Date: 
+                <asp:TextBox ID="txtDate" runat="server" Width="106px"></asp:TextBox>
+            </div>
+
+            <ul id="hour" >Time:
+	            <li id="hours"> </li>
+                <li id="point">:</li>
+                <li id="min"> </li>
+                <li id="Li1">:</li>
+                <li id="sec"> </li>
+            </ul>
+             <div id="webp" >
+            Web Portal
+        </div>
+        <ul class="cnMatKhau">
+
+            <li>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="">HyperLink
+                    <ul class="sub">
+                        <li>
+                            <asp:HyperLink ID="HyperLinkForgotPass" runat="server">Forgot Password Aprroval</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperChangePass" runat="server">Change Password Aprroval</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="HyperChangeSig" runat="server">Change Signature</asp:HyperLink></li>
+                   </ul>
+                </asp:HyperLink>
+                
+
+            </li>
+        </ul>
+        <div id="login" > Login:22343</div>
+        </div>
+          <div style="width:1024px;height:130px; float:left; margin-bottom: 0px;">
+            <table style="width: 1156px;  margin-bottom: 0px;text-align:left; height: 106px;">
+                <tr>
+                  
+                    <td style="width:150px">
+                        <asp:CheckBox ID="checkNhap" runat="server" Text="" Checked="True" Font-Size="Larger" />
+                        <asp:LinkButton ID="LinkNhap" runat="server">Phieu nhap</asp:LinkButton>
+                    </td>
+                    
+                    <td style="width:150px">
+                        <asp:CheckBox ID="checkNotYetTrans" runat="server" />
+                        <asp:LinkButton ID="LinkPhieuChuaDich" runat="server">Phiếu chưa dịch</asp:LinkButton>
+                    </td>
+                    <td style="width:200px">
+                        <asp:CheckBox ID="CheckTranslated" runat="server" />
+                        <asp:LinkButton ID="LinkPhieuDich" runat="server">Phiếu đã dịch</asp:LinkButton>
+                    </td>
+                    <td style="width:150px">
+                        <asp:CheckBox ID="CheckOk" runat="server" Text=" " Font-Size="Larger" />
+                        <asp:LinkButton ID="LinkPhieuDaKy" runat="server">Phiếu đã ký</asp:LinkButton>
+                    </td>
+                    <td style="width:170px">
+                        <asp:CheckBox ID="CheckNoOk" runat="server" Text="" Font-Size="Larger" />
+                        <asp:LinkButton ID="LinkNoOk" runat="server">Phiếu không ký</asp:LinkButton>
+                    </td>
+                   <td class="auto-style3">
+                       <asp:CheckBox ID="checkKho" runat="server" Text="" Font-Size="Larger" />
+                       <asp:LinkButton ID="LinkKho" runat="server">Storehouse</asp:LinkButton>
+                   </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3" > From Date :
+                        <asp:TextBox ID="txtFromDate" runat="server"></asp:TextBox></td>
+                    <td class="auto-style4" > To Date:
+                         <asp:TextBox ID="txtToDate" runat="server"></asp:TextBox></td>
+                    <td class="auto-style4">
+                        <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" /></td>
+                    <td class="auto-style2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+      <br />
+         
+        <div>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+          </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

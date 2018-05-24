@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyDocusND.master.cs" Inherits="iOffice.SiteMater.MyDocusND" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <link href="../Style/formatMain.css" rel="stylesheet" />
+    <link href="../Style/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+    <script src="<%=ResolveUrl("~/Scripts/") %>jquery.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/") %>jquery-ui.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/") %>jquery-ui-1.8.19.custom.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/") %>formatdate1.js" type="text/javascript"></script>
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+                 <%-- <div id="idBaner" >
+                   </div>--%>
+
+          <div  style="height: 120px; background: #cecece; width:1160px;  padding: 7px 7px 7px 7px;border: 1px solid #cecece; text-align:center;overflow:hidden">
+           <style>
+                    .cnMatKhau{list-style: none; margin: 0px; padding: 0px 0px 0px 0px;font-size:medium}
+                    .cnMatKhau li{display: inline-block; }
+                    .cnMatKhau li a{text-decoration: none; color:#fff; text-transform: uppercase;}
+                    .sub{position: absolute;  background: #0088ca; list-style: none; display:none;width:350px; text-align:left}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; width:500px; }
+                    .cnMatKhau > li:hover > .sub{display: block;}
+               #divChucNang {
+                height: 40px;
+            }
+               </style>
+        <div class="clock" style="height:41px; margin-top: 0px; width: 1151px;">
+             <div id="divHome">
+                <asp:LinkButton ID="linkHome" runat="server" Font-Size="XX-Large" OnClick="linkHome_Click"><img src="<%=ResolveClientUrl("../Images/") %>home.jpg" width="55px" height="40px" /> </asp:LinkButton>
+            </div>
+            <div id="idDate" >Date: 
+                <asp:TextBox ID="txtDate" runat="server" Width="106px"></asp:TextBox>
+            </div>
+          <div id="hour" >Time:
+	            <span id="digitalclock" class="styling"></span>
+                  <script>
+
+                      var alternate = 0
+
+                      var standardbrowser = !document.all && !document.getElementById
+
+
+
+                      if (standardbrowser)
+
+                          document.write('<form name="form1"><input type="text" name="text1" size="11"></form>')
+
+
+
+                      function show() {
+
+                          if (!standardbrowser)
+
+                              var clockobj = document.getElementById ? document.getElementById("digitalclock") : document.all.digitalclock
+
+                          var Digital = new Date()
+
+                          var hours = Digital.getHours()
+
+                          var minutes = Digital.getMinutes()
+
+                          var dn = "AM"
+
+
+
+                          if (hours == 12) dn = "PM"
+
+                          if (hours > 12) {
+
+                              dn = "PM"
+
+                              hours = hours - 12
+
+                          }
+
+                          if (hours == 0) hours = 12
+
+                          if (hours.toString().length == 1)
+
+                              hours = "0" + hours
+
+                          if (minutes <= 9)
+
+                              minutes = "0" + minutes
+
+
+
+                          if (standardbrowser) {
+
+                              if (alternate == 0)
+
+                                  document.form1.text1.value = hours + " : " + minutes + " " + dn
+
+                              else
+
+                                  document.form1.text1.value = hours + "   " + minutes + " " + dn
+
+                          }
+
+                          else {
+
+                              if (alternate == 0)
+
+                                  clockobj.innerHTML = hours + "<font color='#ff0033'>&nbsp;:&nbsp;</font>" + minutes + " " + dn
+
+                              else
+
+                                  clockobj.innerHTML = hours + "<font color='blue'>&nbsp;:&nbsp;</font>" + minutes + " " + dn
+
+                          }
+
+                          alternate = (alternate == 0) ? 1 : 0
+
+                          setTimeout("show()", 1000)
+
+                      }
+
+                      window.onload = show()
+
+             </script>
+            </div>
+            
+             <div id="webp" >
+            My Document
+        </div>
+        <%--<ul class="cnMatKhau">
+
+            <li>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="">FUNCTION
+                    <ul class="sub">
+                        <li style="text-align:left; color:#fff">
+                            <asp:HyperLink ID="HyperLinkForgotPass" runat="server" NavigateUrl="~/presentationLayer/FrmQuenmatkhauxetduyet.aspx">Forgot Password Aprroval</asp:HyperLink></li>
+                        <li style="text-align:left; color:#fff">
+                            <asp:HyperLink ID="HyperChangePass" runat="server" NavigateUrl="~/presentationLayer/frmDoiMatKhauXetDuyet.aspx">Change Password Aprroval</asp:HyperLink></li>
+                        <li style="text-align:left; color:#fff">
+                            <asp:HyperLink ID="HyperChangeSig" runat="server" NavigateUrl="~/presentationLayer/changesignature.aspx">Change Signature</asp:HyperLink></li>
+                   </ul>
+                </asp:HyperLink>
+            </li>
+        </ul>--%>
+        <div id="login" style="text-align:left" > Login: <asp:Label ID="lblNhanVien" runat="server" Text=""></asp:Label>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton1" runat="server"  OnClick="LinkButton1_Click" ValidationGroup="logout"><img src="<%=ResolveClientUrl("../Images/") %>Turn-off.png" /> Logout</asp:LinkButton>
+
+        </div>
+          <div id="divLang">
+             <asp:DropDownList ID="dropDowLanguege" runat="server" AutoPostBack="True" OnSelectedIndexChanged="dropDowLanguege_SelectedIndexChanged">
+                   <asp:ListItem Value="select">Select languege</asp:ListItem>
+                  <asp:ListItem Value="lbl_TW">Taiwan</asp:ListItem>
+                  <asp:ListItem Value="lbl_VN">VietNam</asp:ListItem>
+                  
+           </asp:DropDownList>
+         </div>
+        </div>
+          <div style="width:1150px;height:120px; float:left; margin-bottom: 0px;">
+           
+              <div id="divChucNang">
+                    <div id="divbtnTaoPhieu">
+                       <%-- <asp:Button ID="btnTaoPhieu" runat="server" ValidationGroup="groupMenu" Text="Write PDN" OnClick="btnTaoPhieu_Click" Width="94px" />--%>
+                    </div>
+                    <div id="divlinkPhieuchua">
+                        <asp:CheckBox ID="checkNotYetTrans" runat="server" BackColor="hotpink" Checked="True"/>
+                        <asp:LinkButton ID="LinkPhieuChuaDich" runat="server" ValidationGroup="groupMenu" OnClick="LinkPhieuChuaDich_Click">Phiếu chưa dịch</asp:LinkButton>
+                    </div>
+                    <div id="divDich">
+                        <asp:CheckBox ID="CheckTranslated" runat="server" BackColor="hotpink" Checked="True" />
+                        <asp:LinkButton ID="LinkPhieuDich" runat="server" ValidationGroup="groupMenu" OnClick="LinkPhieuDich_Click">Phiếu đã dịch</asp:LinkButton>
+                    </div>
+                   
+                </div>
+               <div id="div2">
+                   
+                    <div id="divfromdate" > From Date : <asp:TextBox ID="txtFromDate" runat="server"></asp:TextBox></div>
+                    <div id="divtodate" > To Date: <asp:TextBox ID="txtToDate" runat="server" ></asp:TextBox>
+                    </div>
+                    <div id="divsearch" class="button-wrap"> <asp:Button ID="btnSearch" runat="server" ValidationGroup="groupSearch" CssClass="button find" Text="Search" OnClick="btnSearch_Click" Width="84px" /></div> 
+                </div>
+           
+            
+        </div>
+    </div>
+        <div>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+          </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

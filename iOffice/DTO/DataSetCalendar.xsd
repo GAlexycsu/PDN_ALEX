@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetCalendar" targetNamespace="http://tempuri.org/DataSetCalendar.xsd" xmlns:mstns="http://tempuri.org/DataSetCalendar.xsd" xmlns="http://tempuri.org/DataSetCalendar.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetCalendar" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetCalendar" msprop:Generator_UserDSName="DataSetCalendar">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtCalendar" msprop:Generator_TableClassName="dtCalendarDataTable" msprop:Generator_TableVarName="tabledtCalendar" msprop:Generator_TablePropName="dtCalendar" msprop:Generator_RowDeletingName="dtCalendarRowDeleting" msprop:Generator_RowChangingName="dtCalendarRowChanging" msprop:Generator_RowEvHandlerName="dtCalendarRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCalendarRowDeleted" msprop:Generator_UserTableName="dtCalendar" msprop:Generator_RowChangedName="dtCalendarRowChanged" msprop:Generator_RowEvArgName="dtCalendarRowChangeEvent" msprop:Generator_RowClassName="dtCalendarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Userid" msprop:Generator_ColumnVarNameInTable="columnUserid" msprop:Generator_ColumnPropNameInRow="Userid" msprop:Generator_ColumnPropNameInTable="UseridColumn" msprop:Generator_UserColumnName="Userid" type="xs:string" minOccurs="0" />
+              <xs:element name="pdates" msprop:Generator_ColumnVarNameInTable="columnpdates" msprop:Generator_ColumnPropNameInRow="pdates" msprop:Generator_ColumnPropNameInTable="pdatesColumn" msprop:Generator_UserColumnName="pdates" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pdatee" msprop:Generator_ColumnVarNameInTable="columnpdatee" msprop:Generator_ColumnPropNameInRow="pdatee" msprop:Generator_ColumnPropNameInTable="pdateeColumn" msprop:Generator_UserColumnName="pdatee" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pSubject" msprop:Generator_ColumnVarNameInTable="columnpSubject" msprop:Generator_ColumnPropNameInRow="pSubject" msprop:Generator_ColumnPropNameInTable="pSubjectColumn" msprop:Generator_UserColumnName="pSubject" type="xs:string" minOccurs="0" />
+              <xs:element name="wkmemo" msprop:Generator_ColumnVarNameInTable="columnwkmemo" msprop:Generator_ColumnPropNameInRow="wkmemo" msprop:Generator_ColumnPropNameInTable="wkmemoColumn" msprop:Generator_UserColumnName="wkmemo" type="xs:string" minOccurs="0" />
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="jobpercent" msprop:Generator_ColumnVarNameInTable="columnjobpercent" msprop:Generator_ColumnPropNameInRow="jobpercent" msprop:Generator_ColumnPropNameInTable="jobpercentColumn" msprop:Generator_UserColumnName="jobpercent" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FromDate" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" msprop:Generator_UserColumnName="FromDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ToDate" msprop:Generator_ColumnVarNameInTable="columnToDate" msprop:Generator_ColumnPropNameInRow="ToDate" msprop:Generator_ColumnPropNameInTable="ToDateColumn" msprop:Generator_UserColumnName="ToDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

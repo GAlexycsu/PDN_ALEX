@@ -1,0 +1,3036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AlexLoginModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AlexLoginModelStoreContainer">
+          <EntitySet Name="aABC" EntityType="AlexLoginModel.Store.aABC" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Abcon" EntityType="AlexLoginModel.Store.Abcon" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbDepartmentType" EntityType="AlexLoginModel.Store.AbDepartmentType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="abill" EntityType="AlexLoginModel.Store.abill" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbillCuser" EntityType="AlexLoginModel.Store.AbillCuser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="abills" EntityType="AlexLoginModel.Store.abills" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbNghiPhep" EntityType="AlexLoginModel.Store.AbNghiPhep" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbNguoiDich" EntityType="AlexLoginModel.Store.AbNguoiDich" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbScreen" EntityType="AlexLoginModel.Store.AbScreen" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbTrangThaiDuyet" EntityType="AlexLoginModel.Store.AbTrangThaiDuyet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AbVangMat" EntityType="AlexLoginModel.Store.AbVangMat" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ABYn" EntityType="AlexLoginModel.Store.ABYn" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AttactFilePDN" EntityType="AlexLoginModel.Store.AttactFilePDN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BDepartment" EntityType="AlexLoginModel.Store.BDepartment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BOfSupplies" EntityType="AlexLoginModel.Store.BOfSupplies" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Buser_Securety" EntityType="AlexLoginModel.Store.Buser_Securety" store:Type="Tables" store:Schema="dbo" store:Name="Buser_Securety">
+            <DefiningQuery>SELECT 
+      [Buser_Securety].[IDBaoMat] AS [IDBaoMat], 
+      [Buser_Securety].[UserID] AS [UserID], 
+      [Buser_Securety].[MyKey] AS [MyKey], 
+      [Buser_Securety].[ngay] AS [ngay]
+      FROM [dbo].[Buser_Securety] AS [Buser_Securety]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Busers" EntityType="AlexLoginModel.Store.Busers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Busers2" EntityType="AlexLoginModel.Store.Busers2" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ChiTietBuocKy" EntityType="AlexLoginModel.Store.ChiTietBuocKy" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ChucVu" EntityType="AlexLoginModel.Store.ChucVu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="clzl" EntityType="AlexLoginModel.Store.clzl" store:Type="Tables" store:Schema="dbo" store:Name="clzl">
+            <DefiningQuery>SELECT 
+      [clzl].[cldh] AS [cldh], 
+      [clzl].[clbm] AS [clbm], 
+      [clzl].[cllb] AS [cllb], 
+      [clzl].[dycldh] AS [dycldh], 
+      [clzl].[ysbh] AS [ysbh], 
+      [clzl].[yszwsm] AS [yszwsm], 
+      [clzl].[ysywsm] AS [ysywsm], 
+      [clzl].[zwpm] AS [zwpm], 
+      [clzl].[ywpm] AS [ywpm], 
+      [clzl].[dwbh] AS [dwbh], 
+      [clzl].[dwzwsm] AS [dwzwsm], 
+      [clzl].[dwywsm] AS [dwywsm], 
+      [clzl].[clzmlb] AS [clzmlb], 
+      [clzl].[lycc] AS [lycc], 
+      [clzl].[xhcl] AS [xhcl], 
+      [clzl].[jkcl] AS [jkcl], 
+      [clzl].[gjlb] AS [gjlb], 
+      [clzl].[ckcldh] AS [ckcldh], 
+      [clzl].[dzzhl] AS [dzzhl], 
+      [clzl].[xxbh] AS [xxbh], 
+      [clzl].[kfdh] AS [kfdh], 
+      [clzl].[cqdh] AS [cqdh], 
+      [clzl].[cltd] AS [cltd], 
+      [clzl].[tyjh] AS [tyjh], 
+      [clzl].[USERID] AS [USERID], 
+      [clzl].[USERDATE] AS [USERDATE], 
+      [clzl].[pumadh] AS [pumadh], 
+      [clzl].[zsdh] AS [zsdh], 
+      [clzl].[trandate] AS [trandate], 
+      [clzl].[leadtime] AS [leadtime], 
+      [clzl].[DCYN] AS [DCYN], 
+      [clzl].[PDYN] AS [PDYN], 
+      [clzl].[MOQ] AS [MOQ], 
+      [clzl].[MatTestNo] AS [MatTestNo], 
+      [clzl].[MatTestPF] AS [MatTestPF], 
+      [clzl].[SkinYn] AS [SkinYn], 
+      [clzl].[RiskColYn] AS [RiskColYn], 
+      [clzl].[RSLTestNo] AS [RSLTestNo], 
+      [clzl].[RSLTestPF] AS [RSLTestPF], 
+      [clzl].[YN] AS [YN], 
+      [clzl].[warept] AS [warept], 
+      [clzl].[PlanPT] AS [PlanPT], 
+      [clzl].[CLFJ] AS [CLFJ], 
+      [clzl].[cltd2] AS [cltd2]
+      FROM [dbo].[clzl] AS [clzl]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="ContentMail" EntityType="AlexLoginModel.Store.ContentMail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GUI_Language" EntityType="AlexLoginModel.Store.GUI_Language" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="pdna" EntityType="AlexLoginModel.Store.pdna" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="pdnaS" EntityType="AlexLoginModel.Store.pdnaS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PDNLink" EntityType="AlexLoginModel.Store.PDNLink" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PDNLuser" EntityType="AlexLoginModel.Store.PDNLuser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projectm" EntityType="AlexLoginModel.Store.Projectm" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projectn" EntityType="AlexLoginModel.Store.Projectn" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projects" EntityType="AlexLoginModel.Store.Projects" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Projectu" EntityType="AlexLoginModel.Store.Projectu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PSworkm" EntityType="AlexLoginModel.Store.PSworkm" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PSworks" EntityType="AlexLoginModel.Store.PSworks" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="QuyTrinhXetDuyet" EntityType="AlexLoginModel.Store.QuyTrinhXetDuyet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="AlexLoginModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TheSystems" EntityType="AlexLoginModel.Store.TheSystems" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TheUsers" EntityType="AlexLoginModel.Store.TheUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Ugroup" EntityType="AlexLoginModel.Store.Ugroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Users_Systems" EntityType="AlexLoginModel.Store.Users_Systems" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UShare" EntityType="AlexLoginModel.Store.UShare" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="zszl" EntityType="AlexLoginModel.Store.zszl" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Abcon_ABC" Association="AlexLoginModel.Store.FK_Abcon_ABC">
+            <End Role="aABC" EntitySet="aABC" />
+            <End Role="Abcon" EntitySet="Abcon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Abcon_ABtype" Association="AlexLoginModel.Store.FK_Abcon_ABtype">
+            <End Role="abill" EntitySet="abill" />
+            <End Role="Abcon" EntitySet="Abcon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Abcon_Yn" Association="AlexLoginModel.Store.FK_Abcon_Yn">
+            <End Role="ABYn" EntitySet="ABYn" />
+            <End Role="Abcon" EntitySet="Abcon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_abill_abill" Association="AlexLoginModel.Store.FK_abill_abill">
+            <End Role="abill" EntitySet="abill" />
+            <End Role="abill1" EntitySet="abill" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AbTrangThaiDuyet_AbTrangThaiDuyet" Association="AlexLoginModel.Store.FK_AbTrangThaiDuyet_AbTrangThaiDuyet">
+            <End Role="pdna" EntitySet="pdna" />
+            <End Role="AbTrangThaiDuyet" EntitySet="AbTrangThaiDuyet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AbTrangThaiDuyet_YN" Association="AlexLoginModel.Store.FK_AbTrangThaiDuyet_YN">
+            <End Role="ABYn" EntitySet="ABYn" />
+            <End Role="AbTrangThaiDuyet" EntitySet="AbTrangThaiDuyet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ChiTietBuocKy_YN" Association="AlexLoginModel.Store.FK_ChiTietBuocKy_YN">
+            <End Role="ABYn" EntitySet="ABYn" />
+            <End Role="ChiTietBuocKy" EntitySet="ChiTietBuocKy" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GUI_Language_AbScreen" Association="AlexLoginModel.Store.FK_GUI_Language_AbScreen">
+            <End Role="AbScreen" EntitySet="AbScreen" />
+            <End Role="GUI_Language" EntitySet="GUI_Language" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_ABC" Association="AlexLoginModel.Store.FK_pdna_ABC">
+            <End Role="aABC" EntitySet="aABC" />
+            <End Role="pdna" EntitySet="pdna" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_Abtype" Association="AlexLoginModel.Store.FK_pdna_Abtype">
+            <End Role="abill" EntitySet="abill" />
+            <End Role="pdna" EntitySet="pdna" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_pdna" Association="AlexLoginModel.Store.FK_pdna_pdna">
+            <End Role="pdna" EntitySet="pdna" />
+            <End Role="pdna1" EntitySet="pdna" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_YN" Association="AlexLoginModel.Store.FK_pdna_YN">
+            <End Role="ABYn" EntitySet="ABYn" />
+            <End Role="pdna" EntitySet="pdna" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aABC">
+          <Key>
+            <PropertyRef Name="ABC" />
+          </Key>
+          <Property Name="ABC" Type="int" Nullable="false" />
+          <Property Name="NameABC" Type="nvarchar" MaxLength="50" />
+          <Property Name="NameABCTW" Type="nvarchar" MaxLength="50" />
+          <Property Name="NameABCEng" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Abcon">
+          <Key>
+            <PropertyRef Name="Gsbh" />
+            <PropertyRef Name="abtype" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="Abstep" />
+            <PropertyRef Name="abps" />
+            <PropertyRef Name="IDCT" />
+          </Key>
+          <Property Name="Gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Abstep" Type="int" Nullable="false" />
+          <Property Name="abps" Type="int" Nullable="false" />
+          <Property Name="IDCT" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Auditor" Type="varchar" MaxLength="10" />
+          <Property Name="abrult" Type="bit" />
+          <Property Name="abmomo" Type="nvarchar" MaxLength="350" />
+          <Property Name="Password2" Type="varchar" MaxLength="150" />
+          <Property Name="Userdate" Type="smalldatetime" />
+          <Property Name="Yn" Type="int" />
+          <Property Name="Maintitle" Type="nvarchar" MaxLength="350" />
+          <Property Name="ABC" Type="int" />
+          <Property Name="from_depart" Type="varchar" MaxLength="15" />
+          <Property Name="from_user" Type="nchar" MaxLength="10" />
+          <Property Name="bixoa" Type="bit" />
+          <Property Name="cothutu" Type="bit" />
+          <Property Name="received" Type="bit" />
+          <Property Name="ABJOB" Type="nvarchar" MaxLength="50" />
+          <Property Name="Id_VB_CD" Type="varchar" MaxLength="50" />
+          <Property Name="signatue" Type="image" />
+          <Property Name="Nhom" Type="int" />
+          <Property Name="kytoanbo" Type="bit" />
+          <Property Name="IDChiTiet" Type="int" />
+          <Property Name="IDCapDuyet" Type="int" />
+          <Property Name="boqua" Type="bit" />
+          <Property Name="lydokhongduyet" Type="nvarchar" MaxLength="350" />
+          <Property Name="ncancel" Type="int" />
+          <Property Name="Donvithongqua" Type="varchar" MaxLength="50" />
+          <Property Name="QA" Type="varchar" MaxLength="1" />
+          <Property Name="QAmemo" Type="nvarchar" MaxLength="350" />
+          <Property Name="QAmemo2" Type="nvarchar" MaxLength="350" />
+        </EntityType>
+        <EntityType Name="AbDepartmentType">
+          <Key>
+            <PropertyRef Name="DepartmentTypeID" />
+            <PropertyRef Name="GSBH" />
+          </Key>
+          <Property Name="DepartmentTypeID" Type="int" Nullable="false" />
+          <Property Name="GSBH" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="DepartmentTypeName" Type="nvarchar" MaxLength="50" />
+          <Property Name="DepartmentTypeNameTW" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="abill">
+          <Key>
+            <PropertyRef Name="abtype" />
+          </Key>
+          <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="abname" Type="nvarchar" MaxLength="50" />
+          <Property Name="maintable" Type="varchar" MaxLength="20" />
+          <Property Name="abnameTW" Type="nvarchar" MaxLength="50" />
+          <Property Name="abnameEng" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AbillCuser">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="abtype" />
+            <PropertyRef Name="DEPID" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="DEPID" Type="varchar" Nullable="false" MaxLength="11" />
+          <Property Name="isCQ" Type="varchar" MaxLength="1" />
+          <Property Name="isAllUser" Type="varchar" MaxLength="1" />
+          <Property Name="updateuser" Type="varchar" MaxLength="10" />
+          <Property Name="Updatetime" Type="smalldatetime" />
+          <Property Name="YN" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="abills">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="ABDepId" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Defuserid" Type="varchar" MaxLength="10" />
+          <Property Name="ABJOB" Type="nvarchar" MaxLength="150" />
+          <Property Name="Abstep" Type="int" Nullable="false" />
+          <Property Name="Abde" Type="int" Nullable="false" />
+          <Property Name="DESC" Type="varchar" MaxLength="50" />
+          <Property Name="bixoa" Type="bit" />
+          <Property Name="Nhom" Type="int" />
+          <Property Name="KyToanBo" Type="bit" />
+        </EntityType>
+        <EntityType Name="AbNghiPhep">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GSBH" Type="varchar" MaxLength="20" />
+          <Property Name="TuNgay" Type="datetime" />
+          <Property Name="DenNgay" Type="datetime" />
+          <Property Name="IDNguoiDuyet" Type="varchar" MaxLength="30" />
+          <Property Name="tennguoiuyquyen" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDNguoiDuocUyQuyen" Type="varchar" MaxLength="30" />
+          <Property Name="tennguoithaythe" Type="nvarchar" MaxLength="50" />
+          <Property Name="ThongQua" Type="int" />
+          <Property Name="TenThongQua" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AbNguoiDich">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="BADEPID" Type="varchar" MaxLength="50" />
+          <Property Name="TenNguoiDich" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="150" />
+          <Property Name="TenNguoiDichTiengHoa" Type="nvarchar" MaxLength="70" />
+        </EntityType>
+        <EntityType Name="AbScreen">
+          <Key>
+            <PropertyRef Name="ScreenID" />
+          </Key>
+          <Property Name="ScreenID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UrlScreen" Type="varchar" MaxLength="350" />
+          <Property Name="AliasScreen" Type="varchar" MaxLength="350" />
+        </EntityType>
+        <EntityType Name="AbTrangThaiDuyet">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="IDTrangThai" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="IDTrangThai" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Yn" Type="int" />
+        </EntityType>
+        <EntityType Name="AbVangMat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NameVietNam" Type="nvarchar" MaxLength="50" />
+          <Property Name="NameTaiwan" Type="varchar" MaxLength="50" />
+          <Property Name="NameEnglish" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ABYn">
+          <Key>
+            <PropertyRef Name="Yn" />
+          </Key>
+          <Property Name="Yn" Type="int" Nullable="false" />
+          <Property Name="YnName" Type="nvarchar" MaxLength="50" />
+          <Property Name="YnNameTW" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AttactFilePDN">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="14" />
+          <Property Name="USID" Type="varchar" MaxLength="15" />
+          <Property Name="FileNameA" Type="varchar" MaxLength="250" />
+          <Property Name="PathNameA" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="BDepartment">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="CKBH" Type="varchar" MaxLength="4" />
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="DepName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DepName_C" Type="varchar" MaxLength="50" />
+          <Property Name="DepMemo" Type="varchar" MaxLength="50" />
+          <Property Name="ProYN" Type="bit" />
+          <Property Name="Worker_Qty" Type="int" />
+          <Property Name="NQty" Type="int" />
+          <Property Name="tsQty" Type="int" />
+          <Property Name="H7Qty" Type="int" />
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="UserDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="YN" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="PlanYN" Type="bit" />
+          <Property Name="GXLB" Type="varchar" MaxLength="10" />
+          <Property Name="ULID" Type="varchar" MaxLength="11" />
+          <Property Name="EMPSYSID" Type="varchar" MaxLength="20" />
+          <Property Name="useYN" Type="bit" />
+          <Property Name="Dclass" Type="varchar" MaxLength="1" />
+          <Property Name="mainyn" Type="bit" />
+          <Property Name="STDworkers" Type="int" />
+          <Property Name="PCworkers" Type="int" />
+          <Property Name="Porder1" Type="varchar" MaxLength="10" />
+          <Property Name="ULSEQ" Type="varchar" MaxLength="10" />
+          <Property Name="DsDepid" Type="varchar" MaxLength="11" />
+          <Property Name="IdUserChuQuan" Type="varchar" MaxLength="25" />
+          <Property Name="DepartmentTypeID" Type="int" />
+          <Property Name="CQuserid" Type="varchar" MaxLength="10" />
+          <Property Name="CQUserid2" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="BOfSupplies">
+          <Key>
+            <PropertyRef Name="IDOfSupplies" />
+          </Key>
+          <Property Name="IDOfSupplies" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GSBH" Type="nchar" MaxLength="10" />
+          <Property Name="pdno" Type="varchar" MaxLength="50" />
+          <Property Name="OfSuppliesName" Type="nvarchar" MaxLength="300" />
+          <Property Name="BUnit" Type="nvarchar" MaxLength="100" />
+          <Property Name="BNumber" Type="int" />
+          <Property Name="BCommnent" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AlexLogin.dbo.Buser_Securety' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Buser_Securety">
+          <Key>
+            <PropertyRef Name="IDBaoMat" />
+          </Key>
+          <Property Name="IDBaoMat" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="varchar" MaxLength="10" />
+          <Property Name="MyKey" Type="nvarchar(max)" />
+          <Property Name="ngay" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Busers">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="USERNAME" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="PWD" Type="varchar" MaxLength="10" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="40" />
+          <Property Name="LASTDATETIME" Type="smalldatetime" />
+          <Property Name="YN" Type="varchar" MaxLength="1" />
+          <Property Name="depid" Type="varchar" MaxLength="10" />
+          <Property Name="JOB" Type="varchar" MaxLength="20" />
+          <Property Name="EMPID" Type="varchar" MaxLength="10" />
+          <Property Name="Password2" Type="varchar" MaxLength="50" />
+          <Property Name="BADEPID" Type="varchar" MaxLength="10" />
+          <Property Name="IdUserQuanLyTT" Type="varchar" MaxLength="10" />
+          <Property Name="USERNAMETW" Type="varchar" MaxLength="50" />
+          <Property Name="pwdlevel" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Busers2">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="USERNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PWD" Type="varchar" MaxLength="10" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+          <Property Name="LASTDATETIME" Type="smalldatetime" />
+          <Property Name="YN" Type="varchar" MaxLength="1" />
+          <Property Name="depid" Type="varchar" MaxLength="10" />
+          <Property Name="JOB" Type="varchar" MaxLength="20" />
+          <Property Name="EMPID" Type="varchar" MaxLength="10" />
+          <Property Name="Password2" Type="varchar" MaxLength="50" />
+          <Property Name="signatue" Type="image" />
+          <Property Name="bixoa" Type="bit" />
+          <Property Name="BADEPID" Type="varchar" MaxLength="15" />
+          <Property Name="isSep" Type="bit" />
+          <Property Name="Maisenhan" Type="int" />
+          <Property Name="abstep" Type="int" />
+          <Property Name="abde" Type="int" />
+          <Property Name="Admin" Type="bit" />
+          <Property Name="IDChucVu" Type="varchar" MaxLength="25" />
+          <Property Name="IDCapDuyet" Type="int" />
+          <Property Name="IdUserQuanLyTT" Type="varchar" MaxLength="10" />
+          <Property Name="USERNAMETW" Type="nvarchar" MaxLength="50" />
+          <Property Name="PWDlevel" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="ChiTietBuocKy">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="abstep" />
+            <PropertyRef Name="ABPS" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="abstep" Type="int" Nullable="false" />
+          <Property Name="ABPS" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Yn" Type="int" />
+          <Property Name="IdNguoiDuyet" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="ChucVu">
+          <Key>
+            <PropertyRef Name="IDChucVu" />
+          </Key>
+          <Property Name="IDChucVu" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="TenChucVu" Type="nvarchar" MaxLength="50" />
+          <Property Name="GSBH" Type="varchar" MaxLength="20" />
+          <Property Name="TenChucVuTiengHoa" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDCapDuyet" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AlexLogin.dbo.clzl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="clzl">
+          <Key>
+            <PropertyRef Name="cldh" />
+            <PropertyRef Name="clbm" />
+            <PropertyRef Name="cllb" />
+            <PropertyRef Name="USERID" />
+            <PropertyRef Name="USERDATE" />
+            <PropertyRef Name="YN" />
+          </Key>
+          <Property Name="cldh" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="clbm" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="cllb" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="dycldh" Type="nvarchar" MaxLength="50" />
+          <Property Name="ysbh" Type="varchar" MaxLength="4" />
+          <Property Name="yszwsm" Type="nvarchar" MaxLength="50" />
+          <Property Name="ysywsm" Type="nvarchar" MaxLength="50" />
+          <Property Name="zwpm" Type="nvarchar" MaxLength="200" />
+          <Property Name="ywpm" Type="nvarchar" MaxLength="300" />
+          <Property Name="dwbh" Type="varchar" MaxLength="4" />
+          <Property Name="dwzwsm" Type="nvarchar" MaxLength="50" />
+          <Property Name="dwywsm" Type="nvarchar" MaxLength="50" />
+          <Property Name="clzmlb" Type="varchar" MaxLength="1" />
+          <Property Name="lycc" Type="varchar" MaxLength="1" />
+          <Property Name="xhcl" Type="varchar" MaxLength="1" />
+          <Property Name="jkcl" Type="varchar" MaxLength="1" />
+          <Property Name="gjlb" Type="varchar" MaxLength="4" />
+          <Property Name="ckcldh" Type="varchar" MaxLength="15" />
+          <Property Name="dzzhl" Type="numeric" Scale="3" />
+          <Property Name="xxbh" Type="varchar" MaxLength="15" />
+          <Property Name="kfdh" Type="varchar" MaxLength="4" />
+          <Property Name="cqdh" Type="varchar" MaxLength="4" />
+          <Property Name="cltd" Type="nvarchar" MaxLength="50" />
+          <Property Name="tyjh" Type="varchar" MaxLength="1" />
+          <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="USERDATE" Type="smalldatetime" Nullable="false" />
+          <Property Name="pumadh" Type="nvarchar" MaxLength="50" />
+          <Property Name="zsdh" Type="nvarchar" MaxLength="50" />
+          <Property Name="trandate" Type="nvarchar" MaxLength="50" />
+          <Property Name="leadtime" Type="int" />
+          <Property Name="DCYN" Type="varchar" MaxLength="1" />
+          <Property Name="PDYN" Type="varchar" MaxLength="1" />
+          <Property Name="MOQ" Type="numeric" />
+          <Property Name="MatTestNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="MatTestPF" Type="varchar" MaxLength="4" />
+          <Property Name="SkinYn" Type="varchar" MaxLength="1" />
+          <Property Name="RiskColYn" Type="varchar" MaxLength="1" />
+          <Property Name="RSLTestNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="RSLTestPF" Type="varchar" MaxLength="4" />
+          <Property Name="YN" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="warept" Type="varchar" MaxLength="1" />
+          <Property Name="PlanPT" Type="varchar" MaxLength="1" />
+          <Property Name="CLFJ" Type="nvarchar" MaxLength="50" />
+          <Property Name="cltd2" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ContentMail">
+          <Key>
+            <PropertyRef Name="ContentID" />
+          </Key>
+          <Property Name="ContentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="USERID" Type="nchar" MaxLength="10" />
+          <Property Name="Pdno" Type="varchar" MaxLength="50" />
+          <Property Name="conten" Type="nvarchar" MaxLength="350" />
+          <Property Name="aproved" Type="bit" />
+        </EntityType>
+        <EntityType Name="GUI_Language">
+          <Key>
+            <PropertyRef Name="TableName" />
+            <PropertyRef Name="lblID" />
+          </Key>
+          <Property Name="TableName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="lblID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="lbl_EN" Type="nvarchar" MaxLength="150" />
+          <Property Name="lbl_VN" Type="nvarchar" MaxLength="150" />
+          <Property Name="lbl_TW" Type="nvarchar" MaxLength="150" />
+          <Property Name="ScreenID" Type="int" />
+        </EntityType>
+        <EntityType Name="pdna">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="pdDate" Type="smalldatetime" />
+          <Property Name="pdLX" Type="varchar" MaxLength="10" />
+          <Property Name="USERDATE" Type="smalldatetime" />
+          <Property Name="USERID" Type="varchar" MaxLength="25" />
+          <Property Name="ZSBH" Type="varchar" MaxLength="10" />
+          <Property Name="CFMID1" Type="varchar" MaxLength="25" />
+          <Property Name="CFMDate1" Type="datetime" />
+          <Property Name="CFMID2" Type="varchar" MaxLength="25" />
+          <Property Name="CFMDate2" Type="datetime" />
+          <Property Name="YN" Type="int" />
+          <Property Name="SB" Type="varchar" MaxLength="10" />
+          <Property Name="PMARK" Type="int" />
+          <Property Name="CFMID0" Type="varchar" MaxLength="25" />
+          <Property Name="CFMDate0" Type="datetime" />
+          <Property Name="pduser" Type="varchar" MaxLength="25" />
+          <Property Name="pddepid" Type="varchar" MaxLength="15" />
+          <Property Name="pdyyid" Type="varchar" MaxLength="20" />
+          <Property Name="yymemo" Type="varchar" MaxLength="250" />
+          <Property Name="shmemo" Type="varchar" MaxLength="250" />
+          <Property Name="mytitle" Type="nvarchar" MaxLength="350" />
+          <Property Name="pdmemovn" Type="nvarchar(max)" />
+          <Property Name="pdmemoch" Type="nvarchar(max)" />
+          <Property Name="bixoa" Type="bit" />
+          <Property Name="LevelDoing" Type="int" />
+          <Property Name="ABC" Type="int" />
+          <Property Name="NoiDungDich" Type="nvarchar(max)" />
+          <Property Name="trangthaidich" Type="bit" />
+          <Property Name="IdnguoiDich" Type="varchar" MaxLength="25" />
+          <Property Name="Abtype" Type="varchar" MaxLength="10" />
+          <Property Name="CFMDate4" Type="datetime" />
+          <Property Name="dagui" Type="bit" />
+          <Property Name="oldpdno" Type="varchar" MaxLength="30" />
+          <Property Name="UseIntent" Type="nvarchar(max)" />
+          <Property Name="pdnsubject" Type="nvarchar" MaxLength="100" />
+          <Property Name="pdmemovn1" Type="nvarchar(max)" />
+          <Property Name="isPause" Type="bit" />
+        </EntityType>
+        <EntityType Name="pdnaS">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdNO" />
+            <PropertyRef Name="Xh" />
+            <PropertyRef Name="CLBH" />
+            <PropertyRef Name="Size" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="pdNO" Type="varchar" Nullable="false" MaxLength="11" />
+          <Property Name="Xh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="CLBH" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="Size" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="CKBH" Type="varchar" MaxLength="4" />
+          <Property Name="ZMLB" Type="varchar" MaxLength="15" />
+          <Property Name="Qty" Type="numeric" Scale="4" />
+          <Property Name="USPrice" Type="money" />
+          <Property Name="USACC" Type="money" />
+          <Property Name="CWHL" Type="int" />
+          <Property Name="VNPrice" Type="numeric" Scale="2" />
+          <Property Name="VNACC" Type="bigint" />
+          <Property Name="Memo0" Type="varchar" MaxLength="250" />
+          <Property Name="CLmemo" Type="varchar" MaxLength="250" />
+          <Property Name="CostID" Type="varchar" MaxLength="15" />
+          <Property Name="BJNO" Type="varchar" MaxLength="11" />
+          <Property Name="YQDate" Type="smalldatetime" />
+          <Property Name="CFMDate" Type="smalldatetime" />
+          <Property Name="USERDATE" Type="smalldatetime" />
+          <Property Name="USERID" Type="varchar" MaxLength="15" />
+          <Property Name="YN" Type="varchar" MaxLength="1" />
+          <Property Name="CLPrice" Type="numeric" Scale="2" />
+          <Property Name="CLACC" Type="numeric" Scale="2" />
+          <Property Name="FKZT" Type="varchar" MaxLength="1" />
+          <Property Name="pdACC" Type="numeric" Scale="2" />
+          <Property Name="VNPpd10" Type="numeric" Scale="2" />
+          <Property Name="DDtp" Type="varchar" MaxLength="1" />
+          <Property Name="DDBH" Type="varchar" MaxLength="15" />
+          <Property Name="cycle" Type="int" />
+          <Property Name="CGNO" Type="varchar" MaxLength="12" />
+          <Property Name="ZSBH" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="PDNLink">
+          <Key>
+            <PropertyRef Name="Gsbh" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Filename" Type="nvarchar" MaxLength="250" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="250" />
+          <Property Name="Cancel" Type="bit" />
+        </EntityType>
+        <EntityType Name="PDNLuser">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="DEPID" />
+            <PropertyRef Name="userid" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="DEPID" Type="varchar" Nullable="false" MaxLength="11" />
+          <Property Name="userid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="SENTDATIME" Type="smalldatetime" />
+          <Property Name="RECVDATIME" Type="smalldatetime" />
+          <Property Name="YN" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Projectm">
+          <Key>
+            <PropertyRef Name="gsbh" />
+            <PropertyRef Name="jsysid" />
+          </Key>
+          <Property Name="gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="sysname" Type="nvarchar" MaxLength="50" />
+          <Property Name="sysmemo" Type="nvarchar" MaxLength="50" />
+          <Property Name="userid" Type="varchar" MaxLength="10" />
+          <Property Name="userdate" Type="datetime" />
+          <Property Name="yn" Type="varchar" MaxLength="1" />
+          <Property Name="sLeaderid" Type="varchar" MaxLength="10" />
+          <Property Name="edates" Type="datetime" />
+          <Property Name="edatee" Type="datetime" />
+          <Property Name="Spercent" Type="numeric" Scale="2" />
+          <Property Name="sysnamevn" Type="nvarchar" MaxLength="50" />
+          <Property Name="sysmemovn" Type="nvarchar" MaxLength="50" />
+          <Property Name="LinkFile" Type="nvarchar" MaxLength="250" />
+          <Property Name="LinkFile2" Type="nvarchar" MaxLength="250" />
+          <Property Name="LinkFile3" Type="nvarchar" MaxLength="250" />
+          <Property Name="Share" Type="bit" />
+        </EntityType>
+        <EntityType Name="Projectn">
+          <Key>
+            <PropertyRef Name="gsbh" />
+            <PropertyRef Name="jsysid" />
+            <PropertyRef Name="jsubid" />
+          </Key>
+          <Property Name="gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="jsubid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="jsubname" Type="nvarchar" MaxLength="250" />
+          <Property Name="jsubmemo" Type="nvarchar" MaxLength="250" />
+          <Property Name="userid" Type="varchar" MaxLength="10" />
+          <Property Name="userdate" Type="smalldatetime" />
+          <Property Name="yn" Type="varchar" MaxLength="1" />
+          <Property Name="sLeaderid" Type="varchar" MaxLength="10" />
+          <Property Name="edates" Type="smalldatetime" />
+          <Property Name="edatee" Type="smalldatetime" />
+          <Property Name="Spercent" Type="numeric" Scale="2" />
+          <Property Name="PDNO" Type="varchar" MaxLength="30" />
+          <Property Name="jsubnamevn" Type="nvarchar" MaxLength="250" />
+          <Property Name="jsubmemovn" Type="nvarchar" MaxLength="250" />
+          <Property Name="Linkfile" Type="nvarchar" MaxLength="250" />
+          <Property Name="Linkfile2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Linkfile3" Type="nvarchar" MaxLength="250" />
+          <Property Name="Share" Type="bit" />
+        </EntityType>
+        <EntityType Name="Projects">
+          <Key>
+            <PropertyRef Name="gsbh" />
+            <PropertyRef Name="jsysid" />
+            <PropertyRef Name="jsubid" />
+            <PropertyRef Name="jobid" />
+          </Key>
+          <Property Name="gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="jsubid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="jobid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="ticketid" Type="varchar" MaxLength="50" />
+          <Property Name="jobname" Type="nvarchar" MaxLength="250" />
+          <Property Name="jobmemo" Type="nvarchar" MaxLength="250" />
+          <Property Name="userid" Type="nvarchar" MaxLength="10" />
+          <Property Name="userdate" Type="smalldatetime" />
+          <Property Name="yn" Type="nvarchar" MaxLength="1" />
+          <Property Name="Jleaderid" Type="varchar" MaxLength="10" />
+          <Property Name="edates" Type="smalldatetime" />
+          <Property Name="edatee" Type="smalldatetime" />
+          <Property Name="jpercent" Type="numeric" Scale="2" />
+          <Property Name="PDNO" Type="varchar" MaxLength="30" />
+          <Property Name="jobnamevn" Type="nvarchar" MaxLength="250" />
+          <Property Name="jobmemovn" Type="nvarchar" MaxLength="250" />
+          <Property Name="Linkfile" Type="nvarchar" MaxLength="250" />
+          <Property Name="Linkfile2" Type="nvarchar" MaxLength="250" />
+          <Property Name="Linkfile3" Type="nvarchar" MaxLength="250" />
+          <Property Name="Share" Type="bit" />
+        </EntityType>
+        <EntityType Name="Projectu">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="Jsysid" />
+            <PropertyRef Name="Jsubid" />
+            <PropertyRef Name="Jodid" />
+            <PropertyRef Name="Juserid" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Jsubid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Jodid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Juserid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="userid" Type="varchar" MaxLength="10" />
+          <Property Name="userdate" Type="smalldatetime" />
+          <Property Name="yn" Type="varchar" MaxLength="1" />
+          <Property Name="juadate" Type="smalldatetime" />
+          <Property Name="juamemo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="PSworkm">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="Userid" />
+            <PropertyRef Name="pdates" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="pdates" Type="smalldatetime" Nullable="false" />
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="pdatee" Type="smalldatetime" />
+          <Property Name="wkmemo" Type="nvarchar" MaxLength="520" />
+          <Property Name="wklink" Type="nvarchar" MaxLength="250" />
+          <Property Name="modidate" Type="smalldatetime" />
+          <Property Name="jobpercent" Type="numeric" />
+          <Property Name="cfmdate" Type="smalldatetime" />
+          <Property Name="cfmuser" Type="varchar" MaxLength="10" />
+          <Property Name="yn" Type="varchar" MaxLength="1" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="450" />
+          <Property Name="wslink2" Type="nvarchar" MaxLength="250" />
+          <Property Name="wslink3" Type="nvarchar" MaxLength="250" />
+          <Property Name="jsysid" Type="varchar" MaxLength="10" />
+          <Property Name="jsubid" Type="varchar" MaxLength="10" />
+          <Property Name="jobid" Type="varchar" MaxLength="10" />
+          <Property Name="ticketid" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PSworks">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="userid" />
+            <PropertyRef Name="pdates" />
+            <PropertyRef Name="id" />
+            <PropertyRef Name="xh" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="userid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="pdates" Type="smalldatetime" Nullable="false" />
+          <Property Name="id" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="xh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="PSmemo" Type="nvarchar" MaxLength="50" />
+          <Property Name="pslink" Type="nvarchar" MaxLength="250" />
+          <Property Name="userdate" Type="smalldatetime" />
+          <Property Name="yn" Type="varchar" MaxLength="10" />
+          <Property Name="pslink2" Type="nvarchar" MaxLength="250" />
+          <Property Name="pslink3" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="QuyTrinhXetDuyet">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="abtype" />
+            <PropertyRef Name="BADEPID" />
+            <PropertyRef Name="ABstep" />
+            <PropertyRef Name="ABPS" />
+            <PropertyRef Name="IDQuyTrinh" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="BADEPID" Type="varchar" Nullable="false" MaxLength="11" />
+          <Property Name="ABstep" Type="int" Nullable="false" />
+          <Property Name="ABPS" Type="int" Nullable="false" />
+          <Property Name="IDQuyTrinh" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NguoiDuyet" Type="varchar" MaxLength="25" />
+          <Property Name="USERNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDChucVu" Type="varchar" MaxLength="20" />
+          <Property Name="TenChucVuTiengHoa" Type="nvarchar" MaxLength="50" />
+          <Property Name="abtypenameTW" Type="nvarchar" MaxLength="50" />
+          <Property Name="tendonviTW" Type="nvarchar" MaxLength="50" />
+          <Property Name="DonViThongQua" Type="varchar" MaxLength="50" />
+          <Property Name="tendonvithongqua" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDLoaiDonVi" Type="int" />
+          <Property Name="DepartmentTypeNameTW" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDCapDuyet" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TheSystems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="StartPage" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="TheUsers">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ActiveCode" Type="nvarchar" MaxLength="200" />
+          <Property Name="SEmail" Type="varchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Ugroup">
+          <Key>
+            <PropertyRef Name="GSBh" />
+            <PropertyRef Name="userid" />
+            <PropertyRef Name="ugno" />
+            <PropertyRef Name="userid2" />
+          </Key>
+          <Property Name="GSBh" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="userid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="ugno" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="userid2" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="UGtitle" Type="varchar" MaxLength="50" />
+          <Property Name="UGmemo" Type="varchar" MaxLength="50" />
+          <Property Name="userdate" Type="smalldatetime" />
+          <Property Name="yn" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Users_Systems">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="SystemID" />
+          </Key>
+          <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SystemID" Type="int" Nullable="false" />
+          <Property Name="ActiveCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="SessionID" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="UShare">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="Userid" />
+            <PropertyRef Name="USID" />
+          </Key>
+          <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="USID" Type="varchar" Nullable="false" MaxLength="11" />
+          <Property Name="UGno" Type="varchar" MaxLength="2" />
+          <Property Name="UStitle" Type="nvarchar(max)" />
+          <Property Name="USmemo" Type="nvarchar(max)" />
+          <Property Name="LinkFile" Type="nvarchar" MaxLength="300" />
+          <Property Name="sdate" Type="smalldatetime" />
+          <Property Name="edate" Type="smalldatetime" />
+          <Property Name="userdate" Type="smalldatetime" />
+          <Property Name="yn" Type="varchar" MaxLength="1" />
+          <Property Name="LinkFile2" Type="nvarchar" MaxLength="300" />
+          <Property Name="LinkFile3" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="zszl">
+          <Key>
+            <PropertyRef Name="zsdh" />
+          </Key>
+          <Property Name="zsdh" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="zsqm" Type="nvarchar" MaxLength="50" />
+          <Property Name="zsjc" Type="varchar" MaxLength="20" />
+          <Property Name="zsywjc" Type="varchar" MaxLength="20" />
+          <Property Name="tybh" Type="varchar" MaxLength="15" />
+          <Property Name="fpdz" Type="nvarchar" MaxLength="120" />
+          <Property Name="yjdz" Type="nvarchar" MaxLength="120" />
+          <Property Name="dh" Type="nvarchar" MaxLength="50" />
+          <Property Name="cz" Type="nvarchar" MaxLength="50" />
+          <Property Name="fzr" Type="nvarchar" MaxLength="50" />
+          <Property Name="bb" Type="varchar" MaxLength="4" />
+          <Property Name="llr2" Type="nvarchar" MaxLength="50" />
+          <Property Name="llr" Type="nvarchar" MaxLength="50" />
+          <Property Name="dybh" Type="varchar" MaxLength="6" />
+          <Property Name="mark" Type="varchar" MaxLength="5" />
+          <Property Name="USERID" Type="varchar" MaxLength="20" />
+          <Property Name="USERDATE" Type="smalldatetime" />
+          <Property Name="TYJH" Type="varchar" MaxLength="1" />
+          <Property Name="YN" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="country" Type="nvarchar" MaxLength="50" />
+          <Property Name="MZsdh" Type="nvarchar" MaxLength="50" />
+          <Property Name="Style" Type="nvarchar" MaxLength="50" />
+          <Property Name="Shippingleadtime" Type="int" />
+          <Property Name="Shippingleadtimes" Type="int" />
+          <Property Name="Customclearanceday" Type="int" />
+          <Property Name="Samplepurchaser" Type="nvarchar" MaxLength="50" />
+          <Property Name="Prodpurchaser" Type="nvarchar" MaxLength="50" />
+          <Property Name="Groupname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Zsdh_TW" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sample_void" Type="varchar" MaxLength="1" />
+          <Property Name="TRANDATE" Type="varchar" MaxLength="17" />
+          <Property Name="fktj" Type="nvarchar" MaxLength="50" />
+          <Property Name="fktj1" Type="numeric" Scale="1" />
+          <Property Name="scd" Type="nvarchar" MaxLength="50" />
+          <Property Name="fzr_mail" Type="nvarchar" MaxLength="100" />
+          <Property Name="llr2_mail" Type="nvarchar" MaxLength="100" />
+          <Property Name="llr_mail" Type="nvarchar" MaxLength="100" />
+          <Property Name="pass0" Type="nvarchar" MaxLength="50" />
+          <Property Name="pass1" Type="nvarchar" MaxLength="50" />
+          <Property Name="pass2" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Abcon_ABC">
+          <End Role="aABC" Type="AlexLoginModel.Store.aABC" Multiplicity="0..1" />
+          <End Role="Abcon" Type="AlexLoginModel.Store.Abcon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aABC">
+              <PropertyRef Name="ABC" />
+            </Principal>
+            <Dependent Role="Abcon">
+              <PropertyRef Name="ABC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Abcon_ABtype">
+          <End Role="abill" Type="AlexLoginModel.Store.abill" Multiplicity="1" />
+          <End Role="Abcon" Type="AlexLoginModel.Store.Abcon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="abill">
+              <PropertyRef Name="abtype" />
+            </Principal>
+            <Dependent Role="Abcon">
+              <PropertyRef Name="abtype" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Abcon_Yn">
+          <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+          <End Role="Abcon" Type="AlexLoginModel.Store.Abcon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="Abcon">
+              <PropertyRef Name="Yn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_abill_abill">
+          <End Role="abill" Type="AlexLoginModel.Store.abill" Multiplicity="1" />
+          <End Role="abill1" Type="AlexLoginModel.Store.abill" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="abill">
+              <PropertyRef Name="abtype" />
+            </Principal>
+            <Dependent Role="abill1">
+              <PropertyRef Name="abtype" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AbTrangThaiDuyet_AbTrangThaiDuyet">
+          <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="1" />
+          <End Role="AbTrangThaiDuyet" Type="AlexLoginModel.Store.AbTrangThaiDuyet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="pdna">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Principal>
+            <Dependent Role="AbTrangThaiDuyet">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AbTrangThaiDuyet_YN">
+          <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+          <End Role="AbTrangThaiDuyet" Type="AlexLoginModel.Store.AbTrangThaiDuyet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="AbTrangThaiDuyet">
+              <PropertyRef Name="Yn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ChiTietBuocKy_YN">
+          <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+          <End Role="ChiTietBuocKy" Type="AlexLoginModel.Store.ChiTietBuocKy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="ChiTietBuocKy">
+              <PropertyRef Name="Yn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GUI_Language_AbScreen">
+          <End Role="AbScreen" Type="AlexLoginModel.Store.AbScreen" Multiplicity="0..1" />
+          <End Role="GUI_Language" Type="AlexLoginModel.Store.GUI_Language" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AbScreen">
+              <PropertyRef Name="ScreenID" />
+            </Principal>
+            <Dependent Role="GUI_Language">
+              <PropertyRef Name="ScreenID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_ABC">
+          <End Role="aABC" Type="AlexLoginModel.Store.aABC" Multiplicity="0..1" />
+          <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aABC">
+              <PropertyRef Name="ABC" />
+            </Principal>
+            <Dependent Role="pdna">
+              <PropertyRef Name="ABC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_Abtype">
+          <End Role="abill" Type="AlexLoginModel.Store.abill" Multiplicity="0..1" />
+          <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="abill">
+              <PropertyRef Name="abtype" />
+            </Principal>
+            <Dependent Role="pdna">
+              <PropertyRef Name="Abtype" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_pdna">
+          <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="1" />
+          <End Role="pdna1" Type="AlexLoginModel.Store.pdna" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="pdna">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Principal>
+            <Dependent Role="pdna1">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_YN">
+          <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+          <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="pdna">
+              <PropertyRef Name="YN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AlexLoginModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AlexLoginEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="aABCs" EntityType="AlexLoginModel.aABC" />
+          <EntitySet Name="Abcons" EntityType="AlexLoginModel.Abcon" />
+          <EntitySet Name="AbDepartmentTypes" EntityType="AlexLoginModel.AbDepartmentType" />
+          <EntitySet Name="abills" EntityType="AlexLoginModel.abill" />
+          <EntitySet Name="AbillCusers" EntityType="AlexLoginModel.AbillCuser" />
+          <EntitySet Name="abills1" EntityType="AlexLoginModel.abill1" />
+          <EntitySet Name="AbNghiPheps" EntityType="AlexLoginModel.AbNghiPhep" />
+          <EntitySet Name="AbNguoiDiches" EntityType="AlexLoginModel.AbNguoiDich" />
+          <EntitySet Name="AbScreens" EntityType="AlexLoginModel.AbScreen" />
+          <EntitySet Name="AbTrangThaiDuyets" EntityType="AlexLoginModel.AbTrangThaiDuyet" />
+          <EntitySet Name="AbVangMats" EntityType="AlexLoginModel.AbVangMat" />
+          <EntitySet Name="ABYns" EntityType="AlexLoginModel.ABYn" />
+          <EntitySet Name="AttactFilePDNs" EntityType="AlexLoginModel.AttactFilePDN" />
+          <EntitySet Name="BDepartments" EntityType="AlexLoginModel.BDepartment" />
+          <EntitySet Name="BOfSupplies" EntityType="AlexLoginModel.BOfSupply" />
+          <EntitySet Name="Buser_Securety" EntityType="AlexLoginModel.Buser_Securety" />
+          <EntitySet Name="Busers" EntityType="AlexLoginModel.Buser" />
+          <EntitySet Name="Busers2" EntityType="AlexLoginModel.Busers2" />
+          <EntitySet Name="ChiTietBuocKies" EntityType="AlexLoginModel.ChiTietBuocKy" />
+          <EntitySet Name="ChucVus" EntityType="AlexLoginModel.ChucVu" />
+          <EntitySet Name="clzls" EntityType="AlexLoginModel.clzl" />
+          <EntitySet Name="ContentMails" EntityType="AlexLoginModel.ContentMail" />
+          <EntitySet Name="GUI_Language" EntityType="AlexLoginModel.GUI_Language" />
+          <EntitySet Name="pdnas" EntityType="AlexLoginModel.pdna" />
+          <EntitySet Name="pdnaS1" EntityType="AlexLoginModel.pdna1" />
+          <EntitySet Name="PDNLinks" EntityType="AlexLoginModel.PDNLink" />
+          <EntitySet Name="PDNLusers" EntityType="AlexLoginModel.PDNLuser" />
+          <EntitySet Name="Projectms" EntityType="AlexLoginModel.Projectm" />
+          <EntitySet Name="Projectns" EntityType="AlexLoginModel.Projectn" />
+          <EntitySet Name="Projects" EntityType="AlexLoginModel.Project" />
+          <EntitySet Name="Projectus" EntityType="AlexLoginModel.Projectu" />
+          <EntitySet Name="PSworkms" EntityType="AlexLoginModel.PSworkm" />
+          <EntitySet Name="PSworks" EntityType="AlexLoginModel.PSwork" />
+          <EntitySet Name="QuyTrinhXetDuyets" EntityType="AlexLoginModel.QuyTrinhXetDuyet" />
+          <EntitySet Name="sysdiagrams" EntityType="AlexLoginModel.sysdiagram" />
+          <EntitySet Name="TheSystems" EntityType="AlexLoginModel.TheSystem" />
+          <EntitySet Name="TheUsers" EntityType="AlexLoginModel.TheUser" />
+          <EntitySet Name="Ugroups" EntityType="AlexLoginModel.Ugroup" />
+          <EntitySet Name="Users_Systems" EntityType="AlexLoginModel.Users_Systems" />
+          <EntitySet Name="UShares" EntityType="AlexLoginModel.UShare" />
+          <EntitySet Name="zszls" EntityType="AlexLoginModel.zszl" />
+          <AssociationSet Name="FK_Abcon_ABC" Association="AlexLoginModel.FK_Abcon_ABC">
+            <End Role="aABC" EntitySet="aABCs" />
+            <End Role="Abcon" EntitySet="Abcons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_ABC" Association="AlexLoginModel.FK_pdna_ABC">
+            <End Role="aABC" EntitySet="aABCs" />
+            <End Role="pdna" EntitySet="pdnas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Abcon_ABtype" Association="AlexLoginModel.FK_Abcon_ABtype">
+            <End Role="abill" EntitySet="abills" />
+            <End Role="Abcon" EntitySet="Abcons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Abcon_Yn" Association="AlexLoginModel.FK_Abcon_Yn">
+            <End Role="ABYn" EntitySet="ABYns" />
+            <End Role="Abcon" EntitySet="Abcons" />
+          </AssociationSet>
+          <AssociationSet Name="FK_abill_abill" Association="AlexLoginModel.FK_abill_abill">
+            <End Role="abill" EntitySet="abills" />
+            <End Role="abill1" EntitySet="abills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_Abtype" Association="AlexLoginModel.FK_pdna_Abtype">
+            <End Role="abill" EntitySet="abills" />
+            <End Role="pdna" EntitySet="pdnas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GUI_Language_AbScreen" Association="AlexLoginModel.FK_GUI_Language_AbScreen">
+            <End Role="AbScreen" EntitySet="AbScreens" />
+            <End Role="GUI_Language" EntitySet="GUI_Language" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AbTrangThaiDuyet_AbTrangThaiDuyet" Association="AlexLoginModel.FK_AbTrangThaiDuyet_AbTrangThaiDuyet">
+            <End Role="pdna" EntitySet="pdnas" />
+            <End Role="AbTrangThaiDuyet" EntitySet="AbTrangThaiDuyets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AbTrangThaiDuyet_YN" Association="AlexLoginModel.FK_AbTrangThaiDuyet_YN">
+            <End Role="ABYn" EntitySet="ABYns" />
+            <End Role="AbTrangThaiDuyet" EntitySet="AbTrangThaiDuyets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ChiTietBuocKy_YN" Association="AlexLoginModel.FK_ChiTietBuocKy_YN">
+            <End Role="ABYn" EntitySet="ABYns" />
+            <End Role="ChiTietBuocKy" EntitySet="ChiTietBuocKies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_YN" Association="AlexLoginModel.FK_pdna_YN">
+            <End Role="ABYn" EntitySet="ABYns" />
+            <End Role="pdna" EntitySet="pdnas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pdna_pdna" Association="AlexLoginModel.FK_pdna_pdna">
+            <End Role="pdna" EntitySet="pdnas" />
+            <End Role="pdna1" EntitySet="pdnas" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(AlexLoginModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(AlexLoginModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="aABC">
+          <Key>
+            <PropertyRef Name="ABC" />
+          </Key>
+          <Property Name="ABC" Type="Int32" Nullable="false" />
+          <Property Name="NameABC" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NameABCTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NameABCEng" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Abcons" Relationship="AlexLoginModel.FK_Abcon_ABC" FromRole="aABC" ToRole="Abcon" />
+          <NavigationProperty Name="pdnas" Relationship="AlexLoginModel.FK_pdna_ABC" FromRole="aABC" ToRole="pdna" />
+        </EntityType>
+        <EntityType Name="Abcon">
+          <Key>
+            <PropertyRef Name="Gsbh" />
+            <PropertyRef Name="abtype" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="Abstep" />
+            <PropertyRef Name="abps" />
+            <PropertyRef Name="IDCT" />
+          </Key>
+          <Property Name="Gsbh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="abtype" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="pdno" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Abstep" Type="Int32" Nullable="false" />
+          <Property Name="abps" Type="Int32" Nullable="false" />
+          <Property Name="IDCT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Auditor" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="abrult" Type="Boolean" />
+          <Property Name="abmomo" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="Password2" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="Userdate" Type="DateTime" Precision="0" />
+          <Property Name="Yn" Type="Int32" />
+          <Property Name="Maintitle" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="ABC" Type="Int32" />
+          <Property Name="from_depart" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="from_user" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="bixoa" Type="Boolean" />
+          <Property Name="cothutu" Type="Boolean" />
+          <Property Name="received" Type="Boolean" />
+          <Property Name="ABJOB" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Id_VB_CD" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="signatue" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Nhom" Type="Int32" />
+          <Property Name="kytoanbo" Type="Boolean" />
+          <Property Name="IDChiTiet" Type="Int32" />
+          <Property Name="IDCapDuyet" Type="Int32" />
+          <Property Name="boqua" Type="Boolean" />
+          <Property Name="lydokhongduyet" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="ncancel" Type="Int32" />
+          <Property Name="Donvithongqua" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="QA" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="QAmemo" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="QAmemo2" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aABC" Relationship="AlexLoginModel.FK_Abcon_ABC" FromRole="Abcon" ToRole="aABC" />
+          <NavigationProperty Name="abill" Relationship="AlexLoginModel.FK_Abcon_ABtype" FromRole="Abcon" ToRole="abill" />
+          <NavigationProperty Name="ABYn" Relationship="AlexLoginModel.FK_Abcon_Yn" FromRole="Abcon" ToRole="ABYn" />
+        </EntityType>
+        <EntityType Name="AbDepartmentType">
+          <Key>
+            <PropertyRef Name="DepartmentTypeID" />
+            <PropertyRef Name="GSBH" />
+          </Key>
+          <Property Name="DepartmentTypeID" Type="Int32" Nullable="false" />
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="DepartmentTypeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DepartmentTypeNameTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="abill">
+          <Key>
+            <PropertyRef Name="abtype" />
+          </Key>
+          <Property Name="abtype" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="abname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="maintable" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="abnameTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="abnameEng" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Abcons" Relationship="AlexLoginModel.FK_Abcon_ABtype" FromRole="abill" ToRole="Abcon" />
+          <NavigationProperty Name="abill1" Relationship="AlexLoginModel.FK_abill_abill" FromRole="abill" ToRole="abill1" />
+          <NavigationProperty Name="abill2" Relationship="AlexLoginModel.FK_abill_abill" FromRole="abill1" ToRole="abill" />
+          <NavigationProperty Name="pdnas" Relationship="AlexLoginModel.FK_pdna_Abtype" FromRole="abill" ToRole="pdna" />
+        </EntityType>
+        <EntityType Name="AbillCuser">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="abtype" />
+            <PropertyRef Name="DEPID" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="abtype" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="DEPID" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="isCQ" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="isAllUser" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="updateuser" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Updatetime" Type="DateTime" Precision="0" />
+          <Property Name="YN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="abill1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="abtype" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="ABDepId" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Defuserid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ABJOB" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Abstep" Type="Int32" Nullable="false" />
+          <Property Name="Abde" Type="Int32" Nullable="false" />
+          <Property Name="DESC" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="bixoa" Type="Boolean" />
+          <Property Name="Nhom" Type="Int32" />
+          <Property Name="KyToanBo" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="AbNghiPhep">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GSBH" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TuNgay" Type="DateTime" Precision="3" />
+          <Property Name="DenNgay" Type="DateTime" Precision="3" />
+          <Property Name="IDNguoiDuyet" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="tennguoiuyquyen" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDNguoiDuocUyQuyen" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="tennguoithaythe" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ThongQua" Type="Int32" />
+          <Property Name="TenThongQua" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AbNguoiDich">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="BADEPID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TenNguoiDich" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="TenNguoiDichTiengHoa" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AbScreen">
+          <Key>
+            <PropertyRef Name="ScreenID" />
+          </Key>
+          <Property Name="ScreenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrlScreen" Type="String" MaxLength="350" Unicode="false" FixedLength="false" />
+          <Property Name="AliasScreen" Type="String" MaxLength="350" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="GUI_Language" Relationship="AlexLoginModel.FK_GUI_Language_AbScreen" FromRole="AbScreen" ToRole="GUI_Language" />
+        </EntityType>
+        <EntityType Name="AbTrangThaiDuyet">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="IDTrangThai" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="pdno" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="IDTrangThai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Yn" Type="Int32" />
+          <NavigationProperty Name="pdna" Relationship="AlexLoginModel.FK_AbTrangThaiDuyet_AbTrangThaiDuyet" FromRole="AbTrangThaiDuyet" ToRole="pdna" />
+          <NavigationProperty Name="ABYn" Relationship="AlexLoginModel.FK_AbTrangThaiDuyet_YN" FromRole="AbTrangThaiDuyet" ToRole="ABYn" />
+        </EntityType>
+        <EntityType Name="AbVangMat">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameVietNam" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NameTaiwan" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NameEnglish" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ABYn">
+          <Key>
+            <PropertyRef Name="Yn" />
+          </Key>
+          <Property Name="Yn" Type="Int32" Nullable="false" />
+          <Property Name="YnName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="YnNameTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Abcons" Relationship="AlexLoginModel.FK_Abcon_Yn" FromRole="ABYn" ToRole="Abcon" />
+          <NavigationProperty Name="AbTrangThaiDuyets" Relationship="AlexLoginModel.FK_AbTrangThaiDuyet_YN" FromRole="ABYn" ToRole="AbTrangThaiDuyet" />
+          <NavigationProperty Name="ChiTietBuocKies" Relationship="AlexLoginModel.FK_ChiTietBuocKy_YN" FromRole="ABYn" ToRole="ChiTietBuocKy" />
+          <NavigationProperty Name="pdnas" Relationship="AlexLoginModel.FK_pdna_YN" FromRole="ABYn" ToRole="pdna" />
+        </EntityType>
+        <EntityType Name="AttactFilePDN">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="14" Unicode="false" FixedLength="false" />
+          <Property Name="USID" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="FileNameA" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="PathNameA" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BDepartment">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="CKBH" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="DepName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DepName_C" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DepMemo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ProYN" Type="Boolean" />
+          <Property Name="Worker_Qty" Type="Int32" />
+          <Property Name="NQty" Type="Int32" />
+          <Property Name="tsQty" Type="Int32" />
+          <Property Name="H7Qty" Type="Int32" />
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="UserDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="YN" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="PlanYN" Type="Boolean" />
+          <Property Name="GXLB" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ULID" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="EMPSYSID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="useYN" Type="Boolean" />
+          <Property Name="Dclass" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="mainyn" Type="Boolean" />
+          <Property Name="STDworkers" Type="Int32" />
+          <Property Name="PCworkers" Type="Int32" />
+          <Property Name="Porder1" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ULSEQ" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="DsDepid" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="IdUserChuQuan" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="DepartmentTypeID" Type="Int32" />
+          <Property Name="CQuserid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CQUserid2" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BOfSupply">
+          <Key>
+            <PropertyRef Name="IDOfSupplies" />
+          </Key>
+          <Property Name="IDOfSupplies" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GSBH" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="pdno" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OfSuppliesName" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="BUnit" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="BNumber" Type="Int32" />
+          <Property Name="BCommnent" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Buser_Securety">
+          <Key>
+            <PropertyRef Name="IDBaoMat" />
+          </Key>
+          <Property Name="IDBaoMat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="MyKey" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ngay" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Buser">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="USERID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PWD" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="LASTDATETIME" Type="DateTime" Precision="0" />
+          <Property Name="YN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="depid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="JOB" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="EMPID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Password2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="BADEPID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="IdUserQuanLyTT" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="USERNAMETW" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="pwdlevel" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Busers2">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="USERID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PWD" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LASTDATETIME" Type="DateTime" Precision="0" />
+          <Property Name="YN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="depid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="JOB" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="EMPID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Password2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="signatue" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="bixoa" Type="Boolean" />
+          <Property Name="BADEPID" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="isSep" Type="Boolean" />
+          <Property Name="Maisenhan" Type="Int32" />
+          <Property Name="abstep" Type="Int32" />
+          <Property Name="abde" Type="Int32" />
+          <Property Name="Admin" Type="Boolean" />
+          <Property Name="IDChucVu" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="IDCapDuyet" Type="Int32" />
+          <Property Name="IdUserQuanLyTT" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="USERNAMETW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PWDlevel" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ChiTietBuocKy">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="abstep" />
+            <PropertyRef Name="ABPS" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="pdno" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="abstep" Type="Int32" Nullable="false" />
+          <Property Name="ABPS" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Yn" Type="Int32" />
+          <Property Name="IdNguoiDuyet" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ABYn" Relationship="AlexLoginModel.FK_ChiTietBuocKy_YN" FromRole="ChiTietBuocKy" ToRole="ABYn" />
+        </EntityType>
+        <EntityType Name="ChucVu">
+          <Key>
+            <PropertyRef Name="IDChucVu" />
+          </Key>
+          <Property Name="IDChucVu" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="TenChucVu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GSBH" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TenChucVuTiengHoa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDCapDuyet" Type="Int32" />
+        </EntityType>
+        <EntityType Name="clzl">
+          <Key>
+            <PropertyRef Name="cldh" />
+            <PropertyRef Name="clbm" />
+            <PropertyRef Name="cllb" />
+            <PropertyRef Name="USERID" />
+            <PropertyRef Name="USERDATE" />
+            <PropertyRef Name="YN" />
+          </Key>
+          <Property Name="cldh" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="clbm" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="cllb" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="dycldh" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ysbh" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="yszwsm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ysywsm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="zwpm" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ywpm" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="dwbh" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="dwzwsm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="dwywsm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="clzmlb" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="lycc" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="xhcl" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="jkcl" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="gjlb" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="ckcldh" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="dzzhl" Type="Decimal" Precision="18" Scale="3" />
+          <Property Name="xxbh" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="kfdh" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="cqdh" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="cltd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="tyjh" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="USERID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="USERDATE" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="pumadh" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="zsdh" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="trandate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="leadtime" Type="Int32" />
+          <Property Name="DCYN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="PDYN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="MOQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MatTestNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MatTestPF" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="SkinYn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="RiskColYn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="RSLTestNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="RSLTestPF" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="YN" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="warept" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="PlanPT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="CLFJ" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="cltd2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ContentMail">
+          <Key>
+            <PropertyRef Name="ContentID" />
+          </Key>
+          <Property Name="ContentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERID" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="Pdno" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="conten" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="aproved" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="GUI_Language">
+          <Key>
+            <PropertyRef Name="TableName" />
+            <PropertyRef Name="lblID" />
+          </Key>
+          <Property Name="TableName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="lblID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="lbl_EN" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="lbl_VN" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="lbl_TW" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="ScreenID" Type="Int32" />
+          <NavigationProperty Name="AbScreen" Relationship="AlexLoginModel.FK_GUI_Language_AbScreen" FromRole="GUI_Language" ToRole="AbScreen" />
+        </EntityType>
+        <EntityType Name="pdna">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="pdno" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="pdDate" Type="DateTime" Precision="0" />
+          <Property Name="pdLX" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="USERDATE" Type="DateTime" Precision="0" />
+          <Property Name="USERID" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="ZSBH" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CFMID1" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="CFMDate1" Type="DateTime" Precision="3" />
+          <Property Name="CFMID2" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="CFMDate2" Type="DateTime" Precision="3" />
+          <Property Name="YN" Type="Int32" />
+          <Property Name="SB" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="PMARK" Type="Int32" />
+          <Property Name="CFMID0" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="CFMDate0" Type="DateTime" Precision="3" />
+          <Property Name="pduser" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="pddepid" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="pdyyid" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="yymemo" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="shmemo" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="mytitle" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="pdmemovn" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="pdmemoch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="bixoa" Type="Boolean" />
+          <Property Name="LevelDoing" Type="Int32" />
+          <Property Name="ABC" Type="Int32" />
+          <Property Name="NoiDungDich" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="trangthaidich" Type="Boolean" />
+          <Property Name="IdnguoiDich" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Abtype" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CFMDate4" Type="DateTime" Precision="3" />
+          <Property Name="dagui" Type="Boolean" />
+          <Property Name="oldpdno" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="UseIntent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="pdnsubject" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="pdmemovn1" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="isPause" Type="Boolean" />
+          <NavigationProperty Name="aABC" Relationship="AlexLoginModel.FK_pdna_ABC" FromRole="pdna" ToRole="aABC" />
+          <NavigationProperty Name="abill" Relationship="AlexLoginModel.FK_pdna_Abtype" FromRole="pdna" ToRole="abill" />
+          <NavigationProperty Name="AbTrangThaiDuyets" Relationship="AlexLoginModel.FK_AbTrangThaiDuyet_AbTrangThaiDuyet" FromRole="pdna" ToRole="AbTrangThaiDuyet" />
+          <NavigationProperty Name="ABYn" Relationship="AlexLoginModel.FK_pdna_YN" FromRole="pdna" ToRole="ABYn" />
+          <NavigationProperty Name="pdna1" Relationship="AlexLoginModel.FK_pdna_pdna" FromRole="pdna" ToRole="pdna1" />
+          <NavigationProperty Name="pdna2" Relationship="AlexLoginModel.FK_pdna_pdna" FromRole="pdna1" ToRole="pdna" />
+        </EntityType>
+        <EntityType Name="pdna1">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdNO" />
+            <PropertyRef Name="Xh" />
+            <PropertyRef Name="CLBH" />
+            <PropertyRef Name="Size" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="pdNO" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="Xh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="CLBH" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Size" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="CKBH" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="ZMLB" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Qty" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="USPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="USACC" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="CWHL" Type="Int32" />
+          <Property Name="VNPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="VNACC" Type="Int64" />
+          <Property Name="Memo0" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CLmemo" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CostID" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="BJNO" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="YQDate" Type="DateTime" Precision="0" />
+          <Property Name="CFMDate" Type="DateTime" Precision="0" />
+          <Property Name="USERDATE" Type="DateTime" Precision="0" />
+          <Property Name="USERID" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="YN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="CLPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CLACC" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FKZT" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="pdACC" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="VNPpd10" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="DDtp" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DDBH" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="cycle" Type="Int32" />
+          <Property Name="CGNO" Type="String" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="ZSBH" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="PDNLink">
+          <Key>
+            <PropertyRef Name="Gsbh" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Gsbh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="pdno" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Filename" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="FilePath" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Cancel" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="PDNLuser">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="pdno" />
+            <PropertyRef Name="DEPID" />
+            <PropertyRef Name="userid" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="pdno" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="DEPID" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="userid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SENTDATIME" Type="DateTime" Precision="0" />
+          <Property Name="RECVDATIME" Type="DateTime" Precision="0" />
+          <Property Name="YN" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Projectm">
+          <Key>
+            <PropertyRef Name="gsbh" />
+            <PropertyRef Name="jsysid" />
+          </Key>
+          <Property Name="gsbh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="jsysid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="sysname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="sysmemo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="userid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="userdate" Type="DateTime" Precision="3" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="sLeaderid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="edates" Type="DateTime" Precision="3" />
+          <Property Name="edatee" Type="DateTime" Precision="3" />
+          <Property Name="Spercent" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="sysnamevn" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="sysmemovn" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LinkFile" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="LinkFile2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="LinkFile3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Share" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Projectn">
+          <Key>
+            <PropertyRef Name="gsbh" />
+            <PropertyRef Name="jsysid" />
+            <PropertyRef Name="jsubid" />
+          </Key>
+          <Property Name="gsbh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="jsysid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="jsubid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="jsubname" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="jsubmemo" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="userid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="userdate" Type="DateTime" Precision="0" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="sLeaderid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="edates" Type="DateTime" Precision="0" />
+          <Property Name="edatee" Type="DateTime" Precision="0" />
+          <Property Name="Spercent" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PDNO" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="jsubnamevn" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="jsubmemovn" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Linkfile" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Linkfile2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Linkfile3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Share" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="gsbh" />
+            <PropertyRef Name="jsysid" />
+            <PropertyRef Name="jsubid" />
+            <PropertyRef Name="jobid" />
+          </Key>
+          <Property Name="gsbh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="jsysid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="jsubid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="jobid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ticketid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="jobname" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="jobmemo" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="userid" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="userdate" Type="DateTime" Precision="0" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="Jleaderid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="edates" Type="DateTime" Precision="0" />
+          <Property Name="edatee" Type="DateTime" Precision="0" />
+          <Property Name="jpercent" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PDNO" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="jobnamevn" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="jobmemovn" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Linkfile" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Linkfile2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Linkfile3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Share" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Projectu">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="Jsysid" />
+            <PropertyRef Name="Jsubid" />
+            <PropertyRef Name="Jodid" />
+            <PropertyRef Name="Juserid" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Jsysid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Jsubid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Jodid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Juserid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="userid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="userdate" Type="DateTime" Precision="0" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="juadate" Type="DateTime" Precision="0" />
+          <Property Name="juamemo" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="PSworkm">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="Userid" />
+            <PropertyRef Name="pdates" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Userid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="pdates" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="pdatee" Type="DateTime" Precision="0" />
+          <Property Name="wkmemo" Type="String" MaxLength="520" Unicode="true" FixedLength="false" />
+          <Property Name="wklink" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="modidate" Type="DateTime" Precision="0" />
+          <Property Name="jobpercent" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="cfmdate" Type="DateTime" Precision="0" />
+          <Property Name="cfmuser" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Subject" Type="String" MaxLength="450" Unicode="true" FixedLength="false" />
+          <Property Name="wslink2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="wslink3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="jsysid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="jsubid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="jobid" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ticketid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="PSwork">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="userid" />
+            <PropertyRef Name="pdates" />
+            <PropertyRef Name="id" />
+            <PropertyRef Name="xh" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="userid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="pdates" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="xh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="PSmemo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pslink" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="userdate" Type="DateTime" Precision="0" />
+          <Property Name="yn" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="pslink2" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="pslink3" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="QuyTrinhXetDuyet">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="abtype" />
+            <PropertyRef Name="BADEPID" />
+            <PropertyRef Name="ABstep" />
+            <PropertyRef Name="ABPS" />
+            <PropertyRef Name="IDQuyTrinh" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="abtype" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="BADEPID" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="ABstep" Type="Int32" Nullable="false" />
+          <Property Name="ABPS" Type="Int32" Nullable="false" />
+          <Property Name="IDQuyTrinh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NguoiDuyet" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="USERNAME" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDChucVu" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TenChucVuTiengHoa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="abtypenameTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="tendonviTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DonViThongQua" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tendonvithongqua" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDLoaiDonVi" Type="Int32" />
+          <Property Name="DepartmentTypeNameTW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IDCapDuyet" Type="Int32" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TheSystem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="StartPage" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TheUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ActiveCode" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="SEmail" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Ugroup">
+          <Key>
+            <PropertyRef Name="GSBh" />
+            <PropertyRef Name="userid" />
+            <PropertyRef Name="ugno" />
+            <PropertyRef Name="userid2" />
+          </Key>
+          <Property Name="GSBh" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="userid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ugno" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="userid2" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="UGtitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UGmemo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="userdate" Type="DateTime" Precision="0" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Users_Systems">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="SystemID" />
+          </Key>
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SystemID" Type="Int32" Nullable="false" />
+          <Property Name="ActiveCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="SessionID" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UShare">
+          <Key>
+            <PropertyRef Name="GSBH" />
+            <PropertyRef Name="Userid" />
+            <PropertyRef Name="USID" />
+          </Key>
+          <Property Name="GSBH" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Userid" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="USID" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="UGno" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="UStitle" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="USmemo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="LinkFile" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="sdate" Type="DateTime" Precision="0" />
+          <Property Name="edate" Type="DateTime" Precision="0" />
+          <Property Name="userdate" Type="DateTime" Precision="0" />
+          <Property Name="yn" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="LinkFile2" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="LinkFile3" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="zszl">
+          <Key>
+            <PropertyRef Name="zsdh" />
+          </Key>
+          <Property Name="zsdh" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="zsqm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="zsjc" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="zsywjc" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="tybh" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="fpdz" Type="String" MaxLength="120" Unicode="true" FixedLength="false" />
+          <Property Name="yjdz" Type="String" MaxLength="120" Unicode="true" FixedLength="false" />
+          <Property Name="dh" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="cz" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="fzr" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="bb" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="llr2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="llr" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="dybh" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="mark" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="USERID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="USERDATE" Type="DateTime" Precision="0" />
+          <Property Name="TYJH" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="YN" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="country" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MZsdh" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Style" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Shippingleadtime" Type="Int32" />
+          <Property Name="Shippingleadtimes" Type="Int32" />
+          <Property Name="Customclearanceday" Type="Int32" />
+          <Property Name="Samplepurchaser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Prodpurchaser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Groupname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Zsdh_TW" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sample_void" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="TRANDATE" Type="String" MaxLength="17" Unicode="false" FixedLength="false" />
+          <Property Name="fktj" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="fktj1" Type="Decimal" Precision="18" Scale="1" />
+          <Property Name="scd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="fzr_mail" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="llr2_mail" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="llr_mail" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="pass0" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pass1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pass2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_Abcon_ABC">
+          <End Role="aABC" Type="AlexLoginModel.aABC" Multiplicity="0..1" />
+          <End Role="Abcon" Type="AlexLoginModel.Abcon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aABC">
+              <PropertyRef Name="ABC" />
+            </Principal>
+            <Dependent Role="Abcon">
+              <PropertyRef Name="ABC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_ABC">
+          <End Role="aABC" Type="AlexLoginModel.aABC" Multiplicity="0..1" />
+          <End Role="pdna" Type="AlexLoginModel.pdna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aABC">
+              <PropertyRef Name="ABC" />
+            </Principal>
+            <Dependent Role="pdna">
+              <PropertyRef Name="ABC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Abcon_ABtype">
+          <End Role="abill" Type="AlexLoginModel.abill" Multiplicity="1" />
+          <End Role="Abcon" Type="AlexLoginModel.Abcon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="abill">
+              <PropertyRef Name="abtype" />
+            </Principal>
+            <Dependent Role="Abcon">
+              <PropertyRef Name="abtype" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Abcon_Yn">
+          <End Role="ABYn" Type="AlexLoginModel.ABYn" Multiplicity="0..1" />
+          <End Role="Abcon" Type="AlexLoginModel.Abcon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="Abcon">
+              <PropertyRef Name="Yn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_abill_abill">
+          <End Role="abill" Type="AlexLoginModel.abill" Multiplicity="1" />
+          <End Role="abill1" Type="AlexLoginModel.abill" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="abill">
+              <PropertyRef Name="abtype" />
+            </Principal>
+            <Dependent Role="abill1">
+              <PropertyRef Name="abtype" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_Abtype">
+          <End Role="abill" Type="AlexLoginModel.abill" Multiplicity="0..1" />
+          <End Role="pdna" Type="AlexLoginModel.pdna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="abill">
+              <PropertyRef Name="abtype" />
+            </Principal>
+            <Dependent Role="pdna">
+              <PropertyRef Name="Abtype" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GUI_Language_AbScreen">
+          <End Role="AbScreen" Type="AlexLoginModel.AbScreen" Multiplicity="0..1" />
+          <End Role="GUI_Language" Type="AlexLoginModel.GUI_Language" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AbScreen">
+              <PropertyRef Name="ScreenID" />
+            </Principal>
+            <Dependent Role="GUI_Language">
+              <PropertyRef Name="ScreenID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AbTrangThaiDuyet_AbTrangThaiDuyet">
+          <End Role="pdna" Type="AlexLoginModel.pdna" Multiplicity="1" />
+          <End Role="AbTrangThaiDuyet" Type="AlexLoginModel.AbTrangThaiDuyet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="pdna">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Principal>
+            <Dependent Role="AbTrangThaiDuyet">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AbTrangThaiDuyet_YN">
+          <End Role="ABYn" Type="AlexLoginModel.ABYn" Multiplicity="0..1" />
+          <End Role="AbTrangThaiDuyet" Type="AlexLoginModel.AbTrangThaiDuyet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="AbTrangThaiDuyet">
+              <PropertyRef Name="Yn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ChiTietBuocKy_YN">
+          <End Role="ABYn" Type="AlexLoginModel.ABYn" Multiplicity="0..1" />
+          <End Role="ChiTietBuocKy" Type="AlexLoginModel.ChiTietBuocKy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="ChiTietBuocKy">
+              <PropertyRef Name="Yn" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_YN">
+          <End Role="ABYn" Type="AlexLoginModel.ABYn" Multiplicity="0..1" />
+          <End Role="pdna" Type="AlexLoginModel.pdna" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ABYn">
+              <PropertyRef Name="Yn" />
+            </Principal>
+            <Dependent Role="pdna">
+              <PropertyRef Name="YN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pdna_pdna">
+          <End Role="pdna" Type="AlexLoginModel.pdna" Multiplicity="1" />
+          <End Role="pdna1" Type="AlexLoginModel.pdna" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="pdna">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Principal>
+            <Dependent Role="pdna1">
+              <PropertyRef Name="GSBH" />
+              <PropertyRef Name="pdno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AlexLoginModelStoreContainer" CdmEntityContainer="AlexLoginEntities">
+          <EntitySetMapping Name="aABCs">
+            <EntityTypeMapping TypeName="AlexLoginModel.aABC">
+              <MappingFragment StoreEntitySet="aABC">
+                <ScalarProperty Name="ABC" ColumnName="ABC" />
+                <ScalarProperty Name="NameABC" ColumnName="NameABC" />
+                <ScalarProperty Name="NameABCTW" ColumnName="NameABCTW" />
+                <ScalarProperty Name="NameABCEng" ColumnName="NameABCEng" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Abcons">
+            <EntityTypeMapping TypeName="AlexLoginModel.Abcon">
+              <MappingFragment StoreEntitySet="Abcon">
+                <ScalarProperty Name="Gsbh" ColumnName="Gsbh" />
+                <ScalarProperty Name="abtype" ColumnName="abtype" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="Abstep" ColumnName="Abstep" />
+                <ScalarProperty Name="abps" ColumnName="abps" />
+                <ScalarProperty Name="IDCT" ColumnName="IDCT" />
+                <ScalarProperty Name="Auditor" ColumnName="Auditor" />
+                <ScalarProperty Name="abrult" ColumnName="abrult" />
+                <ScalarProperty Name="abmomo" ColumnName="abmomo" />
+                <ScalarProperty Name="Password2" ColumnName="Password2" />
+                <ScalarProperty Name="Userdate" ColumnName="Userdate" />
+                <ScalarProperty Name="Yn" ColumnName="Yn" />
+                <ScalarProperty Name="Maintitle" ColumnName="Maintitle" />
+                <ScalarProperty Name="ABC" ColumnName="ABC" />
+                <ScalarProperty Name="from_depart" ColumnName="from_depart" />
+                <ScalarProperty Name="from_user" ColumnName="from_user" />
+                <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+                <ScalarProperty Name="cothutu" ColumnName="cothutu" />
+                <ScalarProperty Name="received" ColumnName="received" />
+                <ScalarProperty Name="ABJOB" ColumnName="ABJOB" />
+                <ScalarProperty Name="Id_VB_CD" ColumnName="Id_VB_CD" />
+                <ScalarProperty Name="signatue" ColumnName="signatue" />
+                <ScalarProperty Name="Nhom" ColumnName="Nhom" />
+                <ScalarProperty Name="kytoanbo" ColumnName="kytoanbo" />
+                <ScalarProperty Name="IDChiTiet" ColumnName="IDChiTiet" />
+                <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+                <ScalarProperty Name="boqua" ColumnName="boqua" />
+                <ScalarProperty Name="lydokhongduyet" ColumnName="lydokhongduyet" />
+                <ScalarProperty Name="ncancel" ColumnName="ncancel" />
+                <ScalarProperty Name="Donvithongqua" ColumnName="Donvithongqua" />
+                <ScalarProperty Name="QA" ColumnName="QA" />
+                <ScalarProperty Name="QAmemo" ColumnName="QAmemo" />
+                <ScalarProperty Name="QAmemo2" ColumnName="QAmemo2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbDepartmentTypes">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbDepartmentType">
+              <MappingFragment StoreEntitySet="AbDepartmentType">
+                <ScalarProperty Name="DepartmentTypeID" ColumnName="DepartmentTypeID" />
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="DepartmentTypeName" ColumnName="DepartmentTypeName" />
+                <ScalarProperty Name="DepartmentTypeNameTW" ColumnName="DepartmentTypeNameTW" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="abills">
+            <EntityTypeMapping TypeName="AlexLoginModel.abill">
+              <MappingFragment StoreEntitySet="abill">
+                <ScalarProperty Name="abtype" ColumnName="abtype" />
+                <ScalarProperty Name="abname" ColumnName="abname" />
+                <ScalarProperty Name="maintable" ColumnName="maintable" />
+                <ScalarProperty Name="abnameTW" ColumnName="abnameTW" />
+                <ScalarProperty Name="abnameEng" ColumnName="abnameEng" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbillCusers">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbillCuser">
+              <MappingFragment StoreEntitySet="AbillCuser">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="abtype" ColumnName="abtype" />
+                <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+                <ScalarProperty Name="isCQ" ColumnName="isCQ" />
+                <ScalarProperty Name="isAllUser" ColumnName="isAllUser" />
+                <ScalarProperty Name="updateuser" ColumnName="updateuser" />
+                <ScalarProperty Name="Updatetime" ColumnName="Updatetime" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="abills1">
+            <EntityTypeMapping TypeName="AlexLoginModel.abill1">
+              <MappingFragment StoreEntitySet="abills">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="abtype" ColumnName="abtype" />
+                <ScalarProperty Name="ABDepId" ColumnName="ABDepId" />
+                <ScalarProperty Name="Defuserid" ColumnName="Defuserid" />
+                <ScalarProperty Name="ABJOB" ColumnName="ABJOB" />
+                <ScalarProperty Name="Abstep" ColumnName="Abstep" />
+                <ScalarProperty Name="Abde" ColumnName="Abde" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+                <ScalarProperty Name="Nhom" ColumnName="Nhom" />
+                <ScalarProperty Name="KyToanBo" ColumnName="KyToanBo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbNghiPheps">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbNghiPhep">
+              <MappingFragment StoreEntitySet="AbNghiPhep">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+                <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+                <ScalarProperty Name="IDNguoiDuyet" ColumnName="IDNguoiDuyet" />
+                <ScalarProperty Name="tennguoiuyquyen" ColumnName="tennguoiuyquyen" />
+                <ScalarProperty Name="IDNguoiDuocUyQuyen" ColumnName="IDNguoiDuocUyQuyen" />
+                <ScalarProperty Name="tennguoithaythe" ColumnName="tennguoithaythe" />
+                <ScalarProperty Name="ThongQua" ColumnName="ThongQua" />
+                <ScalarProperty Name="TenThongQua" ColumnName="TenThongQua" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbNguoiDiches">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbNguoiDich">
+              <MappingFragment StoreEntitySet="AbNguoiDich">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+                <ScalarProperty Name="TenNguoiDich" ColumnName="TenNguoiDich" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="TenNguoiDichTiengHoa" ColumnName="TenNguoiDichTiengHoa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbScreens">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbScreen">
+              <MappingFragment StoreEntitySet="AbScreen">
+                <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+                <ScalarProperty Name="UrlScreen" ColumnName="UrlScreen" />
+                <ScalarProperty Name="AliasScreen" ColumnName="AliasScreen" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbTrangThaiDuyets">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbTrangThaiDuyet">
+              <MappingFragment StoreEntitySet="AbTrangThaiDuyet">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+                <ScalarProperty Name="Yn" ColumnName="Yn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AbVangMats">
+            <EntityTypeMapping TypeName="AlexLoginModel.AbVangMat">
+              <MappingFragment StoreEntitySet="AbVangMat">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NameVietNam" ColumnName="NameVietNam" />
+                <ScalarProperty Name="NameTaiwan" ColumnName="NameTaiwan" />
+                <ScalarProperty Name="NameEnglish" ColumnName="NameEnglish" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ABYns">
+            <EntityTypeMapping TypeName="AlexLoginModel.ABYn">
+              <MappingFragment StoreEntitySet="ABYn">
+                <ScalarProperty Name="Yn" ColumnName="Yn" />
+                <ScalarProperty Name="YnName" ColumnName="YnName" />
+                <ScalarProperty Name="YnNameTW" ColumnName="YnNameTW" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttactFilePDNs">
+            <EntityTypeMapping TypeName="AlexLoginModel.AttactFilePDN">
+              <MappingFragment StoreEntitySet="AttactFilePDN">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USID" ColumnName="USID" />
+                <ScalarProperty Name="FileNameA" ColumnName="FileNameA" />
+                <ScalarProperty Name="PathNameA" ColumnName="PathNameA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BDepartments">
+            <EntityTypeMapping TypeName="AlexLoginModel.BDepartment">
+              <MappingFragment StoreEntitySet="BDepartment">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="CKBH" ColumnName="CKBH" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DepName" ColumnName="DepName" />
+                <ScalarProperty Name="DepName_C" ColumnName="DepName_C" />
+                <ScalarProperty Name="DepMemo" ColumnName="DepMemo" />
+                <ScalarProperty Name="ProYN" ColumnName="ProYN" />
+                <ScalarProperty Name="Worker_Qty" ColumnName="Worker_Qty" />
+                <ScalarProperty Name="NQty" ColumnName="NQty" />
+                <ScalarProperty Name="tsQty" ColumnName="tsQty" />
+                <ScalarProperty Name="H7Qty" ColumnName="H7Qty" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserDate" ColumnName="UserDate" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="PlanYN" ColumnName="PlanYN" />
+                <ScalarProperty Name="GXLB" ColumnName="GXLB" />
+                <ScalarProperty Name="ULID" ColumnName="ULID" />
+                <ScalarProperty Name="EMPSYSID" ColumnName="EMPSYSID" />
+                <ScalarProperty Name="useYN" ColumnName="useYN" />
+                <ScalarProperty Name="Dclass" ColumnName="Dclass" />
+                <ScalarProperty Name="mainyn" ColumnName="mainyn" />
+                <ScalarProperty Name="STDworkers" ColumnName="STDworkers" />
+                <ScalarProperty Name="PCworkers" ColumnName="PCworkers" />
+                <ScalarProperty Name="Porder1" ColumnName="Porder1" />
+                <ScalarProperty Name="ULSEQ" ColumnName="ULSEQ" />
+                <ScalarProperty Name="DsDepid" ColumnName="DsDepid" />
+                <ScalarProperty Name="IdUserChuQuan" ColumnName="IdUserChuQuan" />
+                <ScalarProperty Name="DepartmentTypeID" ColumnName="DepartmentTypeID" />
+                <ScalarProperty Name="CQuserid" ColumnName="CQuserid" />
+                <ScalarProperty Name="CQUserid2" ColumnName="CQUserid2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BOfSupplies">
+            <EntityTypeMapping TypeName="AlexLoginModel.BOfSupply">
+              <MappingFragment StoreEntitySet="BOfSupplies">
+                <ScalarProperty Name="IDOfSupplies" ColumnName="IDOfSupplies" />
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="OfSuppliesName" ColumnName="OfSuppliesName" />
+                <ScalarProperty Name="BUnit" ColumnName="BUnit" />
+                <ScalarProperty Name="BNumber" ColumnName="BNumber" />
+                <ScalarProperty Name="BCommnent" ColumnName="BCommnent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Buser_Securety">
+            <EntityTypeMapping TypeName="AlexLoginModel.Buser_Securety">
+              <MappingFragment StoreEntitySet="Buser_Securety">
+                <ScalarProperty Name="IDBaoMat" ColumnName="IDBaoMat" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="MyKey" ColumnName="MyKey" />
+                <ScalarProperty Name="ngay" ColumnName="ngay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Busers">
+            <EntityTypeMapping TypeName="AlexLoginModel.Buser">
+              <MappingFragment StoreEntitySet="Busers">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PWD" ColumnName="PWD" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="LASTDATETIME" ColumnName="LASTDATETIME" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="depid" ColumnName="depid" />
+                <ScalarProperty Name="JOB" ColumnName="JOB" />
+                <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+                <ScalarProperty Name="Password2" ColumnName="Password2" />
+                <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+                <ScalarProperty Name="IdUserQuanLyTT" ColumnName="IdUserQuanLyTT" />
+                <ScalarProperty Name="USERNAMETW" ColumnName="USERNAMETW" />
+                <ScalarProperty Name="pwdlevel" ColumnName="pwdlevel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Busers2">
+            <EntityTypeMapping TypeName="AlexLoginModel.Busers2">
+              <MappingFragment StoreEntitySet="Busers2">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PWD" ColumnName="PWD" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="LASTDATETIME" ColumnName="LASTDATETIME" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="depid" ColumnName="depid" />
+                <ScalarProperty Name="JOB" ColumnName="JOB" />
+                <ScalarProperty Name="EMPID" ColumnName="EMPID" />
+                <ScalarProperty Name="Password2" ColumnName="Password2" />
+                <ScalarProperty Name="signatue" ColumnName="signatue" />
+                <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+                <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+                <ScalarProperty Name="isSep" ColumnName="isSep" />
+                <ScalarProperty Name="Maisenhan" ColumnName="Maisenhan" />
+                <ScalarProperty Name="abstep" ColumnName="abstep" />
+                <ScalarProperty Name="abde" ColumnName="abde" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+                <ScalarProperty Name="IDChucVu" ColumnName="IDChucVu" />
+                <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+                <ScalarProperty Name="IdUserQuanLyTT" ColumnName="IdUserQuanLyTT" />
+                <ScalarProperty Name="USERNAMETW" ColumnName="USERNAMETW" />
+                <ScalarProperty Name="PWDlevel" ColumnName="PWDlevel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChiTietBuocKies">
+            <EntityTypeMapping TypeName="AlexLoginModel.ChiTietBuocKy">
+              <MappingFragment StoreEntitySet="ChiTietBuocKy">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="abstep" ColumnName="abstep" />
+                <ScalarProperty Name="ABPS" ColumnName="ABPS" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Yn" ColumnName="Yn" />
+                <ScalarProperty Name="IdNguoiDuyet" ColumnName="IdNguoiDuyet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChucVus">
+            <EntityTypeMapping TypeName="AlexLoginModel.ChucVu">
+              <MappingFragment StoreEntitySet="ChucVu">
+                <ScalarProperty Name="IDChucVu" ColumnName="IDChucVu" />
+                <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="TenChucVuTiengHoa" ColumnName="TenChucVuTiengHoa" />
+                <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="clzls">
+            <EntityTypeMapping TypeName="AlexLoginModel.clzl">
+              <MappingFragment StoreEntitySet="clzl">
+                <ScalarProperty Name="cldh" ColumnName="cldh" />
+                <ScalarProperty Name="clbm" ColumnName="clbm" />
+                <ScalarProperty Name="cllb" ColumnName="cllb" />
+                <ScalarProperty Name="dycldh" ColumnName="dycldh" />
+                <ScalarProperty Name="ysbh" ColumnName="ysbh" />
+                <ScalarProperty Name="yszwsm" ColumnName="yszwsm" />
+                <ScalarProperty Name="ysywsm" ColumnName="ysywsm" />
+                <ScalarProperty Name="zwpm" ColumnName="zwpm" />
+                <ScalarProperty Name="ywpm" ColumnName="ywpm" />
+                <ScalarProperty Name="dwbh" ColumnName="dwbh" />
+                <ScalarProperty Name="dwzwsm" ColumnName="dwzwsm" />
+                <ScalarProperty Name="dwywsm" ColumnName="dwywsm" />
+                <ScalarProperty Name="clzmlb" ColumnName="clzmlb" />
+                <ScalarProperty Name="lycc" ColumnName="lycc" />
+                <ScalarProperty Name="xhcl" ColumnName="xhcl" />
+                <ScalarProperty Name="jkcl" ColumnName="jkcl" />
+                <ScalarProperty Name="gjlb" ColumnName="gjlb" />
+                <ScalarProperty Name="ckcldh" ColumnName="ckcldh" />
+                <ScalarProperty Name="dzzhl" ColumnName="dzzhl" />
+                <ScalarProperty Name="xxbh" ColumnName="xxbh" />
+                <ScalarProperty Name="kfdh" ColumnName="kfdh" />
+                <ScalarProperty Name="cqdh" ColumnName="cqdh" />
+                <ScalarProperty Name="cltd" ColumnName="cltd" />
+                <ScalarProperty Name="tyjh" ColumnName="tyjh" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+                <ScalarProperty Name="pumadh" ColumnName="pumadh" />
+                <ScalarProperty Name="zsdh" ColumnName="zsdh" />
+                <ScalarProperty Name="trandate" ColumnName="trandate" />
+                <ScalarProperty Name="leadtime" ColumnName="leadtime" />
+                <ScalarProperty Name="DCYN" ColumnName="DCYN" />
+                <ScalarProperty Name="PDYN" ColumnName="PDYN" />
+                <ScalarProperty Name="MOQ" ColumnName="MOQ" />
+                <ScalarProperty Name="MatTestNo" ColumnName="MatTestNo" />
+                <ScalarProperty Name="MatTestPF" ColumnName="MatTestPF" />
+                <ScalarProperty Name="SkinYn" ColumnName="SkinYn" />
+                <ScalarProperty Name="RiskColYn" ColumnName="RiskColYn" />
+                <ScalarProperty Name="RSLTestNo" ColumnName="RSLTestNo" />
+                <ScalarProperty Name="RSLTestPF" ColumnName="RSLTestPF" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="warept" ColumnName="warept" />
+                <ScalarProperty Name="PlanPT" ColumnName="PlanPT" />
+                <ScalarProperty Name="CLFJ" ColumnName="CLFJ" />
+                <ScalarProperty Name="cltd2" ColumnName="cltd2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContentMails">
+            <EntityTypeMapping TypeName="AlexLoginModel.ContentMail">
+              <MappingFragment StoreEntitySet="ContentMail">
+                <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="Pdno" ColumnName="Pdno" />
+                <ScalarProperty Name="conten" ColumnName="conten" />
+                <ScalarProperty Name="aproved" ColumnName="aproved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GUI_Language">
+            <EntityTypeMapping TypeName="AlexLoginModel.GUI_Language">
+              <MappingFragment StoreEntitySet="GUI_Language">
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="lblID" ColumnName="lblID" />
+                <ScalarProperty Name="lbl_EN" ColumnName="lbl_EN" />
+                <ScalarProperty Name="lbl_VN" ColumnName="lbl_VN" />
+                <ScalarProperty Name="lbl_TW" ColumnName="lbl_TW" />
+                <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pdnas">
+            <EntityTypeMapping TypeName="AlexLoginModel.pdna">
+              <MappingFragment StoreEntitySet="pdna">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="pdDate" ColumnName="pdDate" />
+                <ScalarProperty Name="pdLX" ColumnName="pdLX" />
+                <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="ZSBH" ColumnName="ZSBH" />
+                <ScalarProperty Name="CFMID1" ColumnName="CFMID1" />
+                <ScalarProperty Name="CFMDate1" ColumnName="CFMDate1" />
+                <ScalarProperty Name="CFMID2" ColumnName="CFMID2" />
+                <ScalarProperty Name="CFMDate2" ColumnName="CFMDate2" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="SB" ColumnName="SB" />
+                <ScalarProperty Name="PMARK" ColumnName="PMARK" />
+                <ScalarProperty Name="CFMID0" ColumnName="CFMID0" />
+                <ScalarProperty Name="CFMDate0" ColumnName="CFMDate0" />
+                <ScalarProperty Name="pduser" ColumnName="pduser" />
+                <ScalarProperty Name="pddepid" ColumnName="pddepid" />
+                <ScalarProperty Name="pdyyid" ColumnName="pdyyid" />
+                <ScalarProperty Name="yymemo" ColumnName="yymemo" />
+                <ScalarProperty Name="shmemo" ColumnName="shmemo" />
+                <ScalarProperty Name="mytitle" ColumnName="mytitle" />
+                <ScalarProperty Name="pdmemovn" ColumnName="pdmemovn" />
+                <ScalarProperty Name="pdmemoch" ColumnName="pdmemoch" />
+                <ScalarProperty Name="bixoa" ColumnName="bixoa" />
+                <ScalarProperty Name="LevelDoing" ColumnName="LevelDoing" />
+                <ScalarProperty Name="ABC" ColumnName="ABC" />
+                <ScalarProperty Name="NoiDungDich" ColumnName="NoiDungDich" />
+                <ScalarProperty Name="trangthaidich" ColumnName="trangthaidich" />
+                <ScalarProperty Name="IdnguoiDich" ColumnName="IdnguoiDich" />
+                <ScalarProperty Name="Abtype" ColumnName="Abtype" />
+                <ScalarProperty Name="CFMDate4" ColumnName="CFMDate4" />
+                <ScalarProperty Name="dagui" ColumnName="dagui" />
+                <ScalarProperty Name="oldpdno" ColumnName="oldpdno" />
+                <ScalarProperty Name="UseIntent" ColumnName="UseIntent" />
+                <ScalarProperty Name="pdnsubject" ColumnName="pdnsubject" />
+                <ScalarProperty Name="pdmemovn1" ColumnName="pdmemovn1" />
+                <ScalarProperty Name="isPause" ColumnName="isPause" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pdnaS1">
+            <EntityTypeMapping TypeName="AlexLoginModel.pdna1">
+              <MappingFragment StoreEntitySet="pdnaS">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="pdNO" ColumnName="pdNO" />
+                <ScalarProperty Name="Xh" ColumnName="Xh" />
+                <ScalarProperty Name="CLBH" ColumnName="CLBH" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="CKBH" ColumnName="CKBH" />
+                <ScalarProperty Name="ZMLB" ColumnName="ZMLB" />
+                <ScalarProperty Name="Qty" ColumnName="Qty" />
+                <ScalarProperty Name="USPrice" ColumnName="USPrice" />
+                <ScalarProperty Name="USACC" ColumnName="USACC" />
+                <ScalarProperty Name="CWHL" ColumnName="CWHL" />
+                <ScalarProperty Name="VNPrice" ColumnName="VNPrice" />
+                <ScalarProperty Name="VNACC" ColumnName="VNACC" />
+                <ScalarProperty Name="Memo0" ColumnName="Memo0" />
+                <ScalarProperty Name="CLmemo" ColumnName="CLmemo" />
+                <ScalarProperty Name="CostID" ColumnName="CostID" />
+                <ScalarProperty Name="BJNO" ColumnName="BJNO" />
+                <ScalarProperty Name="YQDate" ColumnName="YQDate" />
+                <ScalarProperty Name="CFMDate" ColumnName="CFMDate" />
+                <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="CLPrice" ColumnName="CLPrice" />
+                <ScalarProperty Name="CLACC" ColumnName="CLACC" />
+                <ScalarProperty Name="FKZT" ColumnName="FKZT" />
+                <ScalarProperty Name="pdACC" ColumnName="pdACC" />
+                <ScalarProperty Name="VNPpd10" ColumnName="VNPpd10" />
+                <ScalarProperty Name="DDtp" ColumnName="DDtp" />
+                <ScalarProperty Name="DDBH" ColumnName="DDBH" />
+                <ScalarProperty Name="cycle" ColumnName="cycle" />
+                <ScalarProperty Name="CGNO" ColumnName="CGNO" />
+                <ScalarProperty Name="ZSBH" ColumnName="ZSBH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PDNLinks">
+            <EntityTypeMapping TypeName="AlexLoginModel.PDNLink">
+              <MappingFragment StoreEntitySet="PDNLink">
+                <ScalarProperty Name="Gsbh" ColumnName="Gsbh" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Filename" ColumnName="Filename" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="Cancel" ColumnName="Cancel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PDNLusers">
+            <EntityTypeMapping TypeName="AlexLoginModel.PDNLuser">
+              <MappingFragment StoreEntitySet="PDNLuser">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="pdno" ColumnName="pdno" />
+                <ScalarProperty Name="DEPID" ColumnName="DEPID" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="SENTDATIME" ColumnName="SENTDATIME" />
+                <ScalarProperty Name="RECVDATIME" ColumnName="RECVDATIME" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projectms">
+            <EntityTypeMapping TypeName="AlexLoginModel.Projectm">
+              <MappingFragment StoreEntitySet="Projectm">
+                <ScalarProperty Name="gsbh" ColumnName="gsbh" />
+                <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+                <ScalarProperty Name="sysname" ColumnName="sysname" />
+                <ScalarProperty Name="sysmemo" ColumnName="sysmemo" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="sLeaderid" ColumnName="sLeaderid" />
+                <ScalarProperty Name="edates" ColumnName="edates" />
+                <ScalarProperty Name="edatee" ColumnName="edatee" />
+                <ScalarProperty Name="Spercent" ColumnName="Spercent" />
+                <ScalarProperty Name="sysnamevn" ColumnName="sysnamevn" />
+                <ScalarProperty Name="sysmemovn" ColumnName="sysmemovn" />
+                <ScalarProperty Name="LinkFile" ColumnName="LinkFile" />
+                <ScalarProperty Name="LinkFile2" ColumnName="LinkFile2" />
+                <ScalarProperty Name="LinkFile3" ColumnName="LinkFile3" />
+                <ScalarProperty Name="Share" ColumnName="Share" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projectns">
+            <EntityTypeMapping TypeName="AlexLoginModel.Projectn">
+              <MappingFragment StoreEntitySet="Projectn">
+                <ScalarProperty Name="gsbh" ColumnName="gsbh" />
+                <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+                <ScalarProperty Name="jsubid" ColumnName="jsubid" />
+                <ScalarProperty Name="jsubname" ColumnName="jsubname" />
+                <ScalarProperty Name="jsubmemo" ColumnName="jsubmemo" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="sLeaderid" ColumnName="sLeaderid" />
+                <ScalarProperty Name="edates" ColumnName="edates" />
+                <ScalarProperty Name="edatee" ColumnName="edatee" />
+                <ScalarProperty Name="Spercent" ColumnName="Spercent" />
+                <ScalarProperty Name="PDNO" ColumnName="PDNO" />
+                <ScalarProperty Name="jsubnamevn" ColumnName="jsubnamevn" />
+                <ScalarProperty Name="jsubmemovn" ColumnName="jsubmemovn" />
+                <ScalarProperty Name="Linkfile" ColumnName="Linkfile" />
+                <ScalarProperty Name="Linkfile2" ColumnName="Linkfile2" />
+                <ScalarProperty Name="Linkfile3" ColumnName="Linkfile3" />
+                <ScalarProperty Name="Share" ColumnName="Share" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projects">
+            <EntityTypeMapping TypeName="AlexLoginModel.Project">
+              <MappingFragment StoreEntitySet="Projects">
+                <ScalarProperty Name="gsbh" ColumnName="gsbh" />
+                <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+                <ScalarProperty Name="jsubid" ColumnName="jsubid" />
+                <ScalarProperty Name="jobid" ColumnName="jobid" />
+                <ScalarProperty Name="ticketid" ColumnName="ticketid" />
+                <ScalarProperty Name="jobname" ColumnName="jobname" />
+                <ScalarProperty Name="jobmemo" ColumnName="jobmemo" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="Jleaderid" ColumnName="Jleaderid" />
+                <ScalarProperty Name="edates" ColumnName="edates" />
+                <ScalarProperty Name="edatee" ColumnName="edatee" />
+                <ScalarProperty Name="jpercent" ColumnName="jpercent" />
+                <ScalarProperty Name="PDNO" ColumnName="PDNO" />
+                <ScalarProperty Name="jobnamevn" ColumnName="jobnamevn" />
+                <ScalarProperty Name="jobmemovn" ColumnName="jobmemovn" />
+                <ScalarProperty Name="Linkfile" ColumnName="Linkfile" />
+                <ScalarProperty Name="Linkfile2" ColumnName="Linkfile2" />
+                <ScalarProperty Name="Linkfile3" ColumnName="Linkfile3" />
+                <ScalarProperty Name="Share" ColumnName="Share" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projectus">
+            <EntityTypeMapping TypeName="AlexLoginModel.Projectu">
+              <MappingFragment StoreEntitySet="Projectu">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="Jsysid" ColumnName="Jsysid" />
+                <ScalarProperty Name="Jsubid" ColumnName="Jsubid" />
+                <ScalarProperty Name="Jodid" ColumnName="Jodid" />
+                <ScalarProperty Name="Juserid" ColumnName="Juserid" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="juadate" ColumnName="juadate" />
+                <ScalarProperty Name="juamemo" ColumnName="juamemo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PSworkms">
+            <EntityTypeMapping TypeName="AlexLoginModel.PSworkm">
+              <MappingFragment StoreEntitySet="PSworkm">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="Userid" ColumnName="Userid" />
+                <ScalarProperty Name="pdates" ColumnName="pdates" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="pdatee" ColumnName="pdatee" />
+                <ScalarProperty Name="wkmemo" ColumnName="wkmemo" />
+                <ScalarProperty Name="wklink" ColumnName="wklink" />
+                <ScalarProperty Name="modidate" ColumnName="modidate" />
+                <ScalarProperty Name="jobpercent" ColumnName="jobpercent" />
+                <ScalarProperty Name="cfmdate" ColumnName="cfmdate" />
+                <ScalarProperty Name="cfmuser" ColumnName="cfmuser" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="wslink2" ColumnName="wslink2" />
+                <ScalarProperty Name="wslink3" ColumnName="wslink3" />
+                <ScalarProperty Name="jsysid" ColumnName="jsysid" />
+                <ScalarProperty Name="jsubid" ColumnName="jsubid" />
+                <ScalarProperty Name="jobid" ColumnName="jobid" />
+                <ScalarProperty Name="ticketid" ColumnName="ticketid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PSworks">
+            <EntityTypeMapping TypeName="AlexLoginModel.PSwork">
+              <MappingFragment StoreEntitySet="PSworks">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="pdates" ColumnName="pdates" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="xh" ColumnName="xh" />
+                <ScalarProperty Name="PSmemo" ColumnName="PSmemo" />
+                <ScalarProperty Name="pslink" ColumnName="pslink" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="pslink2" ColumnName="pslink2" />
+                <ScalarProperty Name="pslink3" ColumnName="pslink3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuyTrinhXetDuyets">
+            <EntityTypeMapping TypeName="AlexLoginModel.QuyTrinhXetDuyet">
+              <MappingFragment StoreEntitySet="QuyTrinhXetDuyet">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="abtype" ColumnName="abtype" />
+                <ScalarProperty Name="BADEPID" ColumnName="BADEPID" />
+                <ScalarProperty Name="ABstep" ColumnName="ABstep" />
+                <ScalarProperty Name="ABPS" ColumnName="ABPS" />
+                <ScalarProperty Name="IDQuyTrinh" ColumnName="IDQuyTrinh" />
+                <ScalarProperty Name="NguoiDuyet" ColumnName="NguoiDuyet" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="IDChucVu" ColumnName="IDChucVu" />
+                <ScalarProperty Name="TenChucVuTiengHoa" ColumnName="TenChucVuTiengHoa" />
+                <ScalarProperty Name="abtypenameTW" ColumnName="abtypenameTW" />
+                <ScalarProperty Name="tendonviTW" ColumnName="tendonviTW" />
+                <ScalarProperty Name="DonViThongQua" ColumnName="DonViThongQua" />
+                <ScalarProperty Name="tendonvithongqua" ColumnName="tendonvithongqua" />
+                <ScalarProperty Name="IDLoaiDonVi" ColumnName="IDLoaiDonVi" />
+                <ScalarProperty Name="DepartmentTypeNameTW" ColumnName="DepartmentTypeNameTW" />
+                <ScalarProperty Name="IDCapDuyet" ColumnName="IDCapDuyet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="AlexLoginModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheSystems">
+            <EntityTypeMapping TypeName="AlexLoginModel.TheSystem">
+              <MappingFragment StoreEntitySet="TheSystems">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="StartPage" ColumnName="StartPage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheUsers">
+            <EntityTypeMapping TypeName="AlexLoginModel.TheUser">
+              <MappingFragment StoreEntitySet="TheUsers">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ActiveCode" ColumnName="ActiveCode" />
+                <ScalarProperty Name="SEmail" ColumnName="SEmail" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ugroups">
+            <EntityTypeMapping TypeName="AlexLoginModel.Ugroup">
+              <MappingFragment StoreEntitySet="Ugroup">
+                <ScalarProperty Name="GSBh" ColumnName="GSBh" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="ugno" ColumnName="ugno" />
+                <ScalarProperty Name="userid2" ColumnName="userid2" />
+                <ScalarProperty Name="UGtitle" ColumnName="UGtitle" />
+                <ScalarProperty Name="UGmemo" ColumnName="UGmemo" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users_Systems">
+            <EntityTypeMapping TypeName="AlexLoginModel.Users_Systems">
+              <MappingFragment StoreEntitySet="Users_Systems">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+                <ScalarProperty Name="ActiveCode" ColumnName="ActiveCode" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UShares">
+            <EntityTypeMapping TypeName="AlexLoginModel.UShare">
+              <MappingFragment StoreEntitySet="UShare">
+                <ScalarProperty Name="GSBH" ColumnName="GSBH" />
+                <ScalarProperty Name="Userid" ColumnName="Userid" />
+                <ScalarProperty Name="USID" ColumnName="USID" />
+                <ScalarProperty Name="UGno" ColumnName="UGno" />
+                <ScalarProperty Name="UStitle" ColumnName="UStitle" />
+                <ScalarProperty Name="USmemo" ColumnName="USmemo" />
+                <ScalarProperty Name="LinkFile" ColumnName="LinkFile" />
+                <ScalarProperty Name="sdate" ColumnName="sdate" />
+                <ScalarProperty Name="edate" ColumnName="edate" />
+                <ScalarProperty Name="userdate" ColumnName="userdate" />
+                <ScalarProperty Name="yn" ColumnName="yn" />
+                <ScalarProperty Name="LinkFile2" ColumnName="LinkFile2" />
+                <ScalarProperty Name="LinkFile3" ColumnName="LinkFile3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="zszls">
+            <EntityTypeMapping TypeName="AlexLoginModel.zszl">
+              <MappingFragment StoreEntitySet="zszl">
+                <ScalarProperty Name="zsdh" ColumnName="zsdh" />
+                <ScalarProperty Name="zsqm" ColumnName="zsqm" />
+                <ScalarProperty Name="zsjc" ColumnName="zsjc" />
+                <ScalarProperty Name="zsywjc" ColumnName="zsywjc" />
+                <ScalarProperty Name="tybh" ColumnName="tybh" />
+                <ScalarProperty Name="fpdz" ColumnName="fpdz" />
+                <ScalarProperty Name="yjdz" ColumnName="yjdz" />
+                <ScalarProperty Name="dh" ColumnName="dh" />
+                <ScalarProperty Name="cz" ColumnName="cz" />
+                <ScalarProperty Name="fzr" ColumnName="fzr" />
+                <ScalarProperty Name="bb" ColumnName="bb" />
+                <ScalarProperty Name="llr2" ColumnName="llr2" />
+                <ScalarProperty Name="llr" ColumnName="llr" />
+                <ScalarProperty Name="dybh" ColumnName="dybh" />
+                <ScalarProperty Name="mark" ColumnName="mark" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="USERDATE" ColumnName="USERDATE" />
+                <ScalarProperty Name="TYJH" ColumnName="TYJH" />
+                <ScalarProperty Name="YN" ColumnName="YN" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="MZsdh" ColumnName="MZsdh" />
+                <ScalarProperty Name="Style" ColumnName="Style" />
+                <ScalarProperty Name="Shippingleadtime" ColumnName="Shippingleadtime" />
+                <ScalarProperty Name="Shippingleadtimes" ColumnName="Shippingleadtimes" />
+                <ScalarProperty Name="Customclearanceday" ColumnName="Customclearanceday" />
+                <ScalarProperty Name="Samplepurchaser" ColumnName="Samplepurchaser" />
+                <ScalarProperty Name="Prodpurchaser" ColumnName="Prodpurchaser" />
+                <ScalarProperty Name="Groupname" ColumnName="Groupname" />
+                <ScalarProperty Name="Zsdh_TW" ColumnName="Zsdh_TW" />
+                <ScalarProperty Name="Sample_void" ColumnName="Sample_void" />
+                <ScalarProperty Name="TRANDATE" ColumnName="TRANDATE" />
+                <ScalarProperty Name="fktj" ColumnName="fktj" />
+                <ScalarProperty Name="fktj1" ColumnName="fktj1" />
+                <ScalarProperty Name="scd" ColumnName="scd" />
+                <ScalarProperty Name="fzr_mail" ColumnName="fzr_mail" />
+                <ScalarProperty Name="llr2_mail" ColumnName="llr2_mail" />
+                <ScalarProperty Name="llr_mail" ColumnName="llr_mail" />
+                <ScalarProperty Name="pass0" ColumnName="pass0" />
+                <ScalarProperty Name="pass1" ColumnName="pass1" />
+                <ScalarProperty Name="pass2" ColumnName="pass2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="AlexLoginModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="AlexLoginModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="AlexLoginModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="AlexLoginModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AlexLoginModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="AlexLoginModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AlexLoginModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="AlexLoginModel.Store.sp_renamediagram" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

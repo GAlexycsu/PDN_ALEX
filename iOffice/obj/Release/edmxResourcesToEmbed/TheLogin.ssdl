@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlexLoginModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="AlexLoginModelStoreContainer">
+    <EntitySet Name="aABC" EntityType="AlexLoginModel.Store.aABC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Abcon" EntityType="AlexLoginModel.Store.Abcon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbDepartmentType" EntityType="AlexLoginModel.Store.AbDepartmentType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="abill" EntityType="AlexLoginModel.Store.abill" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbillCuser" EntityType="AlexLoginModel.Store.AbillCuser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="abills" EntityType="AlexLoginModel.Store.abills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbNghiPhep" EntityType="AlexLoginModel.Store.AbNghiPhep" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbNguoiDich" EntityType="AlexLoginModel.Store.AbNguoiDich" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbScreen" EntityType="AlexLoginModel.Store.AbScreen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbTrangThaiDuyet" EntityType="AlexLoginModel.Store.AbTrangThaiDuyet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AbVangMat" EntityType="AlexLoginModel.Store.AbVangMat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ABYn" EntityType="AlexLoginModel.Store.ABYn" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttactFilePDN" EntityType="AlexLoginModel.Store.AttactFilePDN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BDepartment" EntityType="AlexLoginModel.Store.BDepartment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BOfSupplies" EntityType="AlexLoginModel.Store.BOfSupplies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Buser_Securety" EntityType="AlexLoginModel.Store.Buser_Securety" store:Type="Tables" store:Schema="dbo" store:Name="Buser_Securety">
+      <DefiningQuery>SELECT 
+      [Buser_Securety].[IDBaoMat] AS [IDBaoMat], 
+      [Buser_Securety].[UserID] AS [UserID], 
+      [Buser_Securety].[MyKey] AS [MyKey], 
+      [Buser_Securety].[ngay] AS [ngay]
+      FROM [dbo].[Buser_Securety] AS [Buser_Securety]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Busers" EntityType="AlexLoginModel.Store.Busers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Busers2" EntityType="AlexLoginModel.Store.Busers2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChiTietBuocKy" EntityType="AlexLoginModel.Store.ChiTietBuocKy" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChucVu" EntityType="AlexLoginModel.Store.ChucVu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="clzl" EntityType="AlexLoginModel.Store.clzl" store:Type="Tables" store:Schema="dbo" store:Name="clzl">
+      <DefiningQuery>SELECT 
+      [clzl].[cldh] AS [cldh], 
+      [clzl].[clbm] AS [clbm], 
+      [clzl].[cllb] AS [cllb], 
+      [clzl].[dycldh] AS [dycldh], 
+      [clzl].[ysbh] AS [ysbh], 
+      [clzl].[yszwsm] AS [yszwsm], 
+      [clzl].[ysywsm] AS [ysywsm], 
+      [clzl].[zwpm] AS [zwpm], 
+      [clzl].[ywpm] AS [ywpm], 
+      [clzl].[dwbh] AS [dwbh], 
+      [clzl].[dwzwsm] AS [dwzwsm], 
+      [clzl].[dwywsm] AS [dwywsm], 
+      [clzl].[clzmlb] AS [clzmlb], 
+      [clzl].[lycc] AS [lycc], 
+      [clzl].[xhcl] AS [xhcl], 
+      [clzl].[jkcl] AS [jkcl], 
+      [clzl].[gjlb] AS [gjlb], 
+      [clzl].[ckcldh] AS [ckcldh], 
+      [clzl].[dzzhl] AS [dzzhl], 
+      [clzl].[xxbh] AS [xxbh], 
+      [clzl].[kfdh] AS [kfdh], 
+      [clzl].[cqdh] AS [cqdh], 
+      [clzl].[cltd] AS [cltd], 
+      [clzl].[tyjh] AS [tyjh], 
+      [clzl].[USERID] AS [USERID], 
+      [clzl].[USERDATE] AS [USERDATE], 
+      [clzl].[pumadh] AS [pumadh], 
+      [clzl].[zsdh] AS [zsdh], 
+      [clzl].[trandate] AS [trandate], 
+      [clzl].[leadtime] AS [leadtime], 
+      [clzl].[DCYN] AS [DCYN], 
+      [clzl].[PDYN] AS [PDYN], 
+      [clzl].[MOQ] AS [MOQ], 
+      [clzl].[MatTestNo] AS [MatTestNo], 
+      [clzl].[MatTestPF] AS [MatTestPF], 
+      [clzl].[SkinYn] AS [SkinYn], 
+      [clzl].[RiskColYn] AS [RiskColYn], 
+      [clzl].[RSLTestNo] AS [RSLTestNo], 
+      [clzl].[RSLTestPF] AS [RSLTestPF], 
+      [clzl].[YN] AS [YN], 
+      [clzl].[warept] AS [warept], 
+      [clzl].[PlanPT] AS [PlanPT], 
+      [clzl].[CLFJ] AS [CLFJ], 
+      [clzl].[cltd2] AS [cltd2]
+      FROM [dbo].[clzl] AS [clzl]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ContentMail" EntityType="AlexLoginModel.Store.ContentMail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GUI_Language" EntityType="AlexLoginModel.Store.GUI_Language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="pdna" EntityType="AlexLoginModel.Store.pdna" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="pdnaS" EntityType="AlexLoginModel.Store.pdnaS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PDNLink" EntityType="AlexLoginModel.Store.PDNLink" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PDNLuser" EntityType="AlexLoginModel.Store.PDNLuser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projectm" EntityType="AlexLoginModel.Store.Projectm" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projectn" EntityType="AlexLoginModel.Store.Projectn" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projects" EntityType="AlexLoginModel.Store.Projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projectu" EntityType="AlexLoginModel.Store.Projectu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PSworkm" EntityType="AlexLoginModel.Store.PSworkm" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PSworks" EntityType="AlexLoginModel.Store.PSworks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QuyTrinhXetDuyet" EntityType="AlexLoginModel.Store.QuyTrinhXetDuyet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="AlexLoginModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TheSystems" EntityType="AlexLoginModel.Store.TheSystems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TheUsers" EntityType="AlexLoginModel.Store.TheUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ugroup" EntityType="AlexLoginModel.Store.Ugroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users_Systems" EntityType="AlexLoginModel.Store.Users_Systems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UShare" EntityType="AlexLoginModel.Store.UShare" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="zszl" EntityType="AlexLoginModel.Store.zszl" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Abcon_ABC" Association="AlexLoginModel.Store.FK_Abcon_ABC">
+      <End Role="aABC" EntitySet="aABC" />
+      <End Role="Abcon" EntitySet="Abcon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Abcon_ABtype" Association="AlexLoginModel.Store.FK_Abcon_ABtype">
+      <End Role="abill" EntitySet="abill" />
+      <End Role="Abcon" EntitySet="Abcon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Abcon_Yn" Association="AlexLoginModel.Store.FK_Abcon_Yn">
+      <End Role="ABYn" EntitySet="ABYn" />
+      <End Role="Abcon" EntitySet="Abcon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_abill_abill" Association="AlexLoginModel.Store.FK_abill_abill">
+      <End Role="abill" EntitySet="abill" />
+      <End Role="abill1" EntitySet="abill" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AbTrangThaiDuyet_AbTrangThaiDuyet" Association="AlexLoginModel.Store.FK_AbTrangThaiDuyet_AbTrangThaiDuyet">
+      <End Role="pdna" EntitySet="pdna" />
+      <End Role="AbTrangThaiDuyet" EntitySet="AbTrangThaiDuyet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AbTrangThaiDuyet_YN" Association="AlexLoginModel.Store.FK_AbTrangThaiDuyet_YN">
+      <End Role="ABYn" EntitySet="ABYn" />
+      <End Role="AbTrangThaiDuyet" EntitySet="AbTrangThaiDuyet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietBuocKy_YN" Association="AlexLoginModel.Store.FK_ChiTietBuocKy_YN">
+      <End Role="ABYn" EntitySet="ABYn" />
+      <End Role="ChiTietBuocKy" EntitySet="ChiTietBuocKy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GUI_Language_AbScreen" Association="AlexLoginModel.Store.FK_GUI_Language_AbScreen">
+      <End Role="AbScreen" EntitySet="AbScreen" />
+      <End Role="GUI_Language" EntitySet="GUI_Language" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdna_ABC" Association="AlexLoginModel.Store.FK_pdna_ABC">
+      <End Role="aABC" EntitySet="aABC" />
+      <End Role="pdna" EntitySet="pdna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdna_Abtype" Association="AlexLoginModel.Store.FK_pdna_Abtype">
+      <End Role="abill" EntitySet="abill" />
+      <End Role="pdna" EntitySet="pdna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdna_pdna" Association="AlexLoginModel.Store.FK_pdna_pdna">
+      <End Role="pdna" EntitySet="pdna" />
+      <End Role="pdna1" EntitySet="pdna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pdna_YN" Association="AlexLoginModel.Store.FK_pdna_YN">
+      <End Role="ABYn" EntitySet="ABYn" />
+      <End Role="pdna" EntitySet="pdna" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aABC">
+    <Key>
+      <PropertyRef Name="ABC" />
+    </Key>
+    <Property Name="ABC" Type="int" Nullable="false" />
+    <Property Name="NameABC" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameABCTW" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameABCEng" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Abcon">
+    <Key>
+      <PropertyRef Name="Gsbh" />
+      <PropertyRef Name="abtype" />
+      <PropertyRef Name="pdno" />
+      <PropertyRef Name="Abstep" />
+      <PropertyRef Name="abps" />
+      <PropertyRef Name="IDCT" />
+    </Key>
+    <Property Name="Gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Abstep" Type="int" Nullable="false" />
+    <Property Name="abps" Type="int" Nullable="false" />
+    <Property Name="IDCT" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Auditor" Type="varchar" MaxLength="10" />
+    <Property Name="abrult" Type="bit" />
+    <Property Name="abmomo" Type="nvarchar" MaxLength="350" />
+    <Property Name="Password2" Type="varchar" MaxLength="150" />
+    <Property Name="Userdate" Type="smalldatetime" />
+    <Property Name="Yn" Type="int" />
+    <Property Name="Maintitle" Type="nvarchar" MaxLength="350" />
+    <Property Name="ABC" Type="int" />
+    <Property Name="from_depart" Type="varchar" MaxLength="15" />
+    <Property Name="from_user" Type="nchar" MaxLength="10" />
+    <Property Name="bixoa" Type="bit" />
+    <Property Name="cothutu" Type="bit" />
+    <Property Name="received" Type="bit" />
+    <Property Name="ABJOB" Type="nvarchar" MaxLength="50" />
+    <Property Name="Id_VB_CD" Type="varchar" MaxLength="50" />
+    <Property Name="signatue" Type="image" />
+    <Property Name="Nhom" Type="int" />
+    <Property Name="kytoanbo" Type="bit" />
+    <Property Name="IDChiTiet" Type="int" />
+    <Property Name="IDCapDuyet" Type="int" />
+    <Property Name="boqua" Type="bit" />
+    <Property Name="lydokhongduyet" Type="nvarchar" MaxLength="350" />
+    <Property Name="ncancel" Type="int" />
+    <Property Name="Donvithongqua" Type="varchar" MaxLength="50" />
+    <Property Name="QA" Type="varchar" MaxLength="1" />
+    <Property Name="QAmemo" Type="nvarchar" MaxLength="350" />
+    <Property Name="QAmemo2" Type="nvarchar" MaxLength="350" />
+  </EntityType>
+  <EntityType Name="AbDepartmentType">
+    <Key>
+      <PropertyRef Name="DepartmentTypeID" />
+      <PropertyRef Name="GSBH" />
+    </Key>
+    <Property Name="DepartmentTypeID" Type="int" Nullable="false" />
+    <Property Name="GSBH" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="DepartmentTypeName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DepartmentTypeNameTW" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="abill">
+    <Key>
+      <PropertyRef Name="abtype" />
+    </Key>
+    <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="abname" Type="nvarchar" MaxLength="50" />
+    <Property Name="maintable" Type="varchar" MaxLength="20" />
+    <Property Name="abnameTW" Type="nvarchar" MaxLength="50" />
+    <Property Name="abnameEng" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AbillCuser">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="abtype" />
+      <PropertyRef Name="DEPID" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="DEPID" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="isCQ" Type="varchar" MaxLength="1" />
+    <Property Name="isAllUser" Type="varchar" MaxLength="1" />
+    <Property Name="updateuser" Type="varchar" MaxLength="10" />
+    <Property Name="Updatetime" Type="smalldatetime" />
+    <Property Name="YN" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="abills">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="ABDepId" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Defuserid" Type="varchar" MaxLength="10" />
+    <Property Name="ABJOB" Type="nvarchar" MaxLength="150" />
+    <Property Name="Abstep" Type="int" Nullable="false" />
+    <Property Name="Abde" Type="int" Nullable="false" />
+    <Property Name="DESC" Type="varchar" MaxLength="50" />
+    <Property Name="bixoa" Type="bit" />
+    <Property Name="Nhom" Type="int" />
+    <Property Name="KyToanBo" Type="bit" />
+  </EntityType>
+  <EntityType Name="AbNghiPhep">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GSBH" Type="varchar" MaxLength="20" />
+    <Property Name="TuNgay" Type="datetime" />
+    <Property Name="DenNgay" Type="datetime" />
+    <Property Name="IDNguoiDuyet" Type="varchar" MaxLength="30" />
+    <Property Name="tennguoiuyquyen" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDNguoiDuocUyQuyen" Type="varchar" MaxLength="30" />
+    <Property Name="tennguoithaythe" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThongQua" Type="int" />
+    <Property Name="TenThongQua" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AbNguoiDich">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BADEPID" Type="varchar" MaxLength="50" />
+    <Property Name="TenNguoiDich" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="150" />
+    <Property Name="TenNguoiDichTiengHoa" Type="nvarchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="AbScreen">
+    <Key>
+      <PropertyRef Name="ScreenID" />
+    </Key>
+    <Property Name="ScreenID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UrlScreen" Type="varchar" MaxLength="350" />
+    <Property Name="AliasScreen" Type="varchar" MaxLength="350" />
+  </EntityType>
+  <EntityType Name="AbTrangThaiDuyet">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="pdno" />
+      <PropertyRef Name="IDTrangThai" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="IDTrangThai" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Yn" Type="int" />
+  </EntityType>
+  <EntityType Name="AbVangMat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NameVietNam" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameTaiwan" Type="varchar" MaxLength="50" />
+    <Property Name="NameEnglish" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ABYn">
+    <Key>
+      <PropertyRef Name="Yn" />
+    </Key>
+    <Property Name="Yn" Type="int" Nullable="false" />
+    <Property Name="YnName" Type="nvarchar" MaxLength="50" />
+    <Property Name="YnNameTW" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AttactFilePDN">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="USID" Type="varchar" MaxLength="15" />
+    <Property Name="FileNameA" Type="varchar" MaxLength="250" />
+    <Property Name="PathNameA" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="BDepartment">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="CKBH" Type="varchar" MaxLength="4" />
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="DepName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DepName_C" Type="varchar" MaxLength="50" />
+    <Property Name="DepMemo" Type="varchar" MaxLength="50" />
+    <Property Name="ProYN" Type="bit" />
+    <Property Name="Worker_Qty" Type="int" />
+    <Property Name="NQty" Type="int" />
+    <Property Name="tsQty" Type="int" />
+    <Property Name="H7Qty" Type="int" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="UserDate" Type="smalldatetime" Nullable="false" />
+    <Property Name="YN" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="PlanYN" Type="bit" />
+    <Property Name="GXLB" Type="varchar" MaxLength="10" />
+    <Property Name="ULID" Type="varchar" MaxLength="11" />
+    <Property Name="EMPSYSID" Type="varchar" MaxLength="20" />
+    <Property Name="useYN" Type="bit" />
+    <Property Name="Dclass" Type="varchar" MaxLength="1" />
+    <Property Name="mainyn" Type="bit" />
+    <Property Name="STDworkers" Type="int" />
+    <Property Name="PCworkers" Type="int" />
+    <Property Name="Porder1" Type="varchar" MaxLength="10" />
+    <Property Name="ULSEQ" Type="varchar" MaxLength="10" />
+    <Property Name="DsDepid" Type="varchar" MaxLength="11" />
+    <Property Name="IdUserChuQuan" Type="varchar" MaxLength="25" />
+    <Property Name="DepartmentTypeID" Type="int" />
+    <Property Name="CQuserid" Type="varchar" MaxLength="10" />
+    <Property Name="CQUserid2" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="BOfSupplies">
+    <Key>
+      <PropertyRef Name="IDOfSupplies" />
+    </Key>
+    <Property Name="IDOfSupplies" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GSBH" Type="nchar" MaxLength="10" />
+    <Property Name="pdno" Type="varchar" MaxLength="50" />
+    <Property Name="OfSuppliesName" Type="nvarchar" MaxLength="300" />
+    <Property Name="BUnit" Type="nvarchar" MaxLength="100" />
+    <Property Name="BNumber" Type="int" />
+    <Property Name="BCommnent" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'AlexLogin.dbo.Buser_Securety' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Buser_Securety">
+    <Key>
+      <PropertyRef Name="IDBaoMat" />
+    </Key>
+    <Property Name="IDBaoMat" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="varchar" MaxLength="10" />
+    <Property Name="MyKey" Type="nvarchar(max)" />
+    <Property Name="ngay" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Busers">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="USERNAME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PWD" Type="varchar" MaxLength="10" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="40" />
+    <Property Name="LASTDATETIME" Type="smalldatetime" />
+    <Property Name="YN" Type="varchar" MaxLength="1" />
+    <Property Name="depid" Type="varchar" MaxLength="10" />
+    <Property Name="JOB" Type="varchar" MaxLength="20" />
+    <Property Name="EMPID" Type="varchar" MaxLength="10" />
+    <Property Name="Password2" Type="varchar" MaxLength="50" />
+    <Property Name="BADEPID" Type="varchar" MaxLength="10" />
+    <Property Name="IdUserQuanLyTT" Type="varchar" MaxLength="10" />
+    <Property Name="USERNAMETW" Type="varchar" MaxLength="50" />
+    <Property Name="pwdlevel" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Busers2">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="USERNAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PWD" Type="varchar" MaxLength="10" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+    <Property Name="LASTDATETIME" Type="smalldatetime" />
+    <Property Name="YN" Type="varchar" MaxLength="1" />
+    <Property Name="depid" Type="varchar" MaxLength="10" />
+    <Property Name="JOB" Type="varchar" MaxLength="20" />
+    <Property Name="EMPID" Type="varchar" MaxLength="10" />
+    <Property Name="Password2" Type="varchar" MaxLength="50" />
+    <Property Name="signatue" Type="image" />
+    <Property Name="bixoa" Type="bit" />
+    <Property Name="BADEPID" Type="varchar" MaxLength="15" />
+    <Property Name="isSep" Type="bit" />
+    <Property Name="Maisenhan" Type="int" />
+    <Property Name="abstep" Type="int" />
+    <Property Name="abde" Type="int" />
+    <Property Name="Admin" Type="bit" />
+    <Property Name="IDChucVu" Type="varchar" MaxLength="25" />
+    <Property Name="IDCapDuyet" Type="int" />
+    <Property Name="IdUserQuanLyTT" Type="varchar" MaxLength="10" />
+    <Property Name="USERNAMETW" Type="nvarchar" MaxLength="50" />
+    <Property Name="PWDlevel" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ChiTietBuocKy">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="pdno" />
+      <PropertyRef Name="abstep" />
+      <PropertyRef Name="ABPS" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="abstep" Type="int" Nullable="false" />
+    <Property Name="ABPS" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Yn" Type="int" />
+    <Property Name="IdNguoiDuyet" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ChucVu">
+    <Key>
+      <PropertyRef Name="IDChucVu" />
+    </Key>
+    <Property Name="IDChucVu" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="TenChucVu" Type="nvarchar" MaxLength="50" />
+    <Property Name="GSBH" Type="varchar" MaxLength="20" />
+    <Property Name="TenChucVuTiengHoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDCapDuyet" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'AlexLogin.dbo.clzl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="clzl">
+    <Key>
+      <PropertyRef Name="cldh" />
+      <PropertyRef Name="clbm" />
+      <PropertyRef Name="cllb" />
+      <PropertyRef Name="USERID" />
+      <PropertyRef Name="USERDATE" />
+      <PropertyRef Name="YN" />
+    </Key>
+    <Property Name="cldh" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="clbm" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="cllb" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="dycldh" Type="nvarchar" MaxLength="50" />
+    <Property Name="ysbh" Type="varchar" MaxLength="4" />
+    <Property Name="yszwsm" Type="nvarchar" MaxLength="50" />
+    <Property Name="ysywsm" Type="nvarchar" MaxLength="50" />
+    <Property Name="zwpm" Type="nvarchar" MaxLength="200" />
+    <Property Name="ywpm" Type="nvarchar" MaxLength="300" />
+    <Property Name="dwbh" Type="varchar" MaxLength="4" />
+    <Property Name="dwzwsm" Type="nvarchar" MaxLength="50" />
+    <Property Name="dwywsm" Type="nvarchar" MaxLength="50" />
+    <Property Name="clzmlb" Type="varchar" MaxLength="1" />
+    <Property Name="lycc" Type="varchar" MaxLength="1" />
+    <Property Name="xhcl" Type="varchar" MaxLength="1" />
+    <Property Name="jkcl" Type="varchar" MaxLength="1" />
+    <Property Name="gjlb" Type="varchar" MaxLength="4" />
+    <Property Name="ckcldh" Type="varchar" MaxLength="15" />
+    <Property Name="dzzhl" Type="numeric" Scale="3" />
+    <Property Name="xxbh" Type="varchar" MaxLength="15" />
+    <Property Name="kfdh" Type="varchar" MaxLength="4" />
+    <Property Name="cqdh" Type="varchar" MaxLength="4" />
+    <Property Name="cltd" Type="nvarchar" MaxLength="50" />
+    <Property Name="tyjh" Type="varchar" MaxLength="1" />
+    <Property Name="USERID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="USERDATE" Type="smalldatetime" Nullable="false" />
+    <Property Name="pumadh" Type="nvarchar" MaxLength="50" />
+    <Property Name="zsdh" Type="nvarchar" MaxLength="50" />
+    <Property Name="trandate" Type="nvarchar" MaxLength="50" />
+    <Property Name="leadtime" Type="int" />
+    <Property Name="DCYN" Type="varchar" MaxLength="1" />
+    <Property Name="PDYN" Type="varchar" MaxLength="1" />
+    <Property Name="MOQ" Type="numeric" />
+    <Property Name="MatTestNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="MatTestPF" Type="varchar" MaxLength="4" />
+    <Property Name="SkinYn" Type="varchar" MaxLength="1" />
+    <Property Name="RiskColYn" Type="varchar" MaxLength="1" />
+    <Property Name="RSLTestNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="RSLTestPF" Type="varchar" MaxLength="4" />
+    <Property Name="YN" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="warept" Type="varchar" MaxLength="1" />
+    <Property Name="PlanPT" Type="varchar" MaxLength="1" />
+    <Property Name="CLFJ" Type="nvarchar" MaxLength="50" />
+    <Property Name="cltd2" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ContentMail">
+    <Key>
+      <PropertyRef Name="ContentID" />
+    </Key>
+    <Property Name="ContentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="USERID" Type="nchar" MaxLength="10" />
+    <Property Name="Pdno" Type="varchar" MaxLength="50" />
+    <Property Name="conten" Type="nvarchar" MaxLength="350" />
+    <Property Name="aproved" Type="bit" />
+  </EntityType>
+  <EntityType Name="GUI_Language">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="lblID" />
+    </Key>
+    <Property Name="TableName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="lblID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="lbl_EN" Type="nvarchar" MaxLength="150" />
+    <Property Name="lbl_VN" Type="nvarchar" MaxLength="150" />
+    <Property Name="lbl_TW" Type="nvarchar" MaxLength="150" />
+    <Property Name="ScreenID" Type="int" />
+  </EntityType>
+  <EntityType Name="pdna">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="pdno" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="pdDate" Type="smalldatetime" />
+    <Property Name="pdLX" Type="varchar" MaxLength="10" />
+    <Property Name="USERDATE" Type="smalldatetime" />
+    <Property Name="USERID" Type="varchar" MaxLength="25" />
+    <Property Name="ZSBH" Type="varchar" MaxLength="10" />
+    <Property Name="CFMID1" Type="varchar" MaxLength="25" />
+    <Property Name="CFMDate1" Type="datetime" />
+    <Property Name="CFMID2" Type="varchar" MaxLength="25" />
+    <Property Name="CFMDate2" Type="datetime" />
+    <Property Name="YN" Type="int" />
+    <Property Name="SB" Type="varchar" MaxLength="10" />
+    <Property Name="PMARK" Type="int" />
+    <Property Name="CFMID0" Type="varchar" MaxLength="25" />
+    <Property Name="CFMDate0" Type="datetime" />
+    <Property Name="pduser" Type="varchar" MaxLength="25" />
+    <Property Name="pddepid" Type="varchar" MaxLength="15" />
+    <Property Name="pdyyid" Type="varchar" MaxLength="20" />
+    <Property Name="yymemo" Type="varchar" MaxLength="250" />
+    <Property Name="shmemo" Type="varchar" MaxLength="250" />
+    <Property Name="mytitle" Type="nvarchar" MaxLength="350" />
+    <Property Name="pdmemovn" Type="nvarchar(max)" />
+    <Property Name="pdmemoch" Type="nvarchar(max)" />
+    <Property Name="bixoa" Type="bit" />
+    <Property Name="LevelDoing" Type="int" />
+    <Property Name="ABC" Type="int" />
+    <Property Name="NoiDungDich" Type="nvarchar(max)" />
+    <Property Name="trangthaidich" Type="bit" />
+    <Property Name="IdnguoiDich" Type="varchar" MaxLength="25" />
+    <Property Name="Abtype" Type="varchar" MaxLength="10" />
+    <Property Name="CFMDate4" Type="datetime" />
+    <Property Name="dagui" Type="bit" />
+    <Property Name="oldpdno" Type="varchar" MaxLength="30" />
+    <Property Name="UseIntent" Type="nvarchar(max)" />
+    <Property Name="pdnsubject" Type="nvarchar" MaxLength="100" />
+    <Property Name="pdmemovn1" Type="nvarchar(max)" />
+    <Property Name="isPause" Type="bit" />
+  </EntityType>
+  <EntityType Name="pdnaS">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="pdNO" />
+      <PropertyRef Name="Xh" />
+      <PropertyRef Name="CLBH" />
+      <PropertyRef Name="Size" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="pdNO" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="Xh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="CLBH" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Size" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="CKBH" Type="varchar" MaxLength="4" />
+    <Property Name="ZMLB" Type="varchar" MaxLength="15" />
+    <Property Name="Qty" Type="numeric" Scale="4" />
+    <Property Name="USPrice" Type="money" />
+    <Property Name="USACC" Type="money" />
+    <Property Name="CWHL" Type="int" />
+    <Property Name="VNPrice" Type="numeric" Scale="2" />
+    <Property Name="VNACC" Type="bigint" />
+    <Property Name="Memo0" Type="varchar" MaxLength="250" />
+    <Property Name="CLmemo" Type="varchar" MaxLength="250" />
+    <Property Name="CostID" Type="varchar" MaxLength="15" />
+    <Property Name="BJNO" Type="varchar" MaxLength="11" />
+    <Property Name="YQDate" Type="smalldatetime" />
+    <Property Name="CFMDate" Type="smalldatetime" />
+    <Property Name="USERDATE" Type="smalldatetime" />
+    <Property Name="USERID" Type="varchar" MaxLength="15" />
+    <Property Name="YN" Type="varchar" MaxLength="1" />
+    <Property Name="CLPrice" Type="numeric" Scale="2" />
+    <Property Name="CLACC" Type="numeric" Scale="2" />
+    <Property Name="FKZT" Type="varchar" MaxLength="1" />
+    <Property Name="pdACC" Type="numeric" Scale="2" />
+    <Property Name="VNPpd10" Type="numeric" Scale="2" />
+    <Property Name="DDtp" Type="varchar" MaxLength="1" />
+    <Property Name="DDBH" Type="varchar" MaxLength="15" />
+    <Property Name="cycle" Type="int" />
+    <Property Name="CGNO" Type="varchar" MaxLength="12" />
+    <Property Name="ZSBH" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="PDNLink">
+    <Key>
+      <PropertyRef Name="Gsbh" />
+      <PropertyRef Name="pdno" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Filename" Type="nvarchar" MaxLength="250" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="250" />
+    <Property Name="Cancel" Type="bit" />
+  </EntityType>
+  <EntityType Name="PDNLuser">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="pdno" />
+      <PropertyRef Name="DEPID" />
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="pdno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DEPID" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="userid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="SENTDATIME" Type="smalldatetime" />
+    <Property Name="RECVDATIME" Type="smalldatetime" />
+    <Property Name="YN" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Projectm">
+    <Key>
+      <PropertyRef Name="gsbh" />
+      <PropertyRef Name="jsysid" />
+    </Key>
+    <Property Name="gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="sysname" Type="nvarchar" MaxLength="50" />
+    <Property Name="sysmemo" Type="nvarchar" MaxLength="50" />
+    <Property Name="userid" Type="varchar" MaxLength="10" />
+    <Property Name="userdate" Type="datetime" />
+    <Property Name="yn" Type="varchar" MaxLength="1" />
+    <Property Name="sLeaderid" Type="varchar" MaxLength="10" />
+    <Property Name="edates" Type="datetime" />
+    <Property Name="edatee" Type="datetime" />
+    <Property Name="Spercent" Type="numeric" Scale="2" />
+    <Property Name="sysnamevn" Type="nvarchar" MaxLength="50" />
+    <Property Name="sysmemovn" Type="nvarchar" MaxLength="50" />
+    <Property Name="LinkFile" Type="nvarchar" MaxLength="250" />
+    <Property Name="LinkFile2" Type="nvarchar" MaxLength="250" />
+    <Property Name="LinkFile3" Type="nvarchar" MaxLength="250" />
+    <Property Name="Share" Type="bit" />
+  </EntityType>
+  <EntityType Name="Projectn">
+    <Key>
+      <PropertyRef Name="gsbh" />
+      <PropertyRef Name="jsysid" />
+      <PropertyRef Name="jsubid" />
+    </Key>
+    <Property Name="gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="jsubid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="jsubname" Type="nvarchar" MaxLength="250" />
+    <Property Name="jsubmemo" Type="nvarchar" MaxLength="250" />
+    <Property Name="userid" Type="varchar" MaxLength="10" />
+    <Property Name="userdate" Type="smalldatetime" />
+    <Property Name="yn" Type="varchar" MaxLength="1" />
+    <Property Name="sLeaderid" Type="varchar" MaxLength="10" />
+    <Property Name="edates" Type="smalldatetime" />
+    <Property Name="edatee" Type="smalldatetime" />
+    <Property Name="Spercent" Type="numeric" Scale="2" />
+    <Property Name="PDNO" Type="varchar" MaxLength="30" />
+    <Property Name="jsubnamevn" Type="nvarchar" MaxLength="250" />
+    <Property Name="jsubmemovn" Type="nvarchar" MaxLength="250" />
+    <Property Name="Linkfile" Type="nvarchar" MaxLength="250" />
+    <Property Name="Linkfile2" Type="nvarchar" MaxLength="250" />
+    <Property Name="Linkfile3" Type="nvarchar" MaxLength="250" />
+    <Property Name="Share" Type="bit" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="gsbh" />
+      <PropertyRef Name="jsysid" />
+      <PropertyRef Name="jsubid" />
+      <PropertyRef Name="jobid" />
+    </Key>
+    <Property Name="gsbh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="jsubid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="jobid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ticketid" Type="varchar" MaxLength="50" />
+    <Property Name="jobname" Type="nvarchar" MaxLength="250" />
+    <Property Name="jobmemo" Type="nvarchar" MaxLength="250" />
+    <Property Name="userid" Type="nvarchar" MaxLength="10" />
+    <Property Name="userdate" Type="smalldatetime" />
+    <Property Name="yn" Type="nvarchar" MaxLength="1" />
+    <Property Name="Jleaderid" Type="varchar" MaxLength="10" />
+    <Property Name="edates" Type="smalldatetime" />
+    <Property Name="edatee" Type="smalldatetime" />
+    <Property Name="jpercent" Type="numeric" Scale="2" />
+    <Property Name="PDNO" Type="varchar" MaxLength="30" />
+    <Property Name="jobnamevn" Type="nvarchar" MaxLength="250" />
+    <Property Name="jobmemovn" Type="nvarchar" MaxLength="250" />
+    <Property Name="Linkfile" Type="nvarchar" MaxLength="250" />
+    <Property Name="Linkfile2" Type="nvarchar" MaxLength="250" />
+    <Property Name="Linkfile3" Type="nvarchar" MaxLength="250" />
+    <Property Name="Share" Type="bit" />
+  </EntityType>
+  <EntityType Name="Projectu">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="Jsysid" />
+      <PropertyRef Name="Jsubid" />
+      <PropertyRef Name="Jodid" />
+      <PropertyRef Name="Juserid" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Jsysid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Jsubid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Jodid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Juserid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="userid" Type="varchar" MaxLength="10" />
+    <Property Name="userdate" Type="smalldatetime" />
+    <Property Name="yn" Type="varchar" MaxLength="1" />
+    <Property Name="juadate" Type="smalldatetime" />
+    <Property Name="juamemo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PSworkm">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="Userid" />
+      <PropertyRef Name="pdates" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="pdates" Type="smalldatetime" Nullable="false" />
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pdatee" Type="smalldatetime" />
+    <Property Name="wkmemo" Type="nvarchar" MaxLength="520" />
+    <Property Name="wklink" Type="nvarchar" MaxLength="250" />
+    <Property Name="modidate" Type="smalldatetime" />
+    <Property Name="jobpercent" Type="numeric" />
+    <Property Name="cfmdate" Type="smalldatetime" />
+    <Property Name="cfmuser" Type="varchar" MaxLength="10" />
+    <Property Name="yn" Type="varchar" MaxLength="1" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="450" />
+    <Property Name="wslink2" Type="nvarchar" MaxLength="250" />
+    <Property Name="wslink3" Type="nvarchar" MaxLength="250" />
+    <Property Name="jsysid" Type="varchar" MaxLength="10" />
+    <Property Name="jsubid" Type="varchar" MaxLength="10" />
+    <Property Name="jobid" Type="varchar" MaxLength="10" />
+    <Property Name="ticketid" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PSworks">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="userid" />
+      <PropertyRef Name="pdates" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="xh" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="userid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="pdates" Type="smalldatetime" Nullable="false" />
+    <Property Name="id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="xh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="PSmemo" Type="nvarchar" MaxLength="50" />
+    <Property Name="pslink" Type="nvarchar" MaxLength="250" />
+    <Property Name="userdate" Type="smalldatetime" />
+    <Property Name="yn" Type="varchar" MaxLength="10" />
+    <Property Name="pslink2" Type="nvarchar" MaxLength="250" />
+    <Property Name="pslink3" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="QuyTrinhXetDuyet">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="abtype" />
+      <PropertyRef Name="BADEPID" />
+      <PropertyRef Name="ABstep" />
+      <PropertyRef Name="ABPS" />
+      <PropertyRef Name="IDQuyTrinh" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="abtype" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="BADEPID" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="ABstep" Type="int" Nullable="false" />
+    <Property Name="ABPS" Type="int" Nullable="false" />
+    <Property Name="IDQuyTrinh" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NguoiDuyet" Type="varchar" MaxLength="25" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDChucVu" Type="varchar" MaxLength="20" />
+    <Property Name="TenChucVuTiengHoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="abtypenameTW" Type="nvarchar" MaxLength="50" />
+    <Property Name="tendonviTW" Type="nvarchar" MaxLength="50" />
+    <Property Name="DonViThongQua" Type="varchar" MaxLength="50" />
+    <Property Name="tendonvithongqua" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDLoaiDonVi" Type="int" />
+    <Property Name="DepartmentTypeNameTW" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDCapDuyet" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TheSystems">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="StartPage" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="TheUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ActiveCode" Type="nvarchar" MaxLength="200" />
+    <Property Name="SEmail" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Ugroup">
+    <Key>
+      <PropertyRef Name="GSBh" />
+      <PropertyRef Name="userid" />
+      <PropertyRef Name="ugno" />
+      <PropertyRef Name="userid2" />
+    </Key>
+    <Property Name="GSBh" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="userid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ugno" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="userid2" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UGtitle" Type="varchar" MaxLength="50" />
+    <Property Name="UGmemo" Type="varchar" MaxLength="50" />
+    <Property Name="userdate" Type="smalldatetime" />
+    <Property Name="yn" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Users_Systems">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="SystemID" />
+    </Key>
+    <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SystemID" Type="int" Nullable="false" />
+    <Property Name="ActiveCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="SessionID" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UShare">
+    <Key>
+      <PropertyRef Name="GSBH" />
+      <PropertyRef Name="Userid" />
+      <PropertyRef Name="USID" />
+    </Key>
+    <Property Name="GSBH" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Userid" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="USID" Type="varchar" Nullable="false" MaxLength="11" />
+    <Property Name="UGno" Type="varchar" MaxLength="2" />
+    <Property Name="UStitle" Type="nvarchar(max)" />
+    <Property Name="USmemo" Type="nvarchar(max)" />
+    <Property Name="LinkFile" Type="nvarchar" MaxLength="300" />
+    <Property Name="sdate" Type="smalldatetime" />
+    <Property Name="edate" Type="smalldatetime" />
+    <Property Name="userdate" Type="smalldatetime" />
+    <Property Name="yn" Type="varchar" MaxLength="1" />
+    <Property Name="LinkFile2" Type="nvarchar" MaxLength="300" />
+    <Property Name="LinkFile3" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="zszl">
+    <Key>
+      <PropertyRef Name="zsdh" />
+    </Key>
+    <Property Name="zsdh" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="zsqm" Type="nvarchar" MaxLength="50" />
+    <Property Name="zsjc" Type="varchar" MaxLength="20" />
+    <Property Name="zsywjc" Type="varchar" MaxLength="20" />
+    <Property Name="tybh" Type="varchar" MaxLength="15" />
+    <Property Name="fpdz" Type="nvarchar" MaxLength="120" />
+    <Property Name="yjdz" Type="nvarchar" MaxLength="120" />
+    <Property Name="dh" Type="nvarchar" MaxLength="50" />
+    <Property Name="cz" Type="nvarchar" MaxLength="50" />
+    <Property Name="fzr" Type="nvarchar" MaxLength="50" />
+    <Property Name="bb" Type="varchar" MaxLength="4" />
+    <Property Name="llr2" Type="nvarchar" MaxLength="50" />
+    <Property Name="llr" Type="nvarchar" MaxLength="50" />
+    <Property Name="dybh" Type="varchar" MaxLength="6" />
+    <Property Name="mark" Type="varchar" MaxLength="5" />
+    <Property Name="USERID" Type="varchar" MaxLength="20" />
+    <Property Name="USERDATE" Type="smalldatetime" />
+    <Property Name="TYJH" Type="varchar" MaxLength="1" />
+    <Property Name="YN" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="country" Type="nvarchar" MaxLength="50" />
+    <Property Name="MZsdh" Type="nvarchar" MaxLength="50" />
+    <Property Name="Style" Type="nvarchar" MaxLength="50" />
+    <Property Name="Shippingleadtime" Type="int" />
+    <Property Name="Shippingleadtimes" Type="int" />
+    <Property Name="Customclearanceday" Type="int" />
+    <Property Name="Samplepurchaser" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prodpurchaser" Type="nvarchar" MaxLength="50" />
+    <Property Name="Groupname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Zsdh_TW" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sample_void" Type="varchar" MaxLength="1" />
+    <Property Name="TRANDATE" Type="varchar" MaxLength="17" />
+    <Property Name="fktj" Type="nvarchar" MaxLength="50" />
+    <Property Name="fktj1" Type="numeric" Scale="1" />
+    <Property Name="scd" Type="nvarchar" MaxLength="50" />
+    <Property Name="fzr_mail" Type="nvarchar" MaxLength="100" />
+    <Property Name="llr2_mail" Type="nvarchar" MaxLength="100" />
+    <Property Name="llr_mail" Type="nvarchar" MaxLength="100" />
+    <Property Name="pass0" Type="nvarchar" MaxLength="50" />
+    <Property Name="pass1" Type="nvarchar" MaxLength="50" />
+    <Property Name="pass2" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Abcon_ABC">
+    <End Role="aABC" Type="AlexLoginModel.Store.aABC" Multiplicity="0..1" />
+    <End Role="Abcon" Type="AlexLoginModel.Store.Abcon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aABC">
+        <PropertyRef Name="ABC" />
+      </Principal>
+      <Dependent Role="Abcon">
+        <PropertyRef Name="ABC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Abcon_ABtype">
+    <End Role="abill" Type="AlexLoginModel.Store.abill" Multiplicity="1" />
+    <End Role="Abcon" Type="AlexLoginModel.Store.Abcon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="abill">
+        <PropertyRef Name="abtype" />
+      </Principal>
+      <Dependent Role="Abcon">
+        <PropertyRef Name="abtype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Abcon_Yn">
+    <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+    <End Role="Abcon" Type="AlexLoginModel.Store.Abcon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ABYn">
+        <PropertyRef Name="Yn" />
+      </Principal>
+      <Dependent Role="Abcon">
+        <PropertyRef Name="Yn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_abill_abill">
+    <End Role="abill" Type="AlexLoginModel.Store.abill" Multiplicity="1" />
+    <End Role="abill1" Type="AlexLoginModel.Store.abill" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="abill">
+        <PropertyRef Name="abtype" />
+      </Principal>
+      <Dependent Role="abill1">
+        <PropertyRef Name="abtype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AbTrangThaiDuyet_AbTrangThaiDuyet">
+    <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="1" />
+    <End Role="AbTrangThaiDuyet" Type="AlexLoginModel.Store.AbTrangThaiDuyet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pdna">
+        <PropertyRef Name="GSBH" />
+        <PropertyRef Name="pdno" />
+      </Principal>
+      <Dependent Role="AbTrangThaiDuyet">
+        <PropertyRef Name="GSBH" />
+        <PropertyRef Name="pdno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AbTrangThaiDuyet_YN">
+    <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+    <End Role="AbTrangThaiDuyet" Type="AlexLoginModel.Store.AbTrangThaiDuyet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ABYn">
+        <PropertyRef Name="Yn" />
+      </Principal>
+      <Dependent Role="AbTrangThaiDuyet">
+        <PropertyRef Name="Yn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietBuocKy_YN">
+    <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+    <End Role="ChiTietBuocKy" Type="AlexLoginModel.Store.ChiTietBuocKy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ABYn">
+        <PropertyRef Name="Yn" />
+      </Principal>
+      <Dependent Role="ChiTietBuocKy">
+        <PropertyRef Name="Yn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GUI_Language_AbScreen">
+    <End Role="AbScreen" Type="AlexLoginModel.Store.AbScreen" Multiplicity="0..1" />
+    <End Role="GUI_Language" Type="AlexLoginModel.Store.GUI_Language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AbScreen">
+        <PropertyRef Name="ScreenID" />
+      </Principal>
+      <Dependent Role="GUI_Language">
+        <PropertyRef Name="ScreenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdna_ABC">
+    <End Role="aABC" Type="AlexLoginModel.Store.aABC" Multiplicity="0..1" />
+    <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aABC">
+        <PropertyRef Name="ABC" />
+      </Principal>
+      <Dependent Role="pdna">
+        <PropertyRef Name="ABC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdna_Abtype">
+    <End Role="abill" Type="AlexLoginModel.Store.abill" Multiplicity="0..1" />
+    <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="abill">
+        <PropertyRef Name="abtype" />
+      </Principal>
+      <Dependent Role="pdna">
+        <PropertyRef Name="Abtype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdna_pdna">
+    <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="1" />
+    <End Role="pdna1" Type="AlexLoginModel.Store.pdna" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="pdna">
+        <PropertyRef Name="GSBH" />
+        <PropertyRef Name="pdno" />
+      </Principal>
+      <Dependent Role="pdna1">
+        <PropertyRef Name="GSBH" />
+        <PropertyRef Name="pdno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pdna_YN">
+    <End Role="ABYn" Type="AlexLoginModel.Store.ABYn" Multiplicity="0..1" />
+    <End Role="pdna" Type="AlexLoginModel.Store.pdna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ABYn">
+        <PropertyRef Name="Yn" />
+      </Principal>
+      <Dependent Role="pdna">
+        <PropertyRef Name="YN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+</Schema>

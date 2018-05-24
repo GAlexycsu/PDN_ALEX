@@ -1,0 +1,132 @@
+D:\PhieuDeNghi\iOffice\iOffice\bin\iOffice.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\iOffice.pdb
+D:\PhieuDeNghi\iOffice\iOffice\bin\AspNet.ScriptManager.jQuery.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.AspNet.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.Core.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OAuth.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OpenId.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\EntityFramework.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\System.Web.Providers.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\EntityFramework.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.Core.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OAuth.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OpenId.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\DotNetOpenAuth.AspNet.xml
+D:\PhieuDeNghi\iOffice\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+D:\PhieuDeNghi\iOffice\iOffice\obj\Release\iOffice.dll.licenses
+D:\PhieuDeNghi\iOffice\iOffice\obj\Release\iOffice.dll
+D:\PhieuDeNghi\iOffice\iOffice\obj\Release\iOffice.pdb
+D:\PhieuDeNghi\iOffice\iOffice\bin\AjaxMin.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\log4net.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\Telerik.Web.Device.Detection.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\Telerik.Web.UI.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\Telerik.Web.UI.Skins.dll
+D:\PhieuDeNghi\iOffice\iOffice\bin\Telerik.Web.Device.Detection.xml
+D:\PhieuDeNghi\iOffice\iOffice\bin\Telerik.Web.UI.xml
+D:\Web PDN\iOffice\bin\iOffice.dll
+D:\Web PDN\iOffice\bin\iOffice.pdb
+D:\Web PDN\iOffice\bin\AjaxMin.dll
+D:\Web PDN\iOffice\bin\AspNet.ScriptManager.jQuery.dll
+D:\Web PDN\iOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.AspNet.dll
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.Core.dll
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OAuth.dll
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OpenId.dll
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Web PDN\iOffice\bin\EntityFramework.dll
+D:\Web PDN\iOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Web PDN\iOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\Web PDN\iOffice\bin\System.Web.Providers.dll
+D:\Web PDN\iOffice\bin\Telerik.Web.UI.dll
+D:\Web PDN\iOffice\bin\Telerik.Web.UI.Skins.dll
+D:\Web PDN\iOffice\bin\EntityFramework.xml
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.Core.xml
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OAuth.xml
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OpenId.xml
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Web PDN\iOffice\bin\DotNetOpenAuth.AspNet.xml
+D:\Web PDN\iOffice\bin\Telerik.Web.UI.xml
+D:\Web PDN\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+D:\Web PDN\iOffice\obj\Release\iOffice.dll.licenses
+D:\Web PDN\iOffice\obj\Release\iOffice.dll
+D:\Web PDN\iOffice\obj\Release\iOffice.pdb
+D:\Web PDN\iOffice\bin\System.Web.Optimization.dll
+D:\Web PDN\iOffice\bin\System.Web.Optimization.xml
+D:\Web PDN\iOffice\bin\Newtonsoft.Json.dll
+D:\Web PDN\iOffice\bin\Newtonsoft.Json.xml
+D:\PDN\iOffice\bin\iOffice.dll
+D:\PDN\iOffice\bin\iOffice.pdb
+D:\PDN\iOffice\bin\AjaxMin.dll
+D:\PDN\iOffice\bin\AspNet.ScriptManager.jQuery.dll
+D:\PDN\iOffice\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\PDN\iOffice\bin\DotNetOpenAuth.AspNet.dll
+D:\PDN\iOffice\bin\DotNetOpenAuth.Core.dll
+D:\PDN\iOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\PDN\iOffice\bin\DotNetOpenAuth.OAuth.dll
+D:\PDN\iOffice\bin\DotNetOpenAuth.OpenId.dll
+D:\PDN\iOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\PDN\iOffice\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\PDN\iOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\PDN\iOffice\bin\Newtonsoft.Json.dll
+D:\PDN\iOffice\bin\System.Web.Providers.dll
+D:\PDN\iOffice\bin\Telerik.Web.UI.dll
+D:\PDN\iOffice\bin\Telerik.Web.UI.Skins.dll
+D:\PDN\iOffice\bin\Newtonsoft.Json.xml
+D:\PDN\iOffice\bin\DotNetOpenAuth.Core.xml
+D:\PDN\iOffice\bin\DotNetOpenAuth.OAuth.xml
+D:\PDN\iOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\PDN\iOffice\bin\DotNetOpenAuth.OpenId.xml
+D:\PDN\iOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\PDN\iOffice\bin\DotNetOpenAuth.AspNet.xml
+D:\PDN\iOffice\bin\Telerik.Web.UI.xml
+D:\PDN\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+D:\PDN\iOffice\obj\Release\iOffice.dll.licenses
+D:\PDN\iOffice\obj\Release\iOffice.dll
+D:\PDN\iOffice\obj\Release\iOffice.pdb
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\iOffice.dll
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\iOffice.pdb
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.dll
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.xml
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.dll.licenses
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.dll
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.pdb
+H:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\iOffice.dll
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\iOffice.pdb
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.dll
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.xml
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.dll.licenses
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.dll
+F:\ALEX\A-Web_dev\PDN_Alex\iOffice\obj\Release\iOffice.pdb
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\bin\iOffice.dll
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\bin\iOffice.pdb
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\bin\Microsoft.Web.Infrastructure.dll
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\bin\Microsoft.Web.Infrastructure.xml
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\obj\Release\iOffice.dll.licenses
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\obj\Release\iOffice.dll
+F:\ALEX\A-Web_dev\Main_Alex\iOffice\obj\Release\iOffice.pdb
+C:\a-web_dev\PDN_Alex\iOffice\bin\iOffice.dll
+C:\a-web_dev\PDN_Alex\iOffice\bin\iOffice.pdb
+C:\a-web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.dll
+C:\a-web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.xml
+C:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+C:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.dll.licenses
+C:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.dll
+C:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.pdb
+C:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.Properties.Resources.resources
+C:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.csproj.GenerateResource.Cache
+D:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.csprojResolveAssemblyReference.cache
+D:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.Properties.Resources.resources
+D:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.csproj.GenerateResource.Cache
+D:\a-web_dev\PDN_Alex\iOffice\obj\Release\iOffice.exe.licenses

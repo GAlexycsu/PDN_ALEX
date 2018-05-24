@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="iOffice.SiteMater.Site1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit"
+         TagPrefix="asp" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Content/Site.css" rel="stylesheet" />
+        <link type="text/css" href="../Style/formatMain.css" rel="stylesheet" />
+      <%-- <link type="text/css" href="<%=ResolveClientUrl("~/Style/") %>formatMain.css" rel="stylesheet" />--%>
+    <link type="text/css" href="../Style/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+    <%-- <link type="text/css" href="<%=ResolveClientUrl("~/Style/") %>jquery-ui-1.8.19.custom.css" rel="stylesheet" />--%>
+    <script src="<%=ResolveClientUrl("~/Scripts/")%>jquery.min.js" type="text/javascript"></script>
+     <script src="<%=ResolveClientUrl("~/Scripts/")%>jquery-ui.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/") %>jquery-ui-1.8.19.custom.min.js" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/") %>JScriptabc.js" type="text/javascript"></script>
+   <script src="<%=ResolveClientUrl("~/Scripts/") %>formatdate1.js" type="text/javascript"></script>
+  
+     <script type="text/javascript">
+         function Abbas() {
+             myDate = new Date()
+             abbas.hours.value = myDate.getHours()
+             abbas.minutes.value = myDate.getMinutes()
+             abbas.seconds.value = myDate.getSeconds()
+         }
+         window.setInterval("Abbas()", 1000)
+</script>
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <style type="text/css">
+        #div1 {
+            height: 41px;
+        }
+    </style>
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+            </asp:ToolkitScriptManager>
+        <%--          <div id="idBaner" style="height:80px" >
+
+          </div>--%>
+
+    <div id="idMenuNgang" style="height: 110px; background: #cecece; width:100%;  padding: 7px 7px 7px 7px;border: 1px solid #cecece; text-align:center;overflow:hidden">
+        
+        <div class="clock" style="height:35px; width: 1160px;">
+            <div id="divHome">
+                <asp:LinkButton ID="linkHome" runat="server" Font-Size="XX-Large" OnClick="linkHome_Click"><img src="<%=ResolveClientUrl("../Images/") %>home.jpg" width="55px" height="40px" />  </asp:LinkButton>
+            </div>
+            <div id="idDate" >Date: 
+                <asp:TextBox ID="txtDate" runat="server" Width="106px"></asp:TextBox>
+            </div>
+
+            <div id="hour" >Time:
+	            <span id="digitalclock" class="styling"></span>
+                  <script>
+
+                      var alternate = 0
+
+                      var standardbrowser = !document.all && !document.getElementById
+
+
+
+                      if (standardbrowser)
+
+                          document.write('<form name="form1"><input type="text" name="text1" size="11"></form>')
+
+
+
+                      function show() {
+
+                          if (!standardbrowser)
+
+                              var clockobj = document.getElementById ? document.getElementById("digitalclock") : document.all.digitalclock
+
+                          var Digital = new Date()
+
+                          var hours = Digital.getHours()
+
+                          var minutes = Digital.getMinutes()
+
+                          var dn = "AM"
+
+
+
+                          if (hours == 12) dn = "PM"
+
+                          if (hours > 12) {
+
+                              dn = "PM"
+
+                              hours = hours - 12
+
+                          }
+
+                          if (hours == 0) hours = 12
+
+                          if (hours.toString().length == 1)
+
+                              hours = "0" + hours
+
+                          if (minutes <= 9)
+
+                              minutes = "0" + minutes
+
+
+
+                          if (standardbrowser) {
+
+                              if (alternate == 0)
+
+                                  document.form1.text1.value = hours + " : " + minutes + " " + dn
+
+                              else
+
+                                  document.form1.text1.value = hours + "   " + minutes + " " + dn
+
+                          }
+
+                          else {
+
+                              if (alternate == 0)
+
+                                  clockobj.innerHTML = hours + "<font color='#ff0033'>&nbsp;:&nbsp;</font>" + minutes + " " + dn
+
+                              else
+
+                                  clockobj.innerHTML = hours + "<font color='blue'>&nbsp;:&nbsp;</font>" + minutes + " " + dn
+
+                          }
+
+                          alternate = (alternate == 0) ? 1 : 0
+
+                          setTimeout("show()", 1000)
+
+                      }
+
+                      window.onload = show()
+
+    </script>
+            </div>
+             <div id="webp" >
+            My Check
+        </div>
+       
+        <div id="login"style="text-align:left" >  Login: <asp:Label ID="lblNhanVien" runat="server" Text=""></asp:Label>
+            &nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" ValidationGroup="logout"><img src="<%=ResolveClientUrl("../Images/") %>Turn-off.png" /> Logout</asp:LinkButton></div>
+            <div id="divLang">
+             <asp:DropDownList ID="dropDowLanguege" runat="server" AutoPostBack="True" OnSelectedIndexChanged="dropDowLanguege_SelectedIndexChanged">
+                   <asp:ListItem Value="select">Select languege</asp:ListItem>
+                  <asp:ListItem Value="lbl_TW">Taiwan</asp:ListItem>
+                  <asp:ListItem Value="lbl_VN">VietNam</asp:ListItem>
+                   <asp:ListItem Value="lbl_EN" >English</asp:ListItem>
+             </asp:DropDownList>
+         </div>
+        </div>
+          
+       <div style="width:1142px; height:118px; float:left; margin-bottom: 0px;">
+            <div id="div1">
+                  
+                     <div id="divTaoPhieu">
+                        <asp:Button ID="btnTaoPhieu" runat="server" ValidationGroup="groupmenu1" Text="Write PDN" OnClick="btnTaoPhieu_Click" BackColor="#F0CCFF" ForeColor="Blue" Height="30px" Width="102px" />
+                    </div>
+                    <div id="divwaitme" >
+                        <asp:CheckBox ID="checkWaitMe" runat="server" Text="" Checked="True" Font-Size="Larger" BackColor="hotpink" />
+                        <asp:LinkButton ID="LinkWaitMe" runat="server" ValidationGroup="groupmenu1"  OnClick="LinkWaitMe_Click">Danh sach van ban den</asp:LinkButton>
+                    </div>
+                    <div  id="divlinkok">
+                        <asp:CheckBox ID="CheckOk" runat="server" Text=" " Font-Size="Larger"  BackColor="hotpink" Checked="True"/>
+                        <asp:LinkButton ID="LinkOK" runat="server" ValidationGroup="groupmenu1"  OnClick="LinkOK_Click">Danh sach Phieu da duyet</asp:LinkButton>
+                    </div>
+                    <div id="divnook" >
+                        <asp:CheckBox ID="CheckNoOk" runat="server" Text="" Font-Size="Larger" BackColor="hotpink" Checked="True" />
+                        <asp:LinkButton ID="linkLinkNoOk" runat="server" ValidationGroup="groupmenu1"  OnClick="LinkLinkNoOk_Click">Danh sach Phieu Khong duyet</asp:LinkButton>
+                    </div>
+                  <%-- <div id="divkho">
+                       <asp:CheckBox ID="checkKho" runat="server" Text="" Font-Size="Larger" BackColor="hotpink"/>
+                       <asp:LinkButton ID="LinkKho" runat="server" ValidationGroup="groupmenu1"  OnClick="LinkKho_Click">Kho phieu</asp:LinkButton>
+                   </div>--%>
+                    
+                </div>
+                <div id="div2">
+                     <div id="divTextTK"> PDN Code: <asp:TextBox ID="txtTimKiem" runat="server" MaxLength="11"></asp:TextBox> 
+                         <asp:FilteredTextBoxExtender ID="Fileter1" runat="server" Enabled="true" TargetControlID="txtTimKiem" FilterType="Numbers" FilterMode="ValidChars"></asp:FilteredTextBoxExtender>
+                    </div>
+                    <div id="divfromdate" > From Date : <asp:TextBox ID="txtFromDate" runat="server"></asp:TextBox></div>
+                    <div id="divtodate" > To Date: <asp:TextBox ID="txtToDate" runat="server" ></asp:TextBox>
+                    </div>
+                    <div id="divsearch" class="button-wrap"> <asp:Button ID="btnSearch" runat="server" CssClass="button find" ValidationGroup="groupSearch" Text="Search" OnClick="btnSearch_Click" BackColor="#F0CCFF" ForeColor="Blue" Width="87px" /></div>
+                    
+                </div>
+          
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         
+        </asp:ContentPlaceHolder>
+    </div>
+         <div id="divWaiting"  style="visibility:hidden" >Form </div>
+    </form>
+</body>
+</html>

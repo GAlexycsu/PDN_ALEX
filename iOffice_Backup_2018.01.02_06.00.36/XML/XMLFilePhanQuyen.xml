@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PhanQuyen>
+  <PhanQuyenID>
+    <UserID>
+      27276
+    </UserID>
+    <RoleWrite>
+      1
+    </RoleWrite>
+    <RoleRead>
+      1
+    </RoleRead>
+  </PhanQuyenID>
+  <PhanQuyenID>
+    <UserID>
+      22343
+    </UserID>
+    <RoleWrite>
+     0
+    </RoleWrite>
+    <RoleRead>
+      1
+    </RoleRead>
+  </PhanQuyenID>
+  
+</PhanQuyen>

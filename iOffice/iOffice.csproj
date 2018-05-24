@@ -1,0 +1,3317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE8D0EB4-1B42-4EA0-9342-7041C9E5E74A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iOffice</RootNamespace>
+    <AssemblyName>iOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DeployIisAppPath>PDN_Alex</DeployIisAppPath>
+    <DeployIisAppPhysicalPath>H:\Webrun\PDN_Alex\</DeployIisAppPhysicalPath>
+    <DeployEncryptKey>P%40ssw0rd</DeployEncryptKey>
+    <PrecompileBeforePublish>false</PrecompileBeforePublish>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.3.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.15.1.3.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.5.11.5295.12309\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=1.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.9.1\lib\net40\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET, Version=3.6.1.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\eOffice\eOffice\bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PhieuDeNghi\iOfficeUpdate26032015ShowComment\iOffice\iOffice\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mail">
+      <HintPath>C:\Users\cao\Desktop\New folder (2)\Mail\Redistributables\Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>C:\Users\cao\Desktop\New folder (2)\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="system.web" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>C:\Users\cao\Downloads\Code30.07\Web HRP\bin\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI, Version=2012.1.411.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2012 SP1\Bin40\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.1.411.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\RadControls for ASP.NET AJAX Q1 2012 SP1\Bin40\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Default_0.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="AutoComplete\AutoCompleteTexBox.asmx" />
+    <Content Include="AutoComplete\WebServiceCLZL.asmx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\CKEditor.NET.dll" />
+    <Content Include="bin\Mail.dll" />
+    <Content Include="Content\CSSForm.css" />
+    <Content Include="Content\FormatDiv.css" />
+    <Content Include="Content\FormatModal.css" />
+    <Content Include="Content\Icon\add.gif" />
+    <Content Include="Content\Icon\add.png" />
+    <Content Include="Content\Icon\back.png" />
+    <Content Include="Content\Icon\cancel.gif" />
+    <Content Include="Content\Icon\delete.png" />
+    <Content Include="Content\Icon\download.png" />
+    <Content Include="Content\Icon\edit.gif" />
+    <Content Include="Content\Icon\find16x16.png" />
+    <Content Include="Content\Icon\forgotPas.png" />
+    <Content Include="Content\Icon\printer.gif" />
+    <Content Include="Content\Icon\save.png" />
+    <Content Include="Content\Icon\share.png" />
+    <Content Include="Content\Icon\upload.png" />
+    <Content Include="Content\Icon\view.png" />
+    <Content Include="Content\img\add16x16.png" />
+    <Content Include="Content\img\application16x16.png" />
+    <Content Include="Content\img\application32x32.png" />
+    <Content Include="Content\img\application_form16x16.png" />
+    <Content Include="Content\img\application_form_group16x16.png" />
+    <Content Include="Content\img\application_form_group32x32.png" />
+    <Content Include="Content\img\arrow-dropdownlist.png" />
+    <Content Include="Content\img\arrow_menu.png" />
+    <Content Include="Content\img\attach_2.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y-bg.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y-blue-bg.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y-blue-end.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y-end.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y-start-blue.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y-start.png" />
+    <Content Include="Content\img\bg-scrollbar-thumb-y.png" />
+    <Content Include="Content\img\bg-scrollbar-track-y-bg.png" />
+    <Content Include="Content\img\bg-scrollbar-track-y.png" />
+    <Content Include="Content\img\bg-scrollbar-trackend-y-start.png" />
+    <Content Include="Content\img\bg-scrollbar-trackend-y.png" />
+    <Content Include="Content\img\BG.png" />
+    <Content Include="Content\img\block-bg.png" />
+    <Content Include="Content\img\block-bg2.png" />
+    <Content Include="Content\img\block-bg3.png" />
+    <Content Include="Content\img\body-bg.png" />
+    <Content Include="Content\img\bomien.png" />
+    <Content Include="Content\img\bonus32x32.png" />
+    <Content Include="Content\img\button.png" />
+    <Content Include="Content\img\calender_blue32x32.png" />
+    <Content Include="Content\img\calsalary.png" />
+    <Content Include="Content\img\calsalary24.png" />
+    <Content Include="Content\img\change_password.png" />
+    <Content Include="Content\img\check16x16.png" />
+    <Content Include="Content\img\check32x32.png" />
+    <Content Include="Content\img\context-border-menu.png" />
+    <Content Include="Content\img\copy.png" />
+    <Content Include="Content\img\delete16x16.png" />
+    <Content Include="Content\img\diagram32x32.png" />
+    <Content Include="Content\img\download.png" />
+    <Content Include="Content\img\dropdownlist-row.gif" />
+    <Content Include="Content\img\dropdownlist_row.png" />
+    <Content Include="Content\img\edit16x16.png" />
+    <Content Include="Content\img\edit32x32.png" />
+    <Content Include="Content\img\exceladd.png" />
+    <Content Include="Content\img\exceledit.png" />
+    <Content Include="Content\img\find16x16.png" />
+    <Content Include="Content\img\folder-closed.gif" />
+    <Content Include="Content\img\folder.gif" />
+    <Content Include="Content\img\form16x16.png" />
+    <Content Include="Content\img\form32x32.png" />
+    <Content Include="Content\img\form_add16x16.png" />
+    <Content Include="Content\img\form_edit16x16.png" />
+    <Content Include="Content\img\form_find16x16.png" />
+    <Content Include="Content\img\FPT.eHRM.png" />
+    <Content Include="Content\img\func-bg.png" />
+    <Content Include="Content\img\function-bg.png" />
+    <Content Include="Content\img\function16x16.png" />
+    <Content Include="Content\img\go-back.png" />
+    <Content Include="Content\img\grid16x16.png" />
+    <Content Include="Content\img\grid32x32.png" />
+    <Content Include="Content\img\group16x16.png" />
+    <Content Include="Content\img\group_edit.png" />
+    <Content Include="Content\img\hide-left.png" />
+    <Content Include="Content\img\hide-right.png" />
+    <Content Include="Content\img\icon_upload_lrg.png" />
+    <Content Include="Content\img\insert.png" />
+    <Content Include="Content\img\left-close.png" />
+    <Content Include="Content\img\left-title-bg.png" />
+    <Content Include="Content\img\line.png" />
+    <Content Include="Content\img\list16x16.png" />
+    <Content Include="Content\img\list32x32.png" />
+    <Content Include="Content\img\loaded.png" />
+    <Content Include="Content\img\loaded2.png" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\img\loading2.gif" />
+    <Content Include="Content\img\loading3.gif" />
+    <Content Include="Content\img\loading_bar2.gif" />
+    <Content Include="Content\img\Login16x16.png" />
+    <Content Include="Content\img\Login32x32.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logout16x16.png" />
+    <Content Include="Content\img\logout32x32.png" />
+    <Content Include="Content\img\mathematic.png" />
+    <Content Include="Content\img\mathematic24.png" />
+    <Content Include="Content\img\minus.gif" />
+    <Content Include="Content\img\navigate-down.png" />
+    <Content Include="Content\img\navigate-left.png" />
+    <Content Include="Content\img\navigate-right.png" />
+    <Content Include="Content\img\navigate-up.png" />
+    <Content Include="Content\img\order.png" />
+    <Content Include="Content\img\organization32x32.png" />
+    <Content Include="Content\img\packing32x32.png" />
+    <Content Include="Content\img\payroll32x32.png" />
+    <Content Include="Content\img\pie_chart32x32.png" />
+    <Content Include="Content\img\Plus.gif" />
+    <Content Include="Content\img\popup-close.png" />
+    <Content Include="Content\img\popup-max.png" />
+    <Content Include="Content\img\popup-min.png" />
+    <Content Include="Content\img\PopupTitleBg.png" />
+    <Content Include="Content\img\PopupTitleClose.png" />
+    <Content Include="Content\img\PopupTitleMax.png" />
+    <Content Include="Content\img\PopupTitleMin.png" />
+    <Content Include="Content\img\poup-bg.png" />
+    <Content Include="Content\img\profile16x16.png" />
+    <Content Include="Content\img\profile_check16x16.png" />
+    <Content Include="Content\img\recuitment32x32.png" />
+    <Content Include="Content\img\remove-icon.png" />
+    <Content Include="Content\img\report-share.png" />
+    <Content Include="Content\img\row-hover.png" />
+    <Content Include="Content\img\row.png" />
+    <Content Include="Content\img\rules.png" />
+    <Content Include="Content\img\save16x16.png" />
+    <Content Include="Content\img\script_edit.png" />
+    <Content Include="Content\img\send-email.png" />
+    <Content Include="Content\img\setting32x32.png" />
+    <Content Include="Content\img\setting_tools.png" />
+    <Content Include="Content\img\Star32x32.png" />
+    <Content Include="Content\img\status-bg.png" />
+    <Content Include="Content\img\surveys32x32.png" />
+    <Content Include="Content\img\tab-bg.png" />
+    <Content Include="Content\img\tab-close.png" />
+    <Content Include="Content\img\th-bg.png" />
+    <Content Include="Content\img\timesheet32x32.png" />
+    <Content Include="Content\img\toolbar-bg.png" />
+    <Content Include="Content\img\toolbar-bg2.png" />
+    <Content Include="Content\img\toolbar-resize.png" />
+    <Content Include="Content\img\top-bg.png" />
+    <Content Include="Content\img\tranning32x32.png" />
+    <Content Include="Content\img\treeview-black-line.gif" />
+    <Content Include="Content\img\treeview-black.gif" />
+    <Content Include="Content\img\treeview-default-line.gif" />
+    <Content Include="Content\img\treeview-default.gif" />
+    <Content Include="Content\img\treeview-gray.gif" />
+    <Content Include="Content\img\treeview-red-line.gif" />
+    <Content Include="Content\img\treeview-red.gif" />
+    <Content Include="Content\img\user32x32.png" />
+    <Content Include="Content\img\user48x48.png" />
+    <Content Include="Content\img\user64x64.png" />
+    <Content Include="Content\img\userinfo.png" />
+    <Content Include="Content\img\userinfo2.png" />
+    <Content Include="Content\img\usersetting32x32.png" />
+    <Content Include="Content\menu\a13.ico" />
+    <Content Include="Content\menu\a26.ico" />
+    <Content Include="Content\menu\a28.ico" />
+    <Content Include="Content\menu\a33.ico" />
+    <Content Include="Content\menu\a4.ico" />
+    <Content Include="Content\menu\a48.ico" />
+    <Content Include="Content\menu\a93.ico" />
+    <Content Include="Content\menu\askanswer.png" />
+    <Content Include="Content\menu\avatar-icon.png" />
+    <Content Include="Content\menu\avatar.png" />
+    <Content Include="Content\menu\bank.png" />
+    <Content Include="Content\menu\bonus-list.png" />
+    <Content Include="Content\menu\bonus.png" />
+    <Content Include="Content\menu\bonustype.png" />
+    <Content Include="Content\menu\branh-user.png" />
+    <Content Include="Content\menu\break-list.png" />
+    <Content Include="Content\menu\cal.png" />
+    <Content Include="Content\menu\calendar-holiday.png" />
+    <Content Include="Content\menu\calender.png" />
+    <Content Include="Content\menu\calsalary_emp.png" />
+    <Content Include="Content\menu\calsalary_position.png" />
+    <Content Include="Content\menu\card-error.png" />
+    <Content Include="Content\menu\card-process.png" />
+    <Content Include="Content\menu\card-setting.png" />
+    <Content Include="Content\menu\catalog.png" />
+    <Content Include="Content\menu\certificates.png" />
+    <Content Include="Content\menu\changepassword.png" />
+    <Content Include="Content\menu\contract.png" />
+    <Content Include="Content\menu\country.png" />
+    <Content Include="Content\menu\cup.png" />
+    <Content Include="Content\menu\custom.gif" />
+    <Content Include="Content\menu\diploma-list.png" />
+    <Content Include="Content\menu\diploma-type.png" />
+    <Content Include="Content\menu\diploma.png" />
+    <Content Include="Content\menu\Drop_down_arrow.gif" />
+    <Content Include="Content\menu\employee-list.png" />
+    <Content Include="Content\menu\english.png" />
+    <Content Include="Content\menu\error-type.png" />
+    <Content Include="Content\menu\ethenic.png" />
+    <Content Include="Content\menu\excel-export.png" />
+    <Content Include="Content\menu\excel-import.png" />
+    <Content Include="Content\menu\exit-button.png" />
+    <Content Include="Content\menu\field-study.png" />
+    <Content Include="Content\menu\field-type.png" />
+    <Content Include="Content\menu\field.png" />
+    <Content Include="Content\menu\function-group.png" />
+    <Content Include="Content\menu\global-list.png" />
+    <Content Include="Content\menu\group-approval.png" />
+    <Content Include="Content\menu\group-function.png" />
+    <Content Include="Content\menu\group-level.png" />
+    <Content Include="Content\menu\group-list.png" />
+    <Content Include="Content\menu\group-position.png" />
+    <Content Include="Content\menu\group-shield.png" />
+    <Content Include="Content\menu\group-user.png" />
+    <Content Include="Content\menu\health-list.png" />
+    <Content Include="Content\menu\health.png" />
+    <Content Include="Content\menu\holiday-list.png" />
+    <Content Include="Content\menu\holiday-register.png" />
+    <Content Include="Content\menu\holiday.png" />
+    <Content Include="Content\menu\holidayquestion.png" />
+    <Content Include="Content\menu\ie.ico" />
+    <Content Include="Content\menu\info.ico" />
+    <Content Include="Content\menu\infomation.png" />
+    <Content Include="Content\menu\information.png" />
+    <Content Include="Content\menu\insertdate.gif" />
+    <Content Include="Content\menu\level-group.png" />
+    <Content Include="Content\menu\library.png" />
+    <Content Include="Content\menu\login-button.png" />
+    <Content Include="Content\menu\login16.png" />
+    <Content Include="Content\menu\logo.gif" />
+    <Content Include="Content\menu\logout.png" />
+    <Content Include="Content\menu\money-bonus.png" />
+    <Content Include="Content\menu\money-list.png" />
+    <Content Include="Content\menu\moneyminus.png" />
+    <Content Include="Content\menu\moneyother.png" />
+    <Content Include="Content\menu\monthleft.gif" />
+    <Content Include="Content\menu\monthright.gif" />
+    <Content Include="Content\menu\news.png" />
+    <Content Include="Content\menu\organisation.png" />
+    <Content Include="Content\menu\organization-up.png" />
+    <Content Include="Content\menu\organization.png" />
+    <Content Include="Content\menu\overtime.png" />
+    <Content Include="Content\menu\overtime16.png" />
+    <Content Include="Content\menu\parameter.png" />
+    <Content Include="Content\menu\passport.png" />
+    <Content Include="Content\menu\payroll-bonus.png" />
+    <Content Include="Content\menu\payroll-calculator.png" />
+    <Content Include="Content\menu\pcalclose.gif" />
+    <Content Include="Content\menu\pcalclose.png" />
+    <Content Include="Content\menu\pcaldrop1.gif" />
+    <Content Include="Content\menu\pcaldrop2.gif" />
+    <Content Include="Content\menu\pcalleft1.gif" />
+    <Content Include="Content\menu\pcalleft2.gif" />
+    <Content Include="Content\menu\pcalright1.gif" />
+    <Content Include="Content\menu\pcalright2.gif" />
+    <Content Include="Content\menu\place.png" />
+    <Content Include="Content\menu\plan.png" />
+    <Content Include="Content\menu\planer1.ico" />
+    <Content Include="Content\menu\planer2.ico" />
+    <Content Include="Content\menu\planer3.ico" />
+    <Content Include="Content\menu\political.png" />
+    <Content Include="Content\menu\position-group.png" />
+    <Content Include="Content\menu\position-user-small.png" />
+    <Content Include="Content\menu\position-user.png" />
+    <Content Include="Content\menu\position.png" />
+    <Content Include="Content\menu\process.png" />
+    <Content Include="Content\menu\profile-list.png" />
+    <Content Include="Content\menu\profile-type.png" />
+    <Content Include="Content\menu\recuit-add.png" />
+    <Content Include="Content\menu\recuit-create.png" />
+    <Content Include="Content\menu\recuit-list.png" />
+    <Content Include="Content\menu\relationship.png" />
+    <Content Include="Content\menu\religion.png" />
+    <Content Include="Content\menu\report-icon.png" />
+    <Content Include="Content\menu\result-list.png" />
+    <Content Include="Content\menu\ring.png" />
+    <Content Include="Content\menu\salaryadd.png" />
+    <Content Include="Content\menu\select.png" />
+    <Content Include="Content\menu\sheld-status2.png" />
+    <Content Include="Content\menu\shield-import.png" />
+    <Content Include="Content\menu\shield-status.png" />
+    <Content Include="Content\menu\shift-approval.png" />
+    <Content Include="Content\menu\shift.png" />
+    <Content Include="Content\menu\skill-list.png" />
+    <Content Include="Content\menu\skill.png" />
+    <Content Include="Content\menu\star.png" />
+    <Content Include="Content\menu\study-list.png" />
+    <Content Include="Content\menu\study-type.png" />
+    <Content Include="Content\menu\study-type2.png" />
+    <Content Include="Content\menu\support.png" />
+    <Content Include="Content\menu\system.ico" />
+    <Content Include="Content\menu\system1.ico" />
+    <Content Include="Content\menu\table-salary.png" />
+    <Content Include="Content\menu\teacher.png" />
+    <Content Include="Content\menu\test.png" />
+    <Content Include="Content\menu\university-list.png" />
+    <Content Include="Content\menu\university.png" />
+    <Content Include="Content\menu\updateshift.png" />
+    <Content Include="Content\menu\user-bonus.png" />
+    <Content Include="Content\menu\user-brach.png" />
+    <Content Include="Content\menu\user-branch.png" />
+    <Content Include="Content\menu\user-break.png" />
+    <Content Include="Content\menu\user-cup.png" />
+    <Content Include="Content\menu\user-exit.png" />
+    <Content Include="Content\menu\user-function.png" />
+    <Content Include="Content\menu\user-global.png" />
+    <Content Include="Content\menu\user-group-new.png" />
+    <Content Include="Content\menu\user-group.png" />
+    <Content Include="Content\menu\user-info.png" />
+    <Content Include="Content\menu\user-process.png" />
+    <Content Include="Content\menu\user-rank.png" />
+    <Content Include="Content\menu\user-refresh.png" />
+    <Content Include="Content\menu\user-salary-basic-add.png" />
+    <Content Include="Content\menu\user-salary-basic.png" />
+    <Content Include="Content\menu\user-set.png" />
+    <Content Include="Content\menu\user-shield.png" />
+    <Content Include="Content\menu\user-status.png" />
+    <Content Include="Content\menu\user-warning.png" />
+    <Content Include="Content\menu\user.png" />
+    <Content Include="Content\menu\user1.ico" />
+    <Content Include="Content\menu\user2.ico" />
+    <Content Include="Content\menu\users-search.png" />
+    <Content Include="Content\menu\users.ico" />
+    <Content Include="Content\menu\word.ico" />
+    <Content Include="Content\menu\word1.ico" />
+    <Content Include="Content\menu\work-setting.png" />
+    <Content Include="Content\menu\worker-register.png" />
+    <Content Include="Content\menu\worker-register24.png" />
+    <Content Include="Content\menu\worker-type-list.png" />
+    <Content Include="Content\menu\worker16.png" />
+    <Content Include="Content\menu\xoay.ico" />
+    <Content Include="Content\menu\za.ico" />
+    <Content Include="Content\menu\zoom.ico" />
+    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="DTO\iOffice.dbml">
+      <SubType>Designer</SubType>
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>iOffice.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Image8S\2015\Autumn Leaves.jpg" />
+    <Content Include="Image8S\2015\cancel.jpg" />
+    <Content Include="Image8S\2015\Frangipani Flowers.jpg" />
+    <Content Include="Image8S\2015\Garden.jpg" />
+    <Content Include="Image8S\2015\img-1.jpg" />
+    <Content Include="Image8S\2015\img-2.jpg" />
+    <Content Include="Image8S\2015\img-3.jpg" />
+    <Content Include="Image8S\2015\TestJPG.jpg" />
+    <Content Include="Images\Create.png" />
+    <Content Include="Images\email_icon_small1.jpg" />
+    <Content Include="Images\Erase.png" />
+    <Content Include="Images\expand.png" />
+    <Content Include="Images\Forward.png" />
+    <Content Include="Images\Go-back.png" />
+    <Content Include="Images\hom1.png" />
+    <Content Include="Images\home.jpg" />
+    <Content Include="Images\Home.png" />
+    <Content Include="Images\Icon\add.gif" />
+    <Content Include="Images\Icon\add.png" />
+    <Content Include="Images\Icon\back.png" />
+    <Content Include="Images\Icon\cancel.gif" />
+    <Content Include="Images\Icon\delete.png" />
+    <Content Include="Images\Icon\edit.gif" />
+    <Content Include="Images\Icon\save.png" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\Last.png" />
+    <Content Include="Images\Message.png" />
+    <Content Include="Images\Modify.png" />
+    <Content Include="Images\New.png" />
+    <Content Include="Images\No.png" />
+    <Content Include="Images\OK.png" />
+    <Content Include="Images\People.png" />
+    <Content Include="Images\Person.png" />
+    <Content Include="Images\project.png" />
+    <Content Include="Images\Save.png" />
+    <Content Include="Images\Search-icon-small.gif" />
+    <Content Include="Images\Setting.png" />
+    <Content Include="Images\Text-in.png" />
+    <Content Include="Images\Text-out.png" />
+    <Content Include="Images\Turn-off.png" />
+    <Content Include="Images\Up.png" />
+    <Content Include="Images\Update.png" />
+    <Content Include="Images\User-group.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\View.png" />
+    <Content Include="Images\Xoa.png" />
+    <Content Include="Images\Yes.png" />
+    <Content Include="App_Code\WebService1.asmx" />
+    <Content Include="presentationLayer\Action_Group.aspx" />
+    <Content Include="presentationLayer\Action_NhanVien.aspx" />
+    <Content Include="presentationLayer\Add8S.aspx" />
+    <Content Include="presentationLayer\AddNew8S.aspx" />
+    <Content Include="presentationLayer\addProjectn.aspx" />
+    <Content Include="presentationLayer\addProjects.aspx" />
+    <Content Include="presentationLayer\AddProjectShare.aspx" />
+    <Content Include="presentationLayer\AddSitem.aspx" />
+    <Content Include="presentationLayer\addSystem.aspx" />
+    <Content Include="presentationLayer\Admin\KiemTraPhieu.aspx" />
+    <Content Include="presentationLayer\Admin\WebForm123.aspx" />
+    <Content Include="presentationLayer\ApproveUser\abc.aspx" />
+    <Content Include="presentationLayer\ApproveUser\ChiTietPhieuBiHuyCB2.aspx" />
+    <Content Include="presentationLayer\ApproveUser\ChiTietPhieuHuyCB1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\DanhSachPhieuChuaDuyetBiTraVeCB.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmDetails2D.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyCheckDetail.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyCheckDetailMH.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyCheckPDN.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyCreatePDN.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyCreatePDN1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyDocusRe.aspx" />
+    <Content Include="presentationLayer\ApproveUser\MyPreviewPDN.aspx" />
+    <Content Include="presentationLayer\ApproveUser\phieumuahangD.aspx" />
+    <Content Include="presentationLayer\ApproveUser\ShowComentByAuditor.aspx" />
+    <Content Include="presentationLayer\ApproveUser\test11.aspx" />
+    <Content Include="presentationLayer\ApproveUser\WebForm1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\wf_Danhsachphieudaduocky.aspx" />
+    <Content Include="presentationLayer\ApproveUser\wf_Danhsachphieutrongkhotheonguoitao.aspx" />
+    <Content Include="presentationLayer\bantin8S.aspx" />
+    <Content Include="presentationLayer\ChangePassword.aspx" />
+    <Content Include="presentationLayer\changesignature.aspx" />
+    <Content Include="CKEditor\adapters\jquery.js" />
+    <Content Include="CKEditor\CHANGES.html" />
+    <Content Include="CKEditor\ckeditor.js" />
+    <Content Include="CKEditor\ckeditor_basic.js" />
+    <Content Include="CKEditor\config.js" />
+    <Content Include="CKEditor\contents.css" />
+    <Content Include="CKEditor\images\spacer.gif" />
+    <Content Include="CKEditor\INSTALL.html" />
+    <Content Include="CKEditor\lang\af.js" />
+    <Content Include="CKEditor\lang\ar.js" />
+    <Content Include="CKEditor\lang\bg.js" />
+    <Content Include="CKEditor\lang\bn.js" />
+    <Content Include="CKEditor\lang\bs.js" />
+    <Content Include="CKEditor\lang\ca.js" />
+    <Content Include="CKEditor\lang\cs.js" />
+    <Content Include="CKEditor\lang\cy.js" />
+    <Content Include="CKEditor\lang\da.js" />
+    <Content Include="CKEditor\lang\de.js" />
+    <Content Include="CKEditor\lang\el.js" />
+    <Content Include="CKEditor\lang\en-au.js" />
+    <Content Include="CKEditor\lang\en-ca.js" />
+    <Content Include="CKEditor\lang\en-gb.js" />
+    <Content Include="CKEditor\lang\en.js" />
+    <Content Include="CKEditor\lang\eo.js" />
+    <Content Include="CKEditor\lang\es.js" />
+    <Content Include="CKEditor\lang\et.js" />
+    <Content Include="CKEditor\lang\eu.js" />
+    <Content Include="CKEditor\lang\fa.js" />
+    <Content Include="CKEditor\lang\fi.js" />
+    <Content Include="CKEditor\lang\fo.js" />
+    <Content Include="CKEditor\lang\fr-ca.js" />
+    <Content Include="CKEditor\lang\fr.js" />
+    <Content Include="CKEditor\lang\gl.js" />
+    <Content Include="CKEditor\lang\gu.js" />
+    <Content Include="CKEditor\lang\he.js" />
+    <Content Include="CKEditor\lang\hi.js" />
+    <Content Include="CKEditor\lang\hr.js" />
+    <Content Include="CKEditor\lang\hu.js" />
+    <Content Include="CKEditor\lang\is.js" />
+    <Content Include="CKEditor\lang\it.js" />
+    <Content Include="CKEditor\lang\ja.js" />
+    <Content Include="CKEditor\lang\ka.js" />
+    <Content Include="CKEditor\lang\km.js" />
+    <Content Include="CKEditor\lang\ko.js" />
+    <Content Include="CKEditor\lang\lt.js" />
+    <Content Include="CKEditor\lang\lv.js" />
+    <Content Include="CKEditor\lang\mn.js" />
+    <Content Include="CKEditor\lang\ms.js" />
+    <Content Include="CKEditor\lang\nb.js" />
+    <Content Include="CKEditor\lang\nl.js" />
+    <Content Include="CKEditor\lang\no.js" />
+    <Content Include="CKEditor\lang\pl.js" />
+    <Content Include="CKEditor\lang\pt-br.js" />
+    <Content Include="CKEditor\lang\pt.js" />
+    <Content Include="CKEditor\lang\ro.js" />
+    <Content Include="CKEditor\lang\ru.js" />
+    <Content Include="CKEditor\lang\sk.js" />
+    <Content Include="CKEditor\lang\sl.js" />
+    <Content Include="CKEditor\lang\sr-latn.js" />
+    <Content Include="CKEditor\lang\sr.js" />
+    <Content Include="CKEditor\lang\sv.js" />
+    <Content Include="CKEditor\lang\th.js" />
+    <Content Include="CKEditor\lang\tr.js" />
+    <Content Include="CKEditor\lang\uk.js" />
+    <Content Include="CKEditor\lang\vi.js" />
+    <Content Include="CKEditor\lang\zh-cn.js" />
+    <Content Include="CKEditor\lang\zh.js" />
+    <Content Include="CKEditor\lang\_languages.js" />
+    <Content Include="CKEditor\lang\_translationstatus.txt" />
+    <Content Include="CKEditor\LICENSE.html" />
+    <Content Include="CKEditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="CKEditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="CKEditor\plugins\about\dialogs\about.js" />
+    <Content Include="CKEditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="CKEditor\plugins\adobeair\plugin.js" />
+    <Content Include="CKEditor\plugins\ajax\plugin.js" />
+    <Content Include="CKEditor\plugins\autogrow\plugin.js" />
+    <Content Include="CKEditor\plugins\bbcode\plugin.js" />
+    <Content Include="CKEditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="CKEditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="CKEditor\plugins\devtools\lang\en.js" />
+    <Content Include="CKEditor\plugins\devtools\plugin.js" />
+    <Content Include="CKEditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="CKEditor\plugins\div\dialogs\div.js" />
+    <Content Include="CKEditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="CKEditor\plugins\docprops\plugin.js" />
+    <Content Include="CKEditor\plugins\find\dialogs\find.js" />
+    <Content Include="CKEditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="CKEditor\plugins\flash\images\placeholder.png" />
+    <Content Include="CKEditor\plugins\forms\dialogs\button.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\form.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\select.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="CKEditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="CKEditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="CKEditor\plugins\iframedialog\plugin.js" />
+    <Content Include="CKEditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="CKEditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="CKEditor\plugins\image\dialogs\image.js" />
+    <Content Include="CKEditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="CKEditor\plugins\link\dialogs\link.js" />
+    <Content Include="CKEditor\plugins\link\images\anchor.gif" />
+    <Content Include="CKEditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="CKEditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="CKEditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="CKEditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="CKEditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="CKEditor\plugins\placeholder\lang\en.js" />
+    <Content Include="CKEditor\plugins\placeholder\lang\he.js" />
+    <Content Include="CKEditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="CKEditor\plugins\placeholder\plugin.js" />
+    <Content Include="CKEditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="CKEditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="CKEditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="CKEditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="CKEditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\heart.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="CKEditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="CKEditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="CKEditor\plugins\specialchar\lang\en.js" />
+    <Content Include="CKEditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="CKEditor\plugins\styles\styles\default.js" />
+    <Content Include="CKEditor\plugins\tableresize\plugin.js" />
+    <Content Include="CKEditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="CKEditor\plugins\table\dialogs\table.js" />
+    <Content Include="CKEditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="CKEditor\plugins\templates\templates\default.js" />
+    <Content Include="CKEditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="CKEditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="CKEditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="CKEditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="CKEditor\plugins\uicolor\lang\en.js" />
+    <Content Include="CKEditor\plugins\uicolor\lang\he.js" />
+    <Content Include="CKEditor\plugins\uicolor\plugin.js" />
+    <Content Include="CKEditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="CKEditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="CKEditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="CKEditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="CKEditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="CKEditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="CKEditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="CKEditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="CKEditor\plugins\xml\plugin.js" />
+    <Content Include="CKEditor\skins\kama\dialog.css" />
+    <Content Include="CKEditor\skins\kama\editor.css" />
+    <Content Include="CKEditor\skins\kama\icons.png" />
+    <Content Include="CKEditor\skins\kama\icons_rtl.png" />
+    <Content Include="CKEditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="CKEditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="CKEditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="CKEditor\skins\kama\images\mini.gif" />
+    <Content Include="CKEditor\skins\kama\images\noimage.png" />
+    <Content Include="CKEditor\skins\kama\images\sprites.png" />
+    <Content Include="CKEditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="CKEditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="CKEditor\skins\kama\skin.js" />
+    <Content Include="CKEditor\skins\kama\templates.css" />
+    <Content Include="CKEditor\skins\office2003\dialog.css" />
+    <Content Include="CKEditor\skins\office2003\editor.css" />
+    <Content Include="CKEditor\skins\office2003\icons.png" />
+    <Content Include="CKEditor\skins\office2003\icons_rtl.png" />
+    <Content Include="CKEditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="CKEditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="CKEditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="CKEditor\skins\office2003\images\mini.gif" />
+    <Content Include="CKEditor\skins\office2003\images\noimage.png" />
+    <Content Include="CKEditor\skins\office2003\images\sprites.png" />
+    <Content Include="CKEditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="CKEditor\skins\office2003\skin.js" />
+    <Content Include="CKEditor\skins\office2003\templates.css" />
+    <Content Include="CKEditor\skins\v2\dialog.css" />
+    <Content Include="CKEditor\skins\v2\editor.css" />
+    <Content Include="CKEditor\skins\v2\icons.png" />
+    <Content Include="CKEditor\skins\v2\icons_rtl.png" />
+    <Content Include="CKEditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="CKEditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="CKEditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="CKEditor\skins\v2\images\mini.gif" />
+    <Content Include="CKEditor\skins\v2\images\noimage.png" />
+    <Content Include="CKEditor\skins\v2\images\sprites.png" />
+    <Content Include="CKEditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="CKEditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="CKEditor\skins\v2\skin.js" />
+    <Content Include="CKEditor\skins\v2\templates.css" />
+    <Content Include="CKEditor\themes\default\theme.js" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ImageChuKy\level1.png" />
+    <Content Include="Content\ImageChuKy\level2.png" />
+    <Content Include="Content\ImageChuKy\level3.png" />
+    <Content Include="Content\ImageChuKy\level4.png" />
+    <Content Include="Content\ImageChuKy\level5.png" />
+    <Content Include="Content\ImageChuKy\level6.png" />
+    <Content Include="Content\ImageChuKy\level0.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="danhsachvanbanden.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\Thumbsdown.png" />
+    <Content Include="Images\Thumbsup.png" />
+    <Content Include="packages.config" />
+    <Content Include="CKEditor\.htaccess" />
+    <Content Include="presentationLayer\ApproveUser\frmDuyetPhieuEmail.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmKhongDuyet.aspx" />
+    <Content Include="presentationLayer\ConfirmPass.aspx" />
+    <Content Include="presentationLayer\CopyScore.aspx" />
+    <Content Include="presentationLayer\CreateMessage.aspx" />
+    <Content Include="presentationLayer\CreateUser.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="presentationLayer\DetailGroup.aspx" />
+    <Content Include="presentationLayer\Edit8S.aspx" />
+    <Content Include="presentationLayer\EditProjectShare.aspx" />
+    <Content Include="presentationLayer\ExportJob.aspx" />
+    <Content Include="presentationLayer\ExportProject.aspx" />
+    <Content Include="presentationLayer\forgotPassword.aspx" />
+    <Content Include="presentationLayer\Group.aspx" />
+    <Content Include="presentationLayer\Main8S.aspx" />
+    <Content Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeChuaDich1.aspx" />
+    <Content Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeChuaDich2.aspx" />
+    <Content Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeDaDich1.aspx" />
+    <Content Include="presentationLayer\NguoiDich\MyDocusND.aspx" />
+    <Content Include="presentationLayer\OverViewShare.aspx" />
+    <Content Include="presentationLayer\page8SDetail.aspx" />
+    <Content Include="presentationLayer\pageMain.aspx" />
+    <Content Include="presentationLayer\pageMain3.aspx" />
+    <Content Include="presentationLayer\ProjectShareByUser.aspx" />
+    <Content Include="presentationLayer\resetPassword.aspx" />
+    <Content Include="presentationLayer\Rport8SScore.aspx" />
+    <Content Include="presentationLayer\ShareJobWith.aspx" />
+    <Content Include="presentationLayer\ShareProject.aspx" />
+    <Content Include="presentationLayer\ShowComentByAuditor1.aspx" />
+    <Content Include="presentationLayer\Users\ChiTietPhieuBiHuy2.aspx" />
+    <Content Include="presentationLayer\Users\ChiTietPhieuHuy1.aspx" />
+    <Content Include="presentationLayer\Users\DanhSachPhieuChuaDuyetBiTraVe.aspx" />
+    <Content Include="presentationLayer\Users\frChiTietKhongduyet.aspx" />
+    <Content Include="presentationLayer\Users\frChiTietMHKhongDuyet.aspx" />
+    <Content Include="presentationLayer\Users\MyDocusNV.aspx" />
+    <Content Include="presentationLayer\Users\ReportPhieuMuaHang.aspx" />
+    <Content Include="presentationLayer\Users\ShowCommentNV.aspx" />
+    <Content Include="presentationLayer\Users\WF_ReportPDN.aspx" />
+    <Content Include="presentationLayer\ViewShare.aspx" />
+    <Content Include="presentationLayer\WebForm1.aspx" />
+    <Content Include="presentationLayer\WF_ChangePassword.aspx" />
+    <Content Include="presentationLayer\WF_Projectm.aspx" />
+    <Content Include="presentationLayer\WF_Projectm2.aspx" />
+    <Content Include="presentationLayer\WF_ReportT.aspx" />
+    <Content Include="Scripts\bootstrap-multiselect.js" />
+    <Content Include="Scripts\dropdown.js" />
+    <Content Include="Scripts\formatDate.js" />
+    <Content Include="Scripts\formatdate1.js" />
+    <Content Include="Scripts\FormatDate8S.js" />
+    <Content Include="Scripts\FormatextBox.js" />
+    <Content Include="Scripts\getComment.js" />
+    <Content Include="Scripts\getCommentNV.js" />
+    <Content Include="Scripts\GetData8S.js" />
+    <Content Include="Scripts\getDetailGroup.js" />
+    <Content Include="Scripts\getGroup.js" />
+    <Content Include="Scripts\gridviewRoll1.js" />
+    <Content Include="Scripts\JavaScriptChat.js" />
+    <Content Include="Scripts\JavaScriptFormatDate.js" />
+    <Content Include="Scripts\JavaScriptScre.js" />
+    <Content Include="Scripts\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-1.8.3.js" />
+    <Content Include="Scripts\jquery-ui-1.8.19.custom.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.datepick.js" />
+    <Content Include="Scripts\jquery.elevateZoom-3.0.8.min.js" />
+    <Content Include="Scripts\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.1.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.1.min.js" />
+    <Content Include="Scripts\jquery.tooltip.min.js" />
+    <Content Include="Scripts\JScriptabc.js" />
+    <Content Include="Scripts\JScriptMoveTreeview2.js" />
+    <Content Include="Scripts\SriptGetEmployee.js" />
+    <Content Include="showPDNcode.aspx" />
+    <Content Include="Style\Button.css" />
+    <Content Include="Style\CSSForm1.css" />
+    <Content Include="Style\css\bootstrap-multiselect.css" />
+    <Content Include="Style\EX03Form1.css" />
+    <Content Include="Style\formatButton.css" />
+    <Content Include="Style\formatbutton2.css" />
+    <Content Include="Style\formatMain1.css" />
+    <Content Include="Style\formatMain3.css" />
+    <Content Include="Style\formatmenu.css" />
+    <Content Include="Style\insertImage.css" />
+    <Content Include="Style\jquery-ui.css" />
+    <Content Include="Style\formatMain.css" />
+    <Content Include="Style\jquery-ui-1.8.19.custom.css" />
+    <Content Include="Style\jquery.datepick.css" />
+    <Content Include="Style\jquery.min.js" />
+    <Content Include="Style\SoTaiEm.css" />
+    <Content Include="Style\StyleSheet1.css" />
+    <Content Include="Style\StyleSheet2.css" />
+    <Content Include="Style\XPForm.css" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebLang.aspx" />
+    <Content Include="WebService1.asmx" />
+    <Content Include="MyPhoto.ashx" />
+    <Content Include="presentationLayer\Admin\FDanhSachLoaiPhieu.aspx" />
+    <Content Include="presentationLayer\Admin\FQPDNFlow.aspx" />
+    <Content Include="presentationLayer\Admin\frmAddUsers.aspx" />
+    <Content Include="presentationLayer\Admin\frmBoPhan.aspx" />
+    <Content Include="presentationLayer\Admin\frmEditBoPhan.aspx" />
+    <Content Include="presentationLayer\Admin\frmEditNghiPhep.aspx" />
+    <Content Include="presentationLayer\Admin\frmNghiPhep.aspx" />
+    <Content Include="presentationLayer\Admin\frmQPDNFlow.aspx" />
+    <Content Include="presentationLayer\Admin\FSualoaiphieu.aspx" />
+    <Content Include="presentationLayer\Admin\fSuaQuyTrinh.aspx" />
+    <Content Include="presentationLayer\Admin\QPDNFlow2.aspx" />
+    <Content Include="presentationLayer\Admin\XoaQuyTrinh.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chinhsuaphieu.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietduyet1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietduyet2.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietphieuchuadich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietphieudadich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietphieugui1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietphieugui2.aspx" />
+    <Content Include="presentationLayer\ApproveUser\chitietphieumuahang.aspx" />
+    <Content Include="presentationLayer\ApproveUser\danhsachphieubanguikhongduocduyet.aspx" />
+    <Content Include="presentationLayer\ApproveUser\danhsachphieuchuadich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\danhsachphieudadich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\Danhsachphieuguibihuy.aspx" />
+    <Content Include="presentationLayer\ApproveUser\Danhsachphieumoikhoitao.aspx" />
+    <Content Include="presentationLayer\ApproveUser\DanhSachPhieuTrongKhoTheoNguoiDuyet.aspx" />
+    <Content Include="presentationLayer\ApproveUser\Danhsachvanbandagui.aspx" />
+    <Content Include="presentationLayer\ApproveUser\danhsachvanbandaky.aspx" />
+    <Content Include="presentationLayer\ApproveUser\danhsachvanbankhongduyet.aspx" />
+    <Content Include="presentationLayer\ApproveUser\Details5.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmChiTiet.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmChiTietDich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmchitietphieu1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmChiTietPhieuChuaDich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmchitietphieumuahang.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmChitietphieumuahangdich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmreview1.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmSuaphieumuahang.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmTaoPhieu.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmTrinhDuyetCB.aspx" />
+    <Content Include="presentationLayer\ApproveUser\FrmViewCB.aspx" />
+    <Content Include="presentationLayer\ApproveUser\Guinguoidich.aspx" />
+    <Content Include="presentationLayer\ApproveUser\phieumuahang.aspx" />
+    <Content Include="presentationLayer\ApproveUser\tinhtrangtheovanban.aspx" />
+    <Content Include="presentationLayer\ApproveUser\ViDu.aspx" />
+    <Content Include="presentationLayer\frmDoiMatKhauXetDuyet.aspx" />
+    <Content Include="presentationLayer\FrmQuenmatkhauxetduyet.aspx" />
+    <Content Include="presentationLayer\Help1.aspx" />
+    <Content Include="presentationLayer\NguoiDich\chinhsuaphieuND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\chitietphieuchuadichND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\chitietphieudadichND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\chitietphieugui1ND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\chitietphieugui2ND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\danhsachphieuchuadichND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\danhsachphieudadichND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\feedback.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmChiTietDichND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDanhsachphieucattrongkhoND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDanhsachphieudaduyetND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDanhsachphieudaguiND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDanhsachphieukhongduockyND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDanhsachphieumoikhoitaoND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDetailsND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmDetails2ND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmPreviewND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmSuaphieumuahangND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmTaoPhieuND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\frmTrinhDuyetND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\phieumuahangND.aspx" />
+    <Content Include="presentationLayer\NguoiDich\tinhtrangtheovanbanND.aspx" />
+    <Content Include="presentationLayer\Users\chinhsuaphieuNV.aspx" />
+    <Content Include="presentationLayer\Users\chitietphieuchuadichNV.aspx" />
+    <Content Include="presentationLayer\Users\chitietphieudadichNV.aspx" />
+    <Content Include="presentationLayer\Users\chitietphieugui1NV.aspx" />
+    <Content Include="presentationLayer\Users\chitietphieugui2NV.aspx" />
+    <Content Include="presentationLayer\Users\chitietphieukhoitao.aspx" />
+    <Content Include="presentationLayer\Users\danhsachphieucattrongkhoNV.aspx" />
+    <Content Include="presentationLayer\Users\danhsachphieudaduyetNV.aspx" />
+    <Content Include="presentationLayer\Users\DanhsachphieumoikhoitaoNV.aspx" />
+    <Content Include="presentationLayer\Users\DanhsachtinhtrangvanbandaguiNV.aspx" />
+    <Content Include="presentationLayer\Users\danhsachvanbanchuadichNV.aspx" />
+    <Content Include="presentationLayer\Users\danhsachvanbandadichNV.aspx" />
+    <Content Include="presentationLayer\Users\DanhsachvanbandaguiNV.aspx" />
+    <Content Include="presentationLayer\Users\danhsachvanbankhongduockyNV.aspx" />
+    <Content Include="presentationLayer\Users\frmchitietphieuNV.aspx" />
+    <Content Include="presentationLayer\Users\frmchitietphieu1NV.aspx" />
+    <Content Include="presentationLayer\Users\frmChiTietPhieuChuaDichNV.aspx" />
+    <Content Include="presentationLayer\Users\frmchitietphieumuahangNV.aspx" />
+    <Content Include="presentationLayer\Users\frmChitietphieumuahangdichNV.aspx" />
+    <Content Include="presentationLayer\Users\frmDanhsachphieubihuyNV.aspx" />
+    <Content Include="presentationLayer\Users\frmDetails2NV.aspx" />
+    <Content Include="presentationLayer\Users\frmFirst.aspx" />
+    <Content Include="presentationLayer\Users\frmSuaphieumuahangNV.aspx" />
+    <Content Include="presentationLayer\Users\frmtaophieunghiphep.aspx" />
+    <Content Include="presentationLayer\Users\frmViewPhieuNghiPhep.aspx" />
+    <Content Include="presentationLayer\Users\guinguoidichNV.aspx" />
+    <Content Include="presentationLayer\Users\phieumuahangNV.aspx" />
+    <Content Include="presentationLayer\Users\tinhtrangtheovanbanNV.aspx" />
+    <Content Include="presentationLayer\Users\ViDu5.aspx" />
+    <Content Include="presentationLayer\Users\WebForm4.aspx" />
+    <Content Include="ProcessSignature\MyPhoto1.ashx" />
+    <Content Include="ProcessSignature\MyPhoto2.ashx" />
+    <Content Include="ProcessSignature\MyPhoto3.ashx" />
+    <Content Include="ProcessSignature\MyPhoto4.ashx" />
+    <Content Include="ProcessSignature\MyPhoto5.ashx" />
+    <Content Include="ProcessSignature\MyPhoto7.ashx" />
+    <Content Include="ProcessSignature\MyPhoto6.ashx" />
+    <Content Include="presentationLayer\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ProcessSignature\MyPhotoKhongDuyet.ashx" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="presentationLayer\KeepAlive1.ashx" />
+    <Content Include="presentationLayer\KeepAlive.ashx" />
+    <Content Include="presentationLayer\KeepAlive2.ashx" />
+    <Content Include="presentationLayer\KeepAlive3.ashx" />
+    <Content Include="ProcessSignature\MyPhoto8.ashx" />
+    <Content Include="Help\huongdansudunghethong.pdf" />
+    <Content Include="ProcessSignature\ChangeImage.ashx" />
+    <Content Include="XML\XMLFile8S.xml" />
+    <Content Include="XML\XMLFile8SS.xml" />
+    <Content Include="XML\XMLFileAttactID.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\XMLFileCalender.xml" />
+    <Content Include="XML\XMLFileLang.xml" />
+    <Content Include="XML\XMLFilePhanQuyen.xml" />
+    <Content Include="XML\XMLFileProjectN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\XMLFileProjectS.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\XMLFileSystem.xml" />
+    <Content Include="DTO\dsDanhSachPhieuDatMuaHangNoSize.xsc">
+      <DependentUpon>dsDanhSachPhieuDatMuaHangNoSize.xsd</DependentUpon>
+    </Content>
+    <Content Include="DTO\dsDanhSachPhieuDatMuaHangCoSize.xsc">
+      <DependentUpon>dsDanhSachPhieuDatMuaHangCoSize.xsd</DependentUpon>
+    </Content>
+    <Content Include="DTO\DataSetS8.xsc">
+      <DependentUpon>DataSetS8.xsd</DependentUpon>
+    </Content>
+    <Content Include="DTO\DataSetProject.xsc">
+      <DependentUpon>DataSetProject.xsd</DependentUpon>
+    </Content>
+    <Content Include="DTO\DataSetCalendar.xsc">
+      <DependentUpon>DataSetCalendar.xsd</DependentUpon>
+    </Content>
+    <Content Include="DTO\DataSet8SScore.xsc">
+      <DependentUpon>DataSet8SScore.xsd</DependentUpon>
+    </Content>
+    <Content Include="DTO\DataSet8S.xsc">
+      <DependentUpon>DataSet8S.xsd</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="DTO\DataSet8S.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet8S.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\DataSet8S.xss">
+      <DependentUpon>DataSet8S.xsd</DependentUpon>
+    </Content>
+    <None Include="DTO\DataSet8SScore.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet8SScore.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\DataSet8SScore.xss">
+      <DependentUpon>DataSet8SScore.xsd</DependentUpon>
+    </Content>
+    <None Include="DTO\DataSetCalendar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCalendar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\DataSetCalendar.xss">
+      <DependentUpon>DataSetCalendar.xsd</DependentUpon>
+    </Content>
+    <None Include="DTO\DataSetProject.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProject.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\DataSetProject.xss">
+      <DependentUpon>DataSetProject.xsd</DependentUpon>
+    </Content>
+    <None Include="DTO\DataSetS8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetS8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\DataSetS8.xss">
+      <DependentUpon>DataSetS8.xsd</DependentUpon>
+    </Content>
+    <None Include="DTO\dsDanhSachPhieuDatMuaHangCoSize.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDanhSachPhieuDatMuaHangCoSize.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\dsDanhSachPhieuDatMuaHangCoSize.xss">
+      <DependentUpon>dsDanhSachPhieuDatMuaHangCoSize.xsd</DependentUpon>
+    </Content>
+    <None Include="DTO\dsDanhSachPhieuDatMuaHangNoSize.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDanhSachPhieuDatMuaHangNoSize.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DTO\dsDanhSachPhieuDatMuaHangNoSize.xss">
+      <DependentUpon>dsDanhSachPhieuDatMuaHangNoSize.xsd</DependentUpon>
+    </Content>
+    <Content Include="changeSignature.ashx" />
+    <Content Include="presentationLayer\Admin\frmBUser.aspx" />
+    <Content Include="presentationLayer\Admin\frmEditUser.aspx" />
+    <Content Include="presentationLayer\ApproveUser\DanhSachVanBanDen.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmApproval.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmDetails.aspx" />
+    <Content Include="presentationLayer\ApproveUser\frmDetails2.aspx" />
+    <Content Include="presentationLayer\ApproveUser\test.aspx" />
+    <Content Include="presentationLayer\frmDoiMatKhau.aspx" />
+    <Content Include="presentationLayer\frmLienhe.aspx" />
+    <Content Include="presentationLayer\frmQuenmatkhau.aspx" />
+    <Content Include="presentationLayer\Users\frmDetailsNV.aspx" />
+    <Content Include="presentationLayer\Users\frmTaoMoi.aspx" />
+    <Content Include="presentationLayer\Users\frmTrinhDuyet.aspx" />
+    <Content Include="presentationLayer\Users\frmTrinhKy.aspx" />
+    <Content Include="presentationLayer\Users\FrmView.aspx" />
+    <Content Include="presentationLayer\Users\Home.aspx" />
+    <Content Include="presentationLayer\Users\taomoi.aspx" />
+    <Content Include="presentationLayer\Users\ucTaoMoi.ascx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\dinhdangngay.js" />
+    <Content Include="Content\img\vssver2.scc" />
+    <Content Include="Content\menu\vssver2.scc" />
+    <None Include="DTO\iOffice.dbml.layout">
+      <DependentUpon>iOffice.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\aa.pubxml" />
+    <None Include="Properties\PublishProfiles\PDNalex_Setting.pubxml" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Style\GridviewScroll.css" />
+    <Content Include="Scripts\gridviewScroll.min.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\js_getseson_min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\ngay.js" />
+    <Content Include="Scripts\NgayNghi.js" />
+    <Content Include="Scripts\NgayThang.js" />
+    <Content Include="Scripts\nhapso.js" />
+    <Content Include="Scripts\ScrollableGridViewPlugin_ASP.NetAJAXmin.js" />
+    <Content Include="Scripts\session_run.js" />
+    <Content Include="Scripts\session_run1.js" />
+    <Content Include="Scripts\session_run2.js" />
+    <Content Include="Scripts\session_run4.js" />
+    <Content Include="Scripts\Xacnhanxoa.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Style\css\bootstrap-theme.css" />
+    <Content Include="Style\css\bootstrap-theme.min.css" />
+    <Content Include="Style\css\bootstrap.css" />
+    <Content Include="Style\css\bootstrap.min.css" />
+    <Content Include="Style\EX03Form.css" />
+    <Content Include="Style\file.css" />
+    <Content Include="Style\kieuchu.css" />
+    <Content Include="Style\menu1.css" />
+    <Content Include="Style\menu2.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abconDAL.cs" />
+    <Compile Include="Default_0.aspx.cs">
+      <DependentUpon>Default_0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_0.aspx.designer.cs">
+      <DependentUpon>Default_0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DataSet8S.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet8S.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DataSet8SScore.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet8SScore.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DataSetCalendar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCalendar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DataSetProject.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProject.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DataSetS8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetS8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\dsDanhSachPhieuDatMuaHangCoSize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDanhSachPhieuDatMuaHangCoSize.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\dsDanhSachPhieuDatMuaHangNoSize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDanhSachPhieuDatMuaHangNoSize.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="AutoComplete\WebServiceCLZL.asmx.cs">
+      <DependentUpon>WebServiceCLZL.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="changeSignature.ashx.cs">
+      <DependentUpon>changeSignature.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dalPDNLink.cs" />
+    <Compile Include="DAO\BaseGennal.cs" />
+    <Compile Include="DAO\BaseGennal1.cs" />
+    <Compile Include="DAO\ChiTietPhieuMuaHangPDNSDAO.cs" />
+    <Compile Include="DAO\PDNA1DAO.cs" />
+    <Compile Include="departDAL.cs" />
+    <Compile Include="DTO\Abcon2.cs" />
+    <Compile Include="DTO\Abcon3.cs" />
+    <Compile Include="DTO\AbconTKEN.cs" />
+    <Compile Include="DTO\abconTKTW.cs" />
+    <Compile Include="DTO\AbconTKVN.cs" />
+    <Compile Include="DTO\iOffice.designer.cs">
+      <DependentUpon>iOffice.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="App_Code\GernericDataAccess.cs" />
+    <Compile Include="App_Code\Common\BaseGUI.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\Common\BLL_File.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Code\Common\Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Code\Common\CommonFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Code\Common\MasterPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\DAL\pdnDAL\dalPDN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Code\LanguegeBus.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\ViewReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Action_Group.aspx.cs">
+      <DependentUpon>Action_Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Action_Group.aspx.designer.cs">
+      <DependentUpon>Action_Group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Action_NhanVien.aspx.cs">
+      <DependentUpon>Action_NhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Action_NhanVien.aspx.designer.cs">
+      <DependentUpon>Action_NhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Add8S.aspx.cs">
+      <DependentUpon>Add8S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Add8S.aspx.designer.cs">
+      <DependentUpon>Add8S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\AddNew8S.aspx.cs">
+      <DependentUpon>AddNew8S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\AddNew8S.aspx.designer.cs">
+      <DependentUpon>AddNew8S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\addProjectn.aspx.cs">
+      <DependentUpon>addProjectn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\addProjectn.aspx.designer.cs">
+      <DependentUpon>addProjectn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\addProjects.aspx.cs">
+      <DependentUpon>addProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\addProjects.aspx.designer.cs">
+      <DependentUpon>addProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\AddProjectShare.aspx.cs">
+      <DependentUpon>AddProjectShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\AddProjectShare.aspx.designer.cs">
+      <DependentUpon>AddProjectShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\AddSitem.aspx.cs">
+      <DependentUpon>AddSitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\AddSitem.aspx.designer.cs">
+      <DependentUpon>AddSitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\addSystem.aspx.cs">
+      <DependentUpon>addSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\addSystem.aspx.designer.cs">
+      <DependentUpon>addSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\KiemTraPhieu.aspx.cs">
+      <DependentUpon>KiemTraPhieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\KiemTraPhieu.aspx.designer.cs">
+      <DependentUpon>KiemTraPhieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\WebForm123.aspx.cs">
+      <DependentUpon>WebForm123.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\WebForm123.aspx.designer.cs">
+      <DependentUpon>WebForm123.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\abc.aspx.cs">
+      <DependentUpon>abc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\abc.aspx.designer.cs">
+      <DependentUpon>abc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ChiTietPhieuBiHuyCB2.aspx.cs">
+      <DependentUpon>ChiTietPhieuBiHuyCB2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ChiTietPhieuBiHuyCB2.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuBiHuyCB2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ChiTietPhieuHuyCB1.aspx.cs">
+      <DependentUpon>ChiTietPhieuHuyCB1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ChiTietPhieuHuyCB1.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuHuyCB1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\DanhSachPhieuChuaDuyetBiTraVeCB.aspx.cs">
+      <DependentUpon>DanhSachPhieuChuaDuyetBiTraVeCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\DanhSachPhieuChuaDuyetBiTraVeCB.aspx.designer.cs">
+      <DependentUpon>DanhSachPhieuChuaDuyetBiTraVeCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDetails2D.aspx.cs">
+      <DependentUpon>frmDetails2D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDetails2D.aspx.designer.cs">
+      <DependentUpon>frmDetails2D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCheckDetail.aspx.cs">
+      <DependentUpon>MyCheckDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCheckDetail.aspx.designer.cs">
+      <DependentUpon>MyCheckDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCheckDetailMH.aspx.cs">
+      <DependentUpon>MyCheckDetailMH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCheckDetailMH.aspx.designer.cs">
+      <DependentUpon>MyCheckDetailMH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCheckPDN.aspx.cs">
+      <DependentUpon>MyCheckPDN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCheckPDN.aspx.designer.cs">
+      <DependentUpon>MyCheckPDN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCreatePDN.aspx.cs">
+      <DependentUpon>MyCreatePDN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCreatePDN.aspx.designer.cs">
+      <DependentUpon>MyCreatePDN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCreatePDN1.aspx.cs">
+      <DependentUpon>MyCreatePDN1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyCreatePDN1.aspx.designer.cs">
+      <DependentUpon>MyCreatePDN1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyPreviewPDN.aspx.cs">
+      <DependentUpon>MyPreviewPDN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyPreviewPDN.aspx.designer.cs">
+      <DependentUpon>MyPreviewPDN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\phieumuahangD.aspx.cs">
+      <DependentUpon>phieumuahangD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\phieumuahangD.aspx.designer.cs">
+      <DependentUpon>phieumuahangD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ShowComentByAuditor.aspx.cs">
+      <DependentUpon>ShowComentByAuditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ShowComentByAuditor.aspx.designer.cs">
+      <DependentUpon>ShowComentByAuditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\wf_Danhsachphieudaduocky.aspx.cs">
+      <DependentUpon>wf_Danhsachphieudaduocky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\wf_Danhsachphieudaduocky.aspx.designer.cs">
+      <DependentUpon>wf_Danhsachphieudaduocky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\wf_Danhsachphieutrongkhotheonguoitao.aspx.cs">
+      <DependentUpon>wf_Danhsachphieutrongkhotheonguoitao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\wf_Danhsachphieutrongkhotheonguoitao.aspx.designer.cs">
+      <DependentUpon>wf_Danhsachphieutrongkhotheonguoitao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\AttactDD.cs" />
+    <Compile Include="presentationLayer\bantin8S.aspx.cs">
+      <DependentUpon>bantin8S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\bantin8S.aspx.designer.cs">
+      <DependentUpon>bantin8S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\bllPDN.cs" />
+    <Compile Include="presentationLayer\BLL_Buser2.cs" />
+    <Compile Include="presentationLayer\BLL_TheLogib.cs" />
+    <Compile Include="presentationLayer\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ClassGenera.cs" />
+    <Compile Include="presentationLayer\Common.cs" />
+    <Compile Include="presentationLayer\ConfirmPass.aspx.cs">
+      <DependentUpon>ConfirmPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ConfirmPass.aspx.designer.cs">
+      <DependentUpon>ConfirmPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\CopyScore.aspx.cs">
+      <DependentUpon>CopyScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\CopyScore.aspx.designer.cs">
+      <DependentUpon>CopyScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\CreateMessage.aspx.cs">
+      <DependentUpon>CreateMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\CreateMessage.aspx.designer.cs">
+      <DependentUpon>CreateMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\DALBuser.cs" />
+    <Compile Include="presentationLayer\DAL_Calendar.cs" />
+    <Compile Include="presentationLayer\DAL_GanttTasks.cs" />
+    <Compile Include="presentationLayer\DAL_GenericERPAccess.cs" />
+    <Compile Include="presentationLayer\DAL_GroupShare.cs" />
+    <Compile Include="presentationLayer\DAL_PDN.cs" />
+    <Compile Include="presentationLayer\DAL_projectn.cs" />
+    <Compile Include="presentationLayer\DAL_Projects.cs" />
+    <Compile Include="presentationLayer\DAL_ProjectShare.cs" />
+    <Compile Include="presentationLayer\DAL_SQL_GenericDataAccess.cs" />
+    <Compile Include="presentationLayer\DAL_System.cs" />
+    <Compile Include="presentationLayer\DAL_TheLogib.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\DetailGroup.aspx.cs">
+      <DependentUpon>DetailGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\DetailGroup.aspx.designer.cs">
+      <DependentUpon>DetailGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Edit8S.aspx.cs">
+      <DependentUpon>Edit8S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Edit8S.aspx.designer.cs">
+      <DependentUpon>Edit8S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\EditProjectShare.aspx.cs">
+      <DependentUpon>EditProjectShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\EditProjectShare.aspx.designer.cs">
+      <DependentUpon>EditProjectShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ExportJob.aspx.cs">
+      <DependentUpon>ExportJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ExportJob.aspx.designer.cs">
+      <DependentUpon>ExportJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ExportProject.aspx.cs">
+      <DependentUpon>ExportProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ExportProject.aspx.designer.cs">
+      <DependentUpon>ExportProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\forgotPassword.aspx.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\forgotPassword.aspx.designer.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Group.aspx.cs">
+      <DependentUpon>Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Group.aspx.designer.cs">
+      <DependentUpon>Group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\GroupDAL.cs" />
+    <Compile Include="presentationLayer\LangDAO.cs" />
+    <Compile Include="presentationLayer\Main8S.aspx.cs">
+      <DependentUpon>Main8S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Main8S.aspx.designer.cs">
+      <DependentUpon>Main8S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeChuaDich1.aspx.cs">
+      <DependentUpon>ChiTietPhieuTraVeChuaDich1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeChuaDich1.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuTraVeChuaDich1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeChuaDich2.aspx.cs">
+      <DependentUpon>ChiTietPhieuTraVeChuaDich2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeChuaDich2.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuTraVeChuaDich2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeDaDich1.aspx.cs">
+      <DependentUpon>ChiTietPhieuTraVeDaDich1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\ChiTietPhieuTraVeDaDich1.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuTraVeDaDich1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\MyDocusND.aspx.cs">
+      <DependentUpon>MyDocusND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\MyDocusND.aspx.designer.cs">
+      <DependentUpon>MyDocusND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\OCanlendar.cs" />
+    <Compile Include="presentationLayer\OverViewShare.aspx.cs">
+      <DependentUpon>OverViewShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\OverViewShare.aspx.designer.cs">
+      <DependentUpon>OverViewShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\page8SDetail.aspx.cs">
+      <DependentUpon>page8SDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\page8SDetail.aspx.designer.cs">
+      <DependentUpon>page8SDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\pageMain.aspx.cs">
+      <DependentUpon>pageMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\pageMain.aspx.designer.cs">
+      <DependentUpon>pageMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\pageMain3.aspx.cs">
+      <DependentUpon>pageMain3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\pageMain3.aspx.designer.cs">
+      <DependentUpon>pageMain3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ProjectShareByUser.aspx.cs">
+      <DependentUpon>ProjectShareByUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ProjectShareByUser.aspx.designer.cs">
+      <DependentUpon>ProjectShareByUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Rport8SScore.aspx.cs">
+      <DependentUpon>Rport8SScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Rport8SScore.aspx.designer.cs">
+      <DependentUpon>Rport8SScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\S8recDAL.cs" />
+    <Compile Include="presentationLayer\ShareJobWith.aspx.cs">
+      <DependentUpon>ShareJobWith.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ShareJobWith.aspx.designer.cs">
+      <DependentUpon>ShareJobWith.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Stem8SDAL.cs" />
+    <Compile Include="presentationLayer\WF_Projectm2.aspx.cs">
+      <DependentUpon>WF_Projectm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\WF_Projectm2.aspx.designer.cs">
+      <DependentUpon>WF_Projectm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report\crtSumScoreInWeek.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crtSumScoreInWeek.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReport41.cs">
+      <DependentUpon>CrystalReport41.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\crt8SCore.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crt8SCore.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crtBaoCaoLeanVN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crtBaoCaoLeanVN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crtBaoCaoTuanExcel1.cs">
+      <DependentUpon>crtBaoCaoTuanExcel1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\crtBaoCaoChuyenAnExcel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crtBaoCaoChuyenAnExcel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crtBaoCaoTuanExcel.cs">
+      <DependentUpon>crtBaoCaoTuanExcel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\crtBaoCaoTuan_PDF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crtBaoCaoTuan_PDF.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PhieuDatMuaHangCoSize.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuDatMuaHangCoSize.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PhieuDatMuaHangNoSize.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuDatMuaHangNoSize.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PhieuDatMuaHangNoSizeNoTitle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuDatMuaHangNoSizeNoTitle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\resetPassword.aspx.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\resetPassword.aspx.designer.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ShareProject.aspx.cs">
+      <DependentUpon>ShareProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ShareProject.aspx.designer.cs">
+      <DependentUpon>ShareProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ShowComentByAuditor1.aspx.cs">
+      <DependentUpon>ShowComentByAuditor1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ShowComentByAuditor1.aspx.designer.cs">
+      <DependentUpon>ShowComentByAuditor1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ChiTietPhieuBiHuy2.aspx.cs">
+      <DependentUpon>ChiTietPhieuBiHuy2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ChiTietPhieuBiHuy2.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuBiHuy2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ChiTietPhieuHuy1.aspx.cs">
+      <DependentUpon>ChiTietPhieuHuy1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ChiTietPhieuHuy1.aspx.designer.cs">
+      <DependentUpon>ChiTietPhieuHuy1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhSachPhieuChuaDuyetBiTraVe.aspx.cs">
+      <DependentUpon>DanhSachPhieuChuaDuyetBiTraVe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhSachPhieuChuaDuyetBiTraVe.aspx.designer.cs">
+      <DependentUpon>DanhSachPhieuChuaDuyetBiTraVe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frChiTietKhongduyet.aspx.cs">
+      <DependentUpon>frChiTietKhongduyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frChiTietKhongduyet.aspx.designer.cs">
+      <DependentUpon>frChiTietKhongduyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frChiTietMHKhongDuyet.aspx.cs">
+      <DependentUpon>frChiTietMHKhongDuyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frChiTietMHKhongDuyet.aspx.designer.cs">
+      <DependentUpon>frChiTietMHKhongDuyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\MyDocusNV.aspx.cs">
+      <DependentUpon>MyDocusNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\MyDocusNV.aspx.designer.cs">
+      <DependentUpon>MyDocusNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ReportPhieuMuaHang.aspx.cs">
+      <DependentUpon>ReportPhieuMuaHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ReportPhieuMuaHang.aspx.designer.cs">
+      <DependentUpon>ReportPhieuMuaHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ShowCommentNV.aspx.cs">
+      <DependentUpon>ShowCommentNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ShowCommentNV.aspx.designer.cs">
+      <DependentUpon>ShowCommentNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\WF_ReportPDN.aspx.cs">
+      <DependentUpon>WF_ReportPDN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\WF_ReportPDN.aspx.designer.cs">
+      <DependentUpon>WF_ReportPDN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ViewShare.aspx.cs">
+      <DependentUpon>ViewShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ViewShare.aspx.designer.cs">
+      <DependentUpon>ViewShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\WF_ChangePassword.aspx.cs">
+      <DependentUpon>WF_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\WF_ChangePassword.aspx.designer.cs">
+      <DependentUpon>WF_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\WF_Projectm.aspx.cs">
+      <DependentUpon>WF_Projectm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\WF_Projectm.aspx.designer.cs">
+      <DependentUpon>WF_Projectm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\WF_ReportT.aspx.cs">
+      <DependentUpon>WF_ReportT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\WF_ReportT.aspx.designer.cs">
+      <DependentUpon>WF_ReportT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="quytrinhDal.cs" />
+    <Compile Include="showPDNcode.aspx.cs">
+      <DependentUpon>showPDNcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showPDNcode.aspx.designer.cs">
+      <DependentUpon>showPDNcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\MasterPage2.Master.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\MasterPage2.Master.designer.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\MyDocusND.Master.cs">
+      <DependentUpon>MyDocusND.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\MyDocusND.Master.designer.cs">
+      <DependentUpon>MyDocusND.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\Site8S.Master.cs">
+      <DependentUpon>Site8S.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\Site8S.Master.designer.cs">
+      <DependentUpon>Site8S.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\SiteGroup.Master.cs">
+      <DependentUpon>SiteGroup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\SiteGroup.Master.designer.cs">
+      <DependentUpon>SiteGroup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\testPage.Master.cs">
+      <DependentUpon>testPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\testPage.Master.designer.cs">
+      <DependentUpon>testPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteReport.Master.cs">
+      <DependentUpon>SiteReport.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteReport.Master.designer.cs">
+      <DependentUpon>SiteReport.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userDAL.cs" />
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLang.aspx.cs">
+      <DependentUpon>WebLang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLang.aspx.designer.cs">
+      <DependentUpon>WebLang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DAO\ABCDAO.cs" />
+    <Compile Include="presentationLayer\ApproveUser\MyDocusRe.aspx.cs">
+      <DependentUpon>MyDocusRe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\MyDocusRe.aspx.designer.cs">
+      <DependentUpon>MyDocusRe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\test11.aspx.cs">
+      <DependentUpon>test11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\test11.aspx.designer.cs">
+      <DependentUpon>test11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\changesignature.aspx.cs">
+      <DependentUpon>changesignature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\changesignature.aspx.designer.cs">
+      <DependentUpon>changesignature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDuyetPhieuEmail.aspx.cs">
+      <DependentUpon>frmDuyetPhieuEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDuyetPhieuEmail.aspx.designer.cs">
+      <DependentUpon>frmDuyetPhieuEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmKhongDuyet.aspx.cs">
+      <DependentUpon>frmKhongDuyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmKhongDuyet.aspx.designer.cs">
+      <DependentUpon>frmKhongDuyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\ChangeImage.ashx.cs">
+      <DependentUpon>ChangeImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\MyDocus.Master.cs">
+      <DependentUpon>MyDocus.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\MyDocus.Master.designer.cs">
+      <DependentUpon>MyDocus.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoComplete\AutoCompleteTexBox.asmx.cs">
+      <DependentUpon>AutoCompleteTexBox.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BUS\AbconBUS.cs" />
+    <Compile Include="BUS\abillBUS.cs" />
+    <Compile Include="BUS\BDepartmentBUS.cs" />
+    <Compile Include="BUS\Buser_SecureBUS.cs" />
+    <Compile Include="BUS\ChiTietBuocKyBUS.cs" />
+    <Compile Include="BUS\ChucVuBUS.cs" />
+    <Compile Include="BUS\pdnaBUS.cs" />
+    <Compile Include="BUS\PDNLinkBUS.cs" />
+    <Compile Include="BUS\UserBUS.cs" />
+    <Compile Include="BUS\User_SystemBUS.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="danhsachvanbanden.aspx.cs">
+      <DependentUpon>danhsachvanbanden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="danhsachvanbanden.aspx.designer.cs">
+      <DependentUpon>danhsachvanbanden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\AbconDAO.cs" />
+    <Compile Include="DAO\abillDAO.cs" />
+    <Compile Include="DAO\BDepartmentDAO.cs" />
+    <Compile Include="DAO\Buser_SecureDAO.cs" />
+    <Compile Include="DAO\CapDuyetDAO.cs" />
+    <Compile Include="DAO\CateLanguegeDAO.cs" />
+    <Compile Include="DAO\ChiTietBuocKyDAO.cs" />
+    <Compile Include="DAO\ChucVuDAO.cs" />
+    <Compile Include="DAO\DoUuTienDAO.cs" />
+    <Compile Include="DAO\KhiVangMatDAO.cs" />
+    <Compile Include="DAO\LoaiDonViDAO.cs" />
+    <Compile Include="DAO\NghiPhepDAO.cs" />
+    <Compile Include="DAO\NguoiDichDAO.cs" />
+    <Compile Include="DAO\PDNLinkDAO.cs" />
+    <Compile Include="DAO\pnaDAO.cs" />
+    <Compile Include="DAO\QPDNFlowDAO.cs" />
+    <Compile Include="DAO\SuppliesDAO.cs" />
+    <Compile Include="DAO\TrangThaiDuyetDAO.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="DAO\User_SystemDAO.cs" />
+    <Compile Include="DTO\Abcon1.cs" />
+    <Compile Include="MyPhoto.ashx.cs">
+      <DependentUpon>MyPhoto.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\FDanhSachLoaiPhieu.aspx.cs">
+      <DependentUpon>FDanhSachLoaiPhieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\FDanhSachLoaiPhieu.aspx.designer.cs">
+      <DependentUpon>FDanhSachLoaiPhieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\FQPDNFlow.aspx.cs">
+      <DependentUpon>FQPDNFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\FQPDNFlow.aspx.designer.cs">
+      <DependentUpon>FQPDNFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmAddUsers.aspx.cs">
+      <DependentUpon>frmAddUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmAddUsers.aspx.designer.cs">
+      <DependentUpon>frmAddUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmBoPhan.aspx.cs">
+      <DependentUpon>frmBoPhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmBoPhan.aspx.designer.cs">
+      <DependentUpon>frmBoPhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmBUser.aspx.cs">
+      <DependentUpon>frmBUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmBUser.aspx.designer.cs">
+      <DependentUpon>frmBUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmEditBoPhan.aspx.cs">
+      <DependentUpon>frmEditBoPhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmEditBoPhan.aspx.designer.cs">
+      <DependentUpon>frmEditBoPhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmEditNghiPhep.aspx.cs">
+      <DependentUpon>frmEditNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmEditNghiPhep.aspx.designer.cs">
+      <DependentUpon>frmEditNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmEditUser.aspx.cs">
+      <DependentUpon>frmEditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmEditUser.aspx.designer.cs">
+      <DependentUpon>frmEditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmNghiPhep.aspx.cs">
+      <DependentUpon>frmNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmNghiPhep.aspx.designer.cs">
+      <DependentUpon>frmNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmQPDNFlow.aspx.cs">
+      <DependentUpon>frmQPDNFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\frmQPDNFlow.aspx.designer.cs">
+      <DependentUpon>frmQPDNFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\FSualoaiphieu.aspx.cs">
+      <DependentUpon>FSualoaiphieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\FSualoaiphieu.aspx.designer.cs">
+      <DependentUpon>FSualoaiphieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\fSuaQuyTrinh.aspx.cs">
+      <DependentUpon>fSuaQuyTrinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\fSuaQuyTrinh.aspx.designer.cs">
+      <DependentUpon>fSuaQuyTrinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\QPDNFlow2.aspx.cs">
+      <DependentUpon>QPDNFlow2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\QPDNFlow2.aspx.designer.cs">
+      <DependentUpon>QPDNFlow2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\XoaQuyTrinh.aspx.cs">
+      <DependentUpon>XoaQuyTrinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Admin\XoaQuyTrinh.aspx.designer.cs">
+      <DependentUpon>XoaQuyTrinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chinhsuaphieu.aspx.cs">
+      <DependentUpon>chinhsuaphieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chinhsuaphieu.aspx.designer.cs">
+      <DependentUpon>chinhsuaphieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietduyet1.aspx.cs">
+      <DependentUpon>chitietduyet1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietduyet1.aspx.designer.cs">
+      <DependentUpon>chitietduyet1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietduyet2.aspx.cs">
+      <DependentUpon>chitietduyet2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietduyet2.aspx.designer.cs">
+      <DependentUpon>chitietduyet2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieuchuadich.aspx.cs">
+      <DependentUpon>chitietphieuchuadich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieuchuadich.aspx.designer.cs">
+      <DependentUpon>chitietphieuchuadich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieudadich.aspx.cs">
+      <DependentUpon>chitietphieudadich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieudadich.aspx.designer.cs">
+      <DependentUpon>chitietphieudadich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieugui1.aspx.cs">
+      <DependentUpon>chitietphieugui1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieugui1.aspx.designer.cs">
+      <DependentUpon>chitietphieugui1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieugui2.aspx.cs">
+      <DependentUpon>chitietphieugui2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieugui2.aspx.designer.cs">
+      <DependentUpon>chitietphieugui2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieumuahang.aspx.cs">
+      <DependentUpon>chitietphieumuahang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\chitietphieumuahang.aspx.designer.cs">
+      <DependentUpon>chitietphieumuahang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachphieubanguikhongduocduyet.aspx.cs">
+      <DependentUpon>danhsachphieubanguikhongduocduyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachphieubanguikhongduocduyet.aspx.designer.cs">
+      <DependentUpon>danhsachphieubanguikhongduocduyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachphieuchuadich.aspx.cs">
+      <DependentUpon>danhsachphieuchuadich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachphieuchuadich.aspx.designer.cs">
+      <DependentUpon>danhsachphieuchuadich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachphieudadich.aspx.cs">
+      <DependentUpon>danhsachphieudadich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachphieudadich.aspx.designer.cs">
+      <DependentUpon>danhsachphieudadich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Danhsachphieuguibihuy.aspx.cs">
+      <DependentUpon>Danhsachphieuguibihuy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Danhsachphieuguibihuy.aspx.designer.cs">
+      <DependentUpon>Danhsachphieuguibihuy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Danhsachphieumoikhoitao.aspx.cs">
+      <DependentUpon>Danhsachphieumoikhoitao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Danhsachphieumoikhoitao.aspx.designer.cs">
+      <DependentUpon>Danhsachphieumoikhoitao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\DanhSachPhieuTrongKhoTheoNguoiDuyet.aspx.cs">
+      <DependentUpon>DanhSachPhieuTrongKhoTheoNguoiDuyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\DanhSachPhieuTrongKhoTheoNguoiDuyet.aspx.designer.cs">
+      <DependentUpon>DanhSachPhieuTrongKhoTheoNguoiDuyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Danhsachvanbandagui.aspx.cs">
+      <DependentUpon>Danhsachvanbandagui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Danhsachvanbandagui.aspx.designer.cs">
+      <DependentUpon>Danhsachvanbandagui.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachvanbandaky.aspx.cs">
+      <DependentUpon>danhsachvanbandaky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachvanbandaky.aspx.designer.cs">
+      <DependentUpon>danhsachvanbandaky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\DanhSachVanBanDen.aspx.cs">
+      <DependentUpon>DanhSachVanBanDen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\DanhSachVanBanDen.aspx.designer.cs">
+      <DependentUpon>DanhSachVanBanDen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachvanbankhongduyet.aspx.cs">
+      <DependentUpon>danhsachvanbankhongduyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\danhsachvanbankhongduyet.aspx.designer.cs">
+      <DependentUpon>danhsachvanbankhongduyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Details5.aspx.cs">
+      <DependentUpon>Details5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Details5.aspx.designer.cs">
+      <DependentUpon>Details5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmApproval.aspx.cs">
+      <DependentUpon>frmApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmApproval.aspx.designer.cs">
+      <DependentUpon>frmApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChiTiet.aspx.cs">
+      <DependentUpon>frmChiTiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChiTiet.aspx.designer.cs">
+      <DependentUpon>frmChiTiet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChiTietDich.aspx.cs">
+      <DependentUpon>frmChiTietDich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChiTietDich.aspx.designer.cs">
+      <DependentUpon>frmChiTietDich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmchitietphieu1.aspx.cs">
+      <DependentUpon>frmchitietphieu1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmchitietphieu1.aspx.designer.cs">
+      <DependentUpon>frmchitietphieu1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChiTietPhieuChuaDich.aspx.cs">
+      <DependentUpon>frmChiTietPhieuChuaDich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChiTietPhieuChuaDich.aspx.designer.cs">
+      <DependentUpon>frmChiTietPhieuChuaDich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmchitietphieumuahang.aspx.cs">
+      <DependentUpon>frmchitietphieumuahang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmchitietphieumuahang.aspx.designer.cs">
+      <DependentUpon>frmchitietphieumuahang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChitietphieumuahangdich.aspx.cs">
+      <DependentUpon>frmChitietphieumuahangdich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmChitietphieumuahangdich.aspx.designer.cs">
+      <DependentUpon>frmChitietphieumuahangdich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDetails.aspx.cs">
+      <DependentUpon>frmDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDetails.aspx.designer.cs">
+      <DependentUpon>frmDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDetails2.aspx.cs">
+      <DependentUpon>frmDetails2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmDetails2.aspx.designer.cs">
+      <DependentUpon>frmDetails2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmreview1.aspx.cs">
+      <DependentUpon>frmreview1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmreview1.aspx.designer.cs">
+      <DependentUpon>frmreview1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmSuaphieumuahang.aspx.cs">
+      <DependentUpon>frmSuaphieumuahang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmSuaphieumuahang.aspx.designer.cs">
+      <DependentUpon>frmSuaphieumuahang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmTaoPhieu.aspx.cs">
+      <DependentUpon>frmTaoPhieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmTaoPhieu.aspx.designer.cs">
+      <DependentUpon>frmTaoPhieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmTrinhDuyetCB.aspx.cs">
+      <DependentUpon>frmTrinhDuyetCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\frmTrinhDuyetCB.aspx.designer.cs">
+      <DependentUpon>frmTrinhDuyetCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\FrmViewCB.aspx.cs">
+      <DependentUpon>FrmViewCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\FrmViewCB.aspx.designer.cs">
+      <DependentUpon>FrmViewCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Guinguoidich.aspx.cs">
+      <DependentUpon>Guinguoidich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\Guinguoidich.aspx.designer.cs">
+      <DependentUpon>Guinguoidich.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\phieumuahang.aspx.cs">
+      <DependentUpon>phieumuahang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\phieumuahang.aspx.designer.cs">
+      <DependentUpon>phieumuahang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\tinhtrangtheovanban.aspx.cs">
+      <DependentUpon>tinhtrangtheovanban.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\tinhtrangtheovanban.aspx.designer.cs">
+      <DependentUpon>tinhtrangtheovanban.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ViDu.aspx.cs">
+      <DependentUpon>ViDu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\ApproveUser\ViDu.aspx.designer.cs">
+      <DependentUpon>ViDu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\frmDoiMatKhau.aspx.cs">
+      <DependentUpon>frmDoiMatKhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\frmDoiMatKhau.aspx.designer.cs">
+      <DependentUpon>frmDoiMatKhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\frmDoiMatKhauXetDuyet.aspx.cs">
+      <DependentUpon>frmDoiMatKhauXetDuyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\frmDoiMatKhauXetDuyet.aspx.designer.cs">
+      <DependentUpon>frmDoiMatKhauXetDuyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\frmLienhe.aspx.cs">
+      <DependentUpon>frmLienhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\frmLienhe.aspx.designer.cs">
+      <DependentUpon>frmLienhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\frmQuenmatkhau.aspx.cs">
+      <DependentUpon>frmQuenmatkhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\frmQuenmatkhau.aspx.designer.cs">
+      <DependentUpon>frmQuenmatkhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\FrmQuenmatkhauxetduyet.aspx.cs">
+      <DependentUpon>FrmQuenmatkhauxetduyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\FrmQuenmatkhauxetduyet.aspx.designer.cs">
+      <DependentUpon>FrmQuenmatkhauxetduyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Help1.aspx.cs">
+      <DependentUpon>Help1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Help1.aspx.designer.cs">
+      <DependentUpon>Help1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\KeepAlive.ashx.cs">
+      <DependentUpon>KeepAlive.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\KeepAlive1.ashx.cs">
+      <DependentUpon>KeepAlive1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\KeepAlive2.ashx.cs">
+      <DependentUpon>KeepAlive2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\KeepAlive3.ashx.cs">
+      <DependentUpon>KeepAlive3.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chinhsuaphieuND.aspx.cs">
+      <DependentUpon>chinhsuaphieuND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chinhsuaphieuND.aspx.designer.cs">
+      <DependentUpon>chinhsuaphieuND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieuchuadichND.aspx.cs">
+      <DependentUpon>chitietphieuchuadichND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieuchuadichND.aspx.designer.cs">
+      <DependentUpon>chitietphieuchuadichND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieudadichND.aspx.cs">
+      <DependentUpon>chitietphieudadichND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieudadichND.aspx.designer.cs">
+      <DependentUpon>chitietphieudadichND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieugui1ND.aspx.cs">
+      <DependentUpon>chitietphieugui1ND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieugui1ND.aspx.designer.cs">
+      <DependentUpon>chitietphieugui1ND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieugui2ND.aspx.cs">
+      <DependentUpon>chitietphieugui2ND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\chitietphieugui2ND.aspx.designer.cs">
+      <DependentUpon>chitietphieugui2ND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\danhsachphieuchuadichND.aspx.cs">
+      <DependentUpon>danhsachphieuchuadichND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\danhsachphieuchuadichND.aspx.designer.cs">
+      <DependentUpon>danhsachphieuchuadichND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\danhsachphieudadichND.aspx.cs">
+      <DependentUpon>danhsachphieudadichND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\danhsachphieudadichND.aspx.designer.cs">
+      <DependentUpon>danhsachphieudadichND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmChiTietDichND.aspx.cs">
+      <DependentUpon>frmChiTietDichND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmChiTietDichND.aspx.designer.cs">
+      <DependentUpon>frmChiTietDichND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieucattrongkhoND.aspx.cs">
+      <DependentUpon>frmDanhsachphieucattrongkhoND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieucattrongkhoND.aspx.designer.cs">
+      <DependentUpon>frmDanhsachphieucattrongkhoND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieudaduyetND.aspx.cs">
+      <DependentUpon>frmDanhsachphieudaduyetND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieudaduyetND.aspx.designer.cs">
+      <DependentUpon>frmDanhsachphieudaduyetND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieudaguiND.aspx.cs">
+      <DependentUpon>frmDanhsachphieudaguiND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieudaguiND.aspx.designer.cs">
+      <DependentUpon>frmDanhsachphieudaguiND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieukhongduockyND.aspx.cs">
+      <DependentUpon>frmDanhsachphieukhongduockyND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieukhongduockyND.aspx.designer.cs">
+      <DependentUpon>frmDanhsachphieukhongduockyND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieumoikhoitaoND.aspx.cs">
+      <DependentUpon>frmDanhsachphieumoikhoitaoND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDanhsachphieumoikhoitaoND.aspx.designer.cs">
+      <DependentUpon>frmDanhsachphieumoikhoitaoND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDetailsND.aspx.cs">
+      <DependentUpon>frmDetailsND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDetailsND.aspx.designer.cs">
+      <DependentUpon>frmDetailsND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDetails2ND.aspx.cs">
+      <DependentUpon>frmDetails2ND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmDetails2ND.aspx.designer.cs">
+      <DependentUpon>frmDetails2ND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmPreviewND.aspx.cs">
+      <DependentUpon>frmPreviewND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmPreviewND.aspx.designer.cs">
+      <DependentUpon>frmPreviewND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmSuaphieumuahangND.aspx.cs">
+      <DependentUpon>frmSuaphieumuahangND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmSuaphieumuahangND.aspx.designer.cs">
+      <DependentUpon>frmSuaphieumuahangND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmTaoPhieuND.aspx.cs">
+      <DependentUpon>frmTaoPhieuND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmTaoPhieuND.aspx.designer.cs">
+      <DependentUpon>frmTaoPhieuND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmTrinhDuyetND.aspx.cs">
+      <DependentUpon>frmTrinhDuyetND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\frmTrinhDuyetND.aspx.designer.cs">
+      <DependentUpon>frmTrinhDuyetND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\phieumuahangND.aspx.cs">
+      <DependentUpon>phieumuahangND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\phieumuahangND.aspx.designer.cs">
+      <DependentUpon>phieumuahangND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\tinhtrangtheovanbanND.aspx.cs">
+      <DependentUpon>tinhtrangtheovanbanND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\NguoiDich\tinhtrangtheovanbanND.aspx.designer.cs">
+      <DependentUpon>tinhtrangtheovanbanND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chinhsuaphieuNV.aspx.cs">
+      <DependentUpon>chinhsuaphieuNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chinhsuaphieuNV.aspx.designer.cs">
+      <DependentUpon>chinhsuaphieuNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieuchuadichNV.aspx.cs">
+      <DependentUpon>chitietphieuchuadichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieuchuadichNV.aspx.designer.cs">
+      <DependentUpon>chitietphieuchuadichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieudadichNV.aspx.cs">
+      <DependentUpon>chitietphieudadichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieudadichNV.aspx.designer.cs">
+      <DependentUpon>chitietphieudadichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieugui1NV.aspx.cs">
+      <DependentUpon>chitietphieugui1NV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieugui1NV.aspx.designer.cs">
+      <DependentUpon>chitietphieugui1NV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieugui2NV.aspx.cs">
+      <DependentUpon>chitietphieugui2NV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieugui2NV.aspx.designer.cs">
+      <DependentUpon>chitietphieugui2NV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieukhoitao.aspx.cs">
+      <DependentUpon>chitietphieukhoitao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\chitietphieukhoitao.aspx.designer.cs">
+      <DependentUpon>chitietphieukhoitao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachphieucattrongkhoNV.aspx.cs">
+      <DependentUpon>danhsachphieucattrongkhoNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachphieucattrongkhoNV.aspx.designer.cs">
+      <DependentUpon>danhsachphieucattrongkhoNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachphieudaduyetNV.aspx.cs">
+      <DependentUpon>danhsachphieudaduyetNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachphieudaduyetNV.aspx.designer.cs">
+      <DependentUpon>danhsachphieudaduyetNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhsachphieumoikhoitaoNV.aspx.cs">
+      <DependentUpon>DanhsachphieumoikhoitaoNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhsachphieumoikhoitaoNV.aspx.designer.cs">
+      <DependentUpon>DanhsachphieumoikhoitaoNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhsachtinhtrangvanbandaguiNV.aspx.cs">
+      <DependentUpon>DanhsachtinhtrangvanbandaguiNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhsachtinhtrangvanbandaguiNV.aspx.designer.cs">
+      <DependentUpon>DanhsachtinhtrangvanbandaguiNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachvanbanchuadichNV.aspx.cs">
+      <DependentUpon>danhsachvanbanchuadichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachvanbanchuadichNV.aspx.designer.cs">
+      <DependentUpon>danhsachvanbanchuadichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachvanbandadichNV.aspx.cs">
+      <DependentUpon>danhsachvanbandadichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachvanbandadichNV.aspx.designer.cs">
+      <DependentUpon>danhsachvanbandadichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhsachvanbandaguiNV.aspx.cs">
+      <DependentUpon>DanhsachvanbandaguiNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\DanhsachvanbandaguiNV.aspx.designer.cs">
+      <DependentUpon>DanhsachvanbandaguiNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachvanbankhongduockyNV.aspx.cs">
+      <DependentUpon>danhsachvanbankhongduockyNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\danhsachvanbankhongduockyNV.aspx.designer.cs">
+      <DependentUpon>danhsachvanbankhongduockyNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmchitietphieuNV.aspx.cs">
+      <DependentUpon>frmchitietphieuNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmchitietphieuNV.aspx.designer.cs">
+      <DependentUpon>frmchitietphieuNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmchitietphieu1NV.aspx.cs">
+      <DependentUpon>frmchitietphieu1NV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmchitietphieu1NV.aspx.designer.cs">
+      <DependentUpon>frmchitietphieu1NV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmChiTietPhieuChuaDichNV.aspx.cs">
+      <DependentUpon>frmChiTietPhieuChuaDichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmChiTietPhieuChuaDichNV.aspx.designer.cs">
+      <DependentUpon>frmChiTietPhieuChuaDichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmchitietphieumuahangNV.aspx.cs">
+      <DependentUpon>frmchitietphieumuahangNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmchitietphieumuahangNV.aspx.designer.cs">
+      <DependentUpon>frmchitietphieumuahangNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmChitietphieumuahangdichNV.aspx.cs">
+      <DependentUpon>frmChitietphieumuahangdichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmChitietphieumuahangdichNV.aspx.designer.cs">
+      <DependentUpon>frmChitietphieumuahangdichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmDanhsachphieubihuyNV.aspx.cs">
+      <DependentUpon>frmDanhsachphieubihuyNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmDanhsachphieubihuyNV.aspx.designer.cs">
+      <DependentUpon>frmDanhsachphieubihuyNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmDetailsNV.aspx.cs">
+      <DependentUpon>frmDetailsNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmDetailsNV.aspx.designer.cs">
+      <DependentUpon>frmDetailsNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmDetails2NV.aspx.cs">
+      <DependentUpon>frmDetails2NV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmDetails2NV.aspx.designer.cs">
+      <DependentUpon>frmDetails2NV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmFirst.aspx.cs">
+      <DependentUpon>frmFirst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmFirst.aspx.designer.cs">
+      <DependentUpon>frmFirst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmSuaphieumuahangNV.aspx.cs">
+      <DependentUpon>frmSuaphieumuahangNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmSuaphieumuahangNV.aspx.designer.cs">
+      <DependentUpon>frmSuaphieumuahangNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmTaoMoi.aspx.cs">
+      <DependentUpon>frmTaoMoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmTaoMoi.aspx.designer.cs">
+      <DependentUpon>frmTaoMoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmtaophieunghiphep.aspx.cs">
+      <DependentUpon>frmtaophieunghiphep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmtaophieunghiphep.aspx.designer.cs">
+      <DependentUpon>frmtaophieunghiphep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmTrinhDuyet.aspx.cs">
+      <DependentUpon>frmTrinhDuyet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmTrinhDuyet.aspx.designer.cs">
+      <DependentUpon>frmTrinhDuyet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmTrinhKy.aspx.cs">
+      <DependentUpon>frmTrinhKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmTrinhKy.aspx.designer.cs">
+      <DependentUpon>frmTrinhKy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\FrmView.aspx.cs">
+      <DependentUpon>FrmView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\FrmView.aspx.designer.cs">
+      <DependentUpon>FrmView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmViewPhieuNghiPhep.aspx.cs">
+      <DependentUpon>frmViewPhieuNghiPhep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\frmViewPhieuNghiPhep.aspx.designer.cs">
+      <DependentUpon>frmViewPhieuNghiPhep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\guinguoidichNV.aspx.cs">
+      <DependentUpon>guinguoidichNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\guinguoidichNV.aspx.designer.cs">
+      <DependentUpon>guinguoidichNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\phieumuahangNV.aspx.cs">
+      <DependentUpon>phieumuahangNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\phieumuahangNV.aspx.designer.cs">
+      <DependentUpon>phieumuahangNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\taomoi.aspx.cs">
+      <DependentUpon>taomoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\taomoi.aspx.designer.cs">
+      <DependentUpon>taomoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\tinhtrangtheovanbanNV.aspx.cs">
+      <DependentUpon>tinhtrangtheovanbanNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\tinhtrangtheovanbanNV.aspx.designer.cs">
+      <DependentUpon>tinhtrangtheovanbanNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ucTaoMoi.ascx.cs">
+      <DependentUpon>ucTaoMoi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ucTaoMoi.ascx.designer.cs">
+      <DependentUpon>ucTaoMoi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ViDu5.aspx.cs">
+      <DependentUpon>ViDu5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\ViDu5.aspx.designer.cs">
+      <DependentUpon>ViDu5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="presentationLayer\Users\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="presentationLayer\Users\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto1.ashx.cs">
+      <DependentUpon>MyPhoto1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto2.ashx.cs">
+      <DependentUpon>MyPhoto2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto3.ashx.cs">
+      <DependentUpon>MyPhoto3.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto4.ashx.cs">
+      <DependentUpon>MyPhoto4.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto5.ashx.cs">
+      <DependentUpon>MyPhoto5.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto6.ashx.cs">
+      <DependentUpon>MyPhoto6.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto7.ashx.cs">
+      <DependentUpon>MyPhoto7.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhoto8.ashx.cs">
+      <DependentUpon>MyPhoto8.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessSignature\MyPhotoKhongDuyet.ashx.cs">
+      <DependentUpon>MyPhotoKhongDuyet.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Share\Data.cs" />
+    <Compile Include="Share\FaultContractData.cs" />
+    <Compile Include="Share\libraly.cs" />
+    <Compile Include="Share\Until.cs" />
+    <Compile Include="Share\ViewReport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\SiteAddmin.Master.cs">
+      <DependentUpon>SiteAddmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\SiteAddmin.Master.designer.cs">
+      <DependentUpon>SiteAddmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMater\SiteNguoiDich.Master.cs">
+      <DependentUpon>SiteNguoiDich.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMater\SiteNguoiDich.Master.designer.cs">
+      <DependentUpon>SiteNguoiDich.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\BLL\" />
+    <Folder Include="App_Code\DataSet\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMater\SiteAddmin.Master" />
+    <Content Include="SiteMater\SiteNguoiDich.Master" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Style\css\bootstrap-theme.css.map" />
+    <Content Include="Style\css\bootstrap.css.map" />
+    <Content Include="SiteMater\MyDocus.Master" />
+    <Content Include="SiteMater\Site1.Master" />
+    <Content Include="SiteMater\testPage.Master" />
+    <Content Include="SiteMater\MyDocusND.Master" />
+    <Content Include="SiteMater\AdminMaster.Master" />
+    <Content Include="SiteReport.Master" />
+    <Content Include="SiteMater\MasterPage.Master" />
+    <Content Include="SiteMater\MasterPage2.Master" />
+    <Content Include="SiteMater\SiteGroup.Master" />
+    <Content Include="SiteMater\Site2.Master" />
+    <Content Include="SiteMater\Site8S.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crtSumScoreInWeek.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtSumScoreInWeek.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport41.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport41.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crt8SCore.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crt8SCore.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crtBaoCaoLeanVN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtBaoCaoLeanVN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crtBaoCaoTuanExcel1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtBaoCaoTuanExcel1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crtBaoCaoChuyenAnExcel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtBaoCaoChuyenAnExcel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crtBaoCaoTuanExcel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtBaoCaoTuanExcel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crtBaoCaoTuan_PDF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtBaoCaoTuan_PDF.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Report\PhieuDatMuaHangNoSize.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhieuDatMuaHangNoSize.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\PhieuDatMuaHangNoSizeNoTitle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhieuDatMuaHangNoSizeNoTitle.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Report\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PhieuDatMuaHangCoSize.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhieuDatMuaHangCoSize.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8088</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3530/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://localhost:3530/PDN/</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="False" UseAjaxifiedTemplates="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

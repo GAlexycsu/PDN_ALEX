@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteApproved.master.cs" Inherits="iOffice.SiteMater.SiteApproved" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <link href="../Style/file.css" rel="stylesheet" />
+    <link href="../Style/menu1.css" rel="stylesheet" />
+    <link href="../Style/menu2.css" rel="stylesheet" />
+    <%--<script src="../Scripts/session_run2.js" type="text/javascript"></script>--%>
+    <%-- <script type="text/javascript">
+         function heartBeat()
+         { $.get("KeepAlive1.ashx?", function (data) { }); }
+         $(function ()
+         { setInterval("heartBeat()", 1000 * 30); }) // 30s gửi request một lần});
+
+    </script>--%>
+</head>
+<body>
+    <form id="form1" runat="server" >
+       <center>
+	<div id="bocuc" title="Hệ thống xét duyệt ">
+		
+			<div id="baner"></div>
+		<div style="height: 40px; background: #0088ca;">
+			   <style>
+                    .menu{list-style: none; margin: 0px; padding: 0px 0px 0px 0px;}
+                    .menu li{display: inline-block; margin: 0px 30px 0px 0px; height: 29px;}
+                    .menu li a{text-decoration: none; color: #fff; text-transform: uppercase;}
+                    .sub{position: absolute; width: 270px; background: #0088ca; list-style: none; margin: 10px 0px 0px 0px; padding: 10px; display:none;}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; padding: 7px;}
+                    .menu > li:hover > .sub{display: block;}
+                    .menu1{list-style: none; margin: 0px; padding: 11px 0px 0px 0px;}
+                    .menu1 li{display: inline-block; margin: 0px 30px 0px 0px; height: 29px;}
+                    .menu1 li a{text-decoration: none; color: #fff; text-transform: uppercase;}
+                    .sub{position: absolute; width: 270px; background: #0088ca; list-style: none; margin: 10px 0px 0px 0px; padding: 10px; display:none;}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; padding: 7px;}
+                    .menu1 > li:hover > .sub{display: block;}
+            
+               </style>
+               <ul class="menu">
+              
+                    <li><asp:HyperLink ID="ida1" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/DanhSachVanBanDen.aspx" Font-Underline="False">首页</asp:HyperLink></li>
+                    
+                 
+                    <li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="" Font-Underline="False">更换密码</asp:HyperLink>
+                        <ul class="sub">
+                            <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/presentationLayer/changesignature.aspx" Font-Underline="False">Đổi chữ ký</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/presentationLayer/frmDoiMatKhauXetDuyet.aspx" Font-Underline="False">更换审核密码</asp:HyperLink></li>
+                                         
+                       </ul>
+                    </li>
+                    <li><asp:HyperLink ID="idc1" runat="server" NavigateUrl="~/presentationLayer/frmLienhe.aspx" Font-Underline="False">协助</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/presentationLayer/FrmQuenmatkhauxetduyet.aspx" Font-Underline="False">忘记审核密码</asp:HyperLink></li>
+                    <li><p style="color:white"><asp:Label ID="lblXinChao" runat="server" Text=""></asp:Label> &nbsp;<asp:Label ID="lblTen" runat="server" Text=""></asp:Label></p></li>  
+                    <li> <asp:HyperLink ID="ide1" runat="server" NavigateUrl="http://portal.footgear.com.vn" Font-Underline="False">离开</asp:HyperLink></li>
+
+               </ul>
+      
+		
+         </div>
+		<!-- menu trai -->
+		<div id="body">
+			<div id="menuleft" style="text-align: left; margin-left:-1px; margin-top:-12px; width: 190px; height: 1410px;">
+			<div id="menu9" >
+                
+
+                <ul class="menu1" style="text-align: left;" >
+
+                   
+                   <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:35px; "><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/frmTaoPhieu.aspx" Font-Bold="false">Tạo Phiếu</asp:HyperLink></a></li>
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:40px;"><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/Danhsachphieumoikhoitao.aspx" Font-Bold="false">Danh Sách Phiếu Mới Khởi Tạo</asp:HyperLink></li>
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:40px;"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/danhsachphieuchuadich.aspx" Font-Bold="false">Danh Sách phiếu chưa dịch</asp:HyperLink></li>
+                      
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:40px;"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/danhsachphieudadich.aspx" Font-Bold="false">Danh sách phiếu đã dịch</asp:HyperLink></li>
+                     <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:40px;"><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/DanhSachVanBanDen.aspx" Font-Bold="false">资料名单</asp:HyperLink></li>
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:40px;"><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/Danhsachvanbandagui.aspx" Font-Bold="false">资料名单</asp:HyperLink></li>
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:45px;"><asp:HyperLink ID="HyperLink22" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/danhsachvanbandaky.aspx" Font-Bold="True">审核名单</asp:HyperLink></li>
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:45px;"><asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/danhsachvanbankhongduyet.aspx" Font-Bold="True">Danh sách văn bản không duyệt</asp:HyperLink></li>
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:45px;"><asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/danhsachphieubanguikhongduocduyet.aspx" Font-Bold="True">Danh sách phiếu gửi đi không duyệt</asp:HyperLink></li>
+                   <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:45px;"><asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/Danhsachphieuguibihuy.aspx" Font-Bold="True">Danh sách phiếu gửi đi bị hủy</asp:HyperLink></li>
+                   <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;height:40px;"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/presentationLayer/ApproveUser/DanhSachPhieuTrongKhoTheoNguoiDuyet.aspx" Font-Bold="True">Danh sách phiếu trong kho</asp:HyperLink></li>
+                </ul>
+            </div>
+            </div>
+           
+			<div id="bodychr">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                &nbsp;
+            </div>
+		</div>
+       <div id="z2" style="font-weight: bold; font-size: 16px; width: 1082px; color: blue; margin-left:0px; background-color:#BBD9EE">
+		    <div id="z3" style="font-weight: bold; font-size: 16px; width: 800px; color: blue; margin-left:0px; background-color:#BBD9EE; text-align: center;">
+                <br />
+                <br />
+		              
+		              <p style="width:25px"></p>
+		               © 2014 Bản quyền thuộc về Cty TNHH Tỷ Hùng.<br />
+                
+                 <br />
+                 Điện thoại : 
+		    </div>
+		</div>
+	</div>
+    </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿h2,h3,h4{
+				color:#b200ff
+			}
+			p{padding:2px 10px;text-align: justify;}
+			.ndResize{
+				width: 600px;height: 20px;border: 1px solid #0094ff;padding: 20px;
+				overflow: auto;
+				resize: both;
+			}
+			.breakWord{width: 100px;border: 1px solid blue;word-wrap: break-word;}
+			.Text_shadow1{
+				color:#ff006e;
+				text-shadow: -4px -4px 10px #0000ff;
+			}
+
+            div{
+			border-width: 110px;
+			width: 900px;
+			height: 500px;
+			padding: 10px;
+			margin: 10px auto;
+		} 
+		

@@ -1,0 +1,1851 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TheLogin" Class="iOfficeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.88.191;Initial Catalog=AlexLogin;User ID=Portal;Pooling=True;Min Pool Size=0;Max Pool Size=100;Connect Timeout=15;Load Balance Timeout=0" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TheLogiS" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.aABC" Member="aABCs">
+    <Type Name="aABC">
+      <Column Name="ABC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCEng" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.zszl" Member="zszls">
+    <Type Name="zszl">
+      <Column Name="zsdh" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="zsqm" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="zsjc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="zsywjc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="tybh" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="fpdz" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="yjdz" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="dh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cz" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fzr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="bb" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="llr2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="llr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dybh" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="mark" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="TYJH" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MZsdh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Style" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Shippingleadtime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Shippingleadtimes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Customclearanceday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Samplepurchaser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Prodpurchaser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Groupname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Zsdh_TW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample_void" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="TRANDATE" Type="System.String" DbType="VarChar(17)" CanBeNull="true" />
+      <Column Name="fktj" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fktj1" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="scd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fzr_mail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="llr2_mail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="llr_mail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="pass0" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pass1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pass2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Abcon" Member="Abcons">
+    <Type Name="Abcon">
+      <Column Name="Gsbh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Abstep" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="abps" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDCT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Auditor" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="abrult" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="abmomo" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="Password2" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Userdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Yn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Maintitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="from_depart" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="from_user" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="cothutu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="received" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ABJOB" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Id_VB_CD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="signatue" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nhom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kytoanbo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDChiTiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="boqua" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="lydokhongduyet" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="ncancel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Donvithongqua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QA" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="QAmemo" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="QAmemo2" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbDepartmentType" Member="AbDepartmentTypes">
+    <Type Name="AbDepartmentType">
+      <Column Name="DepartmentTypeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GSBH" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DepartmentTypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.abill" Member="abills">
+    <Type Name="abill">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="maintable" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abnameEng" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.abills" Member="abill1s">
+    <Type Name="abill1">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="ABDepId" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Defuserid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ABJOB" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Abstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Abde" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[DESC]" Member="DESC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nhom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KyToanBo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ABJobAgent" Member="ABJobAgents">
+    <Type Name="ABJobAgent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TuNgay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DenNgay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDNguoiDuyet" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="tennguoiuyquyen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDNguoiDuocUyQuyen" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="tennguoithaythe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ThongQua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenThongQua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ABTranslator" Member="ABTranslatores">
+    <Type Name="ABTranslator">
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TenNguoiDich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="TenNguoiDichTiengHoa" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbScreen" Member="AbScreens">
+    <Type Name="AbScreen">
+      <Column Name="ScreenID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrlScreen" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+      <Column Name="AliasScreen" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ABTrangThaiDuyet" Member="ABTrangThaiDuyets">
+    <Type Name="ABTrangThaiDuyet">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDTrangThai" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Yn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StatusCode" Member="StatusCodes">
+    <Type Name="StatusCode">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameVietNam" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameTaiwan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NameEnglish" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ABYn" Member="ABYns">
+    <Type Name="ABYn">
+      <Column Name="Yn" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BDepartment" Member="BDepartments">
+    <Type Name="BDepartment">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CKBH" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName_C" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DepMemo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Worker_Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tsQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="H7Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="UserDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PlanYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GXLB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ULID" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="EMPSYSID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="useYN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Dclass" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="mainyn" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="STDworkers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PCworkers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Porder1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ULSEQ" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DsDepid" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="IdUserChuQuan" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="DepartmentTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CQuserid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CQUserid2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BOfSupplies" Member="BOfSupplies">
+    <Type Name="BOfSupply">
+      <Column Name="IDOfSupplies" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GSBH" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OfSuppliesName" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="BUnit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="BNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BCommnent" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Buser_Securety" Member="Buser_Secureties">
+    <Type Name="Buser_Securety">
+      <Column Name="IDBaoMat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MyKey" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ngay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Busers" Member="Busers">
+    <Type Name="Buser">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PWD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="LASTDATETIME" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="depid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="JOB" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Password2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IdUserQuanLyTT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERNAMETW" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pwdlevel" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Busers2" Member="Busers2s">
+    <Type Name="Busers2">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PWD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="LASTDATETIME" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="depid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="JOB" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Password2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="signatue" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="isSep" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Maisenhan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="abstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="abde" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Admin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdUserQuanLyTT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERNAMETW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PWDlevel" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PDNSheetFlow" Member="ChiTietBuocKies">
+    <Type Name="PDNSheetFlow">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="abstep" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Yn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdNguoiDuyet" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChucVu" Member="ChucVus">
+    <Type Name="ChucVu">
+      <Column Name="IDChucVu" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.clzl" Member="clzls">
+    <Type Name="clzl">
+      <Column Name="cldh" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="clbm" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="cllb" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="dycldh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ysbh" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="yszwsm" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ysywsm" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="zwpm" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ywpm" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="dwbh" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="dwzwsm" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dwywsm" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="clzmlb" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lycc" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="xhcl" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="jkcl" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="gjlb" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="ckcldh" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="dzzhl" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="xxbh" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="kfdh" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="cqdh" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="cltd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tyjh" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="pumadh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="zsdh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="trandate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="leadtime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DCYN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="PDYN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MOQ" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="MatTestNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MatTestPF" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="SkinYn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="RiskColYn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="RSLTestNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RSLTestPF" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="warept" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="PlanPT" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CLFJ" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cltd2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContentMail" Member="ContentMails">
+    <Type Name="ContentMail">
+      <Column Name="ContentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Pdno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="conten" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="aproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GUI_Language" Member="GUI_Languages">
+    <Type Name="GUI_Language">
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lblID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="lbl_EN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="lbl_VN" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="lbl_TW" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ScreenID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pdna" Member="pdnas">
+    <Type Name="pdna">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pdnaS" Member="pdna1s">
+    <Type Name="pdna1">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdNO" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Xh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLBH" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Size" Type="System.String" DbType="VarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CKBH" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="ZMLB" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="USPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="USACC" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CWHL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VNPrice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="VNACC" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Memo0" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CLmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CostID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BJNO" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="YQDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CFMDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CLPrice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CLACC" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FKZT" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="pdACC" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="VNPpd10" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DDtp" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DDBH" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="cycle" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGNO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PDNLink" Member="PDNLinks">
+    <Type Name="PDNLink">
+      <Column Name="Gsbh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Filename" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="FilePath" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Cancel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projectm" Member="Projectms">
+    <Type Name="Projectm">
+      <Column Name="gsbh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jsysid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sysname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sysmemo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="userdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="yn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="sLeaderid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="edates" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="edatee" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Spercent" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="sysnamevn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sysmemovn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projectn" Member="Projectns">
+    <Type Name="Projectn">
+      <Column Name="gsbh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jsysid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jsubid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jsubname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="jsubmemo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="userdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="yn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="sLeaderid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="edates" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="edatee" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Spercent" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PDNO" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="jsubnamevn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="jsubmemovn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projects" Member="Projects">
+    <Type Name="Project">
+      <Column Name="gsbh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jsysid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jsubid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jobid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ticketid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="jobname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="jobmemo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userid" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="userdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="yn" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="Jleaderid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="edates" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="edatee" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="jpercent" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PDNO" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="jobnamevn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="jobmemovn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projectu" Member="Projectus">
+    <Type Name="Projectu">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jsysid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jsubid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jodid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Juserid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="userdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="yn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="juadate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="juamemo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PSworkm" Member="PSworkms">
+    <Type Name="PSworkm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Userid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdates" Type="System.DateTime" DbType="SmallDateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ticketid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pdatee" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="wkmemo" Type="System.String" DbType="NVarChar(520)" CanBeNull="true" />
+      <Column Name="wklink" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="modidate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="jobpercent" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="cfmdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="cfmuser" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="yn" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PSworks" Member="PSworks">
+    <Type Name="PSwork">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pdates" Type="System.DateTime" DbType="SmallDateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ticketid" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="xh" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PSmemo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pslink" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="userdate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="yn" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QPDNFlow" Member="QPDNFlows">
+    <Type Name="QPDNFlow">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TheSystems" Member="TheSystems">
+    <Type Name="TheSystem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="StartPage" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TheUsers" Member="TheUsers">
+    <Type Name="TheUser">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ActiveCode" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users_Systems" Member="Users_Systems">
+    <Type Name="Users_System">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SystemID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ActiveCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SessionID" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CapNhaPhieuGuiNguoiKhacDich" Method="CapNhaPhieuGuiNguoiKhacDich">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="IdnguoiDich" Parameter="idnguoiDich" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="trangthaidich" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TimMaVanBan" Method="TimMaVanBan">
+    <Parameter Name="ma" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="TimMaVanBanResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CapNhatPhieuDaBiHuy" Method="CapNhatPhieuDaBiHuy">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="dagui" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="bixoa" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="YN" Parameter="yN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NoiDungDich" Parameter="noiDungDich" Type="System.String" DbType="NVarChar(350)" />
+    <Parameter Name="IDNguoiDich" Parameter="iDNguoiDich" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="TrangThaiDich" Parameter="trangThaiDich" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="CFMDate1" Parameter="cFMDate1" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="CFMDate0" Parameter="cFMDate0" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="CFMDate2" Parameter="cFMDate2" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="CFMDate4" Parameter="cFMDate4" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ABC" Parameter="aBC" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LevelDoing" Parameter="levelDoing" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CapNhatPhieuDich" Method="CapNhatPhieuDich">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="NoiDungDich" Parameter="noiDungDich" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMDate2" Parameter="cFMDate2" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IdnguoiDich" Parameter="idnguoiDich" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="trangthaidich" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CapNhatPhieuMuaHangDich" Method="CapNhatPhieuMuaHangDich">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="CFMDate2" Parameter="cFMDate2" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IdnguoiDich" Parameter="idnguoiDich" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="UseIntent" Parameter="useIntent" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="trangthaidich" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CapNhatPhieuTao" Method="CapNhatPhieuTao">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="NoiDungDich" Parameter="noiDungDich" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMDate1" Parameter="cFMDate1" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IdnguoiDich" Parameter="idnguoiDich" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="trangthaidich" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="CapNhatPhieuTaoResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CapNhatPhieuTheoNguoiTao" Method="CapNhatPhieuTheoNguoiTao">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="dagui" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="bixoa" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="YN" Parameter="yN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mytitle" Type="System.String" DbType="NVarChar(350)" />
+    <Parameter Name="pddepid" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Abtype" Parameter="abtype" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMDate0" Parameter="cFMDate0" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USERID" Parameter="uSERID" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="CFMID0" Parameter="cFMID0" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="USERDATE" Parameter="uSERDATE" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ABC" Parameter="aBC" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LevelDoing" Parameter="levelDoing" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CFMID1" Parameter="cFMID1" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CapNhatPhieuTheoNguoiTaoNhoDich" Method="CapNhatPhieuTheoNguoiTaoNhoDich">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="dagui" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="bixoa" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="YN" Parameter="yN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mytitle" Type="System.String" DbType="NVarChar(350)" />
+    <Parameter Name="pddepid" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Abtype" Parameter="abtype" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMDate0" Parameter="cFMDate0" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USERID" Parameter="uSERID" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="CFMID0" Parameter="cFMID0" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="USERDATE" Parameter="uSERDATE" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ABC" Parameter="aBC" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LevelDoing" Parameter="levelDoing" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdnguoiDich" Parameter="idnguoiDich" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="trangthaidich" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CapNhatPhieuTrinhDuyet" Method="CapNhatPhieuTrinhDuyet">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="dagui" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="bixoa" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="YN" Parameter="yN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mytitle" Type="System.String" DbType="NVarChar(350)" />
+    <Parameter Name="pddepid" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Abtype" Parameter="abtype" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMDate0" Parameter="cFMDate0" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="USERID" Parameter="uSERID" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="CFMID0" Parameter="cFMID0" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="USERDATE" Parameter="uSERDATE" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ABC" Parameter="aBC" Type="System.Int32" DbType="Int" />
+    <Parameter Name="LevelDoing" Parameter="levelDoing" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NoiDungDich" Parameter="noiDungDich" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMID1" Parameter="cFMID1" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DanhSachPhieuDaDuyetTheoNguoiTao" Method="DanhSachPhieuDaDuyetTheoNguoiTao">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachPhieuDaDuyetTheoNguoiTaoResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuDaDuyetTheoNguoiTaoTW" Method="DanhSachPhieuDaDuyetTheoNguoiTaoTW">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachPhieuDaDuyetTheoNguoiTaoTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuDaGuiBiHuyTheoNguoiTao" Method="DanhSachPhieuDaGuiBiHuyTheoNguoiTao">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="DanhSachPhieuDaGuiBiHuyTheoNguoiTaoResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuDaGuiBiHuyTheoNguoiTaoTW" Method="DanhSachPhieuDaGuiBiHuyTheoNguoiTaoTW">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="DanhSachPhieuDaGuiBiHuyTheoNguoiTaoTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuKhongDuyetTheoNguoiTao" Method="DanhSachPhieuKhongDuyetTheoNguoiTao">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachPhieuKhongDuyetTheoNguoiTaoResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuKhongDuyetTheoNguoiTaoTW" Method="DanhSachPhieuKhongDuyetTheoNguoiTaoTW">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachPhieuKhongDuyetTheoNguoiTaoTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuMoiKhoiTaoTheoNguoiTao" Method="DanhSachPhieuMoiKhoiTaoTheoNguoiTao">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="DanhSachPhieuMoiKhoiTaoTheoNguoiTaoResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachPhieuMoiKhoiTaoTheoNguoiTaoTW" Method="DanhSachPhieuMoiKhoiTaoTheoNguoiTaoTW">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="DanhSachPhieuMoiKhoiTaoTheoNguoiTaoTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachQPDNFlow" Method="DanhSachQPDNFlow">
+    <ElementType Name="DanhSachQPDNFlowResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ABJOB" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Abde" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Abstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachQPDNFlowTheoBoPhan" Method="DanhSachQPDNFlowTheoBoPhan">
+    <Parameter Name="mabophan" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachQPDNFlowTheoBoPhanResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ABJOB" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Abde" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Abstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachQPDNFlowTheoBoPhanTW" Method="DanhSachQPDNFlowTheoBoPhanTW">
+    <Parameter Name="mabophan" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachQPDNFlowTheoBoPhanTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ABJOB" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Abde" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Abstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachQPDNFlowTW" Method="DanhSachQPDNFlowTW">
+    <ElementType Name="DanhSachQPDNFlowTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ABJOB" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Abde" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Abstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachVanBanDaGuiTheoNguoiGui" Method="DanhSachVanBanDaGuiTheoNguoiGui">
+    <Parameter Name="manguoigui" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="DanhSachVanBanDaGuiTheoNguoiGuiResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachVanBanDaGuiTheoNguoiGuiTW" Method="DanhSachVanBanDaGuiTheoNguoiGuiTW">
+    <Parameter Name="manguoigui" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="DanhSachVanBanDaGuiTheoNguoiGuiTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachVanBanDenKhongDuocDuyetTheoNguoiDuyet" Method="DanhSachVanBanDenKhongDuocDuyetTheoNguoiDuyet">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachVanBanDenKhongDuocDuyetTheoNguoiDuyetResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DanhSachVanBanDenKhongDuocDuyetTheoNguoiDuyetTW" Method="DanhSachVanBanDenKhongDuocDuyetTheoNguoiDuyetTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="DanhSachVanBanDenKhongDuocDuyetTheoNguoiDuyetTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetIDUser" Method="GetIDUser">
+    <Parameter Name="id" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="GetIDUserResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PWD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="LASTDATETIME" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="depid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="JOB" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Password2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="signatue" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="isSep" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Maisenhan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="abstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="abde" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Admin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdUserQuanLyTT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERNAMETW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PWDlevel" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetIDUserApproval" Method="GetIDUserApproval">
+    <Parameter Name="id" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="GetIDUserApprovalResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PWD" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="LASTDATETIME" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="depid" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="JOB" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Password2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="signatue" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="isSep" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Maisenhan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="abstep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="abde" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Admin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdUserQuanLyTT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERNAMETW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PWDlevel" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.InsertDataKS" Method="InsertDataKS" IsComposable="true">
+    <Parameter Name="Vendor" Parameter="vendor" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Document_no" Parameter="document_no" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Dimension" Parameter="dimension" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="Style_Description" Parameter="style_Description" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Color_Description" Parameter="color_Description" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Style" Parameter="style" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PO_Quantity" Parameter="pO_Quantity" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="PO_Output_Date" Parameter="pO_Output_Date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="EX_Factory_Date" Parameter="eX_Factory_Date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Ship_To_Name" Parameter="ship_To_Name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ShipTo" Parameter="shipTo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="S_1" Parameter="s_1" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_1H" Parameter="s_1H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_2" Parameter="s_2" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_2H" Parameter="s_2H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_3" Parameter="s_3" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_3h" Parameter="s_3h" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_4" Parameter="s_4" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_4H" Parameter="s_4H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_5" Parameter="s_5" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_5H" Parameter="s_5H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_6" Parameter="s_6" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_6H" Parameter="s_6H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_7" Parameter="s_7" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_7H" Parameter="s_7H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_8" Parameter="s_8" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_8H" Parameter="s_8H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_9" Parameter="s_9" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_9H" Parameter="s_9H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_10" Parameter="s_10" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_10H" Parameter="s_10H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_11" Parameter="s_11" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_11H" Parameter="s_11H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_12" Parameter="s_12" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_12H" Parameter="s_12H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_13" Parameter="s_13" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_13H" Parameter="s_13H" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="S_14" Parameter="s_14" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="USERID" Parameter="uSERID" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="USERDATE" Parameter="uSERDATE" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.QryDonHang" Method="QryDonHang" IsComposable="true">
+    <Parameter Name="ZSBH" Parameter="zSBH" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="CGNO" Parameter="cGNO" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="CGDate" Parameter="cGDate" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.QryNguoiDuyetTheoCapDuyet" Method="QryNguoiDuyetTheoCapDuyet">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="capduyet" Type="System.Int32" DbType="Int" />
+    <ElementType Name="QryNguoiDuyetTheoCapDuyetResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="from_depart" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryNguoiDuyetTheoCapDuyetTW" Method="QryNguoiDuyetTheoCapDuyetTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="capduyet" Type="System.Int32" DbType="Int" />
+    <ElementType Name="QryNguoiDuyetTheoCapDuyetTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="from_depart" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuChuaDichTheoDich" Method="QryPhieuChuaDichTheoDich">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoiddich" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuChuaDichTheoDichResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuChuaDichTheoNguoiDich" Method="QryPhieuChuaDichTheoNguoiDich">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoiddich" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuChuaDichTheoNguoiDichResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuChuaDichTheoNguoiTao" Method="QryPhieuChuaDichTheoNguoiTao">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoidtao" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuChuaDichTheoNguoiTaoResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="TenNguoiDich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuChuaDichTheoNguoiTaoTheoTiengHoa" Method="QryPhieuChuaDichTheoNguoiTaoTheoTiengHoa">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoidtao" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuChuaDichTheoNguoiTaoTheoTiengHoaResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="TenNguoiDichTiengHoa" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDichTheoNguoiDich" Method="QryPhieuDaDichTheoNguoiDich">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoiddich" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuDaDichTheoNguoiDichResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDichTheoNguoiTao" Method="QryPhieuDaDichTheoNguoiTao">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuDaDichTheoNguoiTaoResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="TenNguoiDich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDichTheoNguoiTaoTW" Method="QryPhieuDaDichTheoNguoiTaoTW">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryPhieuDaDichTheoNguoiTaoTWResult">
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="TenNguoiDichTiengHoa" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyet" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyet">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTheoThoiGian" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTheoThoiGian">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ngayky" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTheoThoiGianResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTheoThoiGianTW" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTheoThoiGianTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ngayky" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTheoThoiGianTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTW" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiDuyetTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiTao" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiTao">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTheoThoiGian" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTheoThoiGian">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ngayky" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTheoThoiGianResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTheoThoiGianTW" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTheoThoiGianTW">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ngayky" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTheoThoiGianTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTW" Method="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTW">
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="QryPhieuDaDuyetCatVaoKhoTheoNguoiTaoTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryQuyTrinhTheoDonVi" Method="QryQuyTrinhTheoDonVi">
+    <Parameter Name="madonvi" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="maloaiphieu" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryQuyTrinhTheoDonViResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryQuyTrinhTheoDonViLoaiPhieu" Method="QryQuyTrinhTheoDonViLoaiPhieu">
+    <Parameter Name="madonvi" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="maloaiphieu" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryQuyTrinhTheoDonViLoaiPhieuResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryQPDNFlow" Method="QryQPDNFlow">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryQPDNFlowResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryQPDNFlowCuaCanBo" Method="QryQPDNFlowCuaCanBo" IsComposable="true">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.QryTinhTrangVanBanTheoMaVanBan" Method="QryTinhTrangVanBanTheoMaVanBan">
+    <Parameter Name="mavanban" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryTinhTrangVanBanTheoMaVanBanResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryTinhTrangVanBanTheoMaVanBanTW" Method="QryTinhTrangVanBanTheoMaVanBanTW">
+    <Parameter Name="mavanban" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryTinhTrangVanBanTheoMaVanBanTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryVanBanCap1" Method="QryVanBanCap1" IsComposable="true">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.QryVanBanDaKyTheoCapDuyet" Method="QryVanBanDaKyTheoCapDuyet">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="QryVanBanDaKyTheoCapDuyetResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="from_depart" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryVanBanDaKyTheoCapDuyetTW" Method="QryVanBanDaKyTheoCapDuyetTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="QryVanBanDaKyTheoCapDuyetTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="from_depart" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryVanBanDenChuaDuyetTheoNguoiDuyet" Method="QryVanBanDenChuaDuyetTheoNguoiDuyet">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="buoctruoc" Type="System.Int32" DbType="Int" />
+    <ElementType Name="QryVanBanDenChuaDuyetTheoNguoiDuyetResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryVanBanDenChuaDuyetTheoNguoiDuyetTW" Method="QryVanBanDenChuaDuyetTheoNguoiDuyetTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="buoctruoc" Type="System.Int32" DbType="Int" />
+    <ElementType Name="QryVanBanDenChuaDuyetTheoNguoiDuyetTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryVanBanDenTheoNguoiDuyet" Method="QryVanBanDenTheoNguoiDuyet">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryVanBanDenTheoNguoiDuyetResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.QryVanBanDenTheoNguoiDuyetTW" Method="QryVanBanDenTheoNguoiDuyetTW">
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="QryVanBanDenTheoNguoiDuyetTWResult">
+      <Column Name="abtype" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayNguoiNguoiVangMatTheoNgayNghi" Method="LayNguoiNguoiVangMatTheoNgayNghi">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="manguoiduyet" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="LayNguoiNguoiVangMatTheoNgayNghiResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TuNgay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DenNgay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDNguoiDuyet" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="tennguoiuyquyen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDNguoiDuocUyQuyen" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="tennguoithaythe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ThongQua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TenThongQua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayPhieuVuaCapNhat" Method="LayPhieuVuaCapNhat">
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="NoiDungDich" Parameter="noiDungDich" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="CFMDate1" Parameter="cFMDate1" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IdnguoiDich" Parameter="idnguoiDich" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="trangthaidich" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="LayPhieuVuaCapNhatResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayQuyTrinhTheoBoPhan" Method="LayQuyTrinhTheoBoPhan">
+    <Parameter Name="madonvi" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="LayQuyTrinhTheoBoPhanResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayQuyTrinhTheoDonViCanBo" Method="LayQuyTrinhTheoDonViCanBo" IsComposable="true">
+    <Parameter Name="madonvi" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.LayQuyTrinhTheoDonViCanBoVaLoaiPhieu" Method="LayQuyTrinhTheoDonViCanBoVaLoaiPhieu" IsComposable="true">
+    <Parameter Name="madonvi" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="maloaiphieu" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.LayQuyTrinhTheoDonViNhanVienVaLoaiPhieu" Method="LayQuyTrinhTheoDonViNhanVienVaLoaiPhieu">
+    <Parameter Name="madonvi" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="maloaiphieu" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="LayQuyTrinhTheoDonViNhanVienVaLoaiPhieuResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayQuyTrinhTheoLoaiPhieu" Method="LayQuyTrinhTheoLoaiPhieu">
+    <Parameter Name="maloaiphieu" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="LayQuyTrinhTheoLoaiPhieuResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="abtype" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="BADEPID" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ABstep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ABPS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDQuyTrinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiDuyet" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucVu" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TenChucVuTiengHoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abtypenameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tendonviTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViThongQua" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tendonvithongqua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDLoaiDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentTypeNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDCapDuyet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayQuyTrinhTheoLoaiPhieuCanBo" Method="LayQuyTrinhTheoLoaiPhieuCanBo" IsComposable="true">
+    <Parameter Name="maloaiphieu" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.LaySoPhieuChuaDichDaCapNhat" Method="LaySoPhieuChuaDichDaCapNhat">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoitao" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="maphieu" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="LaySoPhieuChuaDichDaCapNhatResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LaySoPhieuDaDichTheoNguoiDich" Method="LaySoPhieuDaDichTheoNguoiDich">
+    <Parameter Name="macongty" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="manguoiddich" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="maphieu" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="LaySoPhieuDaDichTheoNguoiDichResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayTenBoPhanTheoMaNguoiDuyet" Method="LayTenBoPhanTheoMaNguoiDuyet">
+    <Parameter Name="manhanvien" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="LayTenBoPhanTheoMaNguoiDuyetResult">
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayTinhTrangVanBanTheoNguoiGui" Method="LayTinhTrangVanBanTheoNguoiGui">
+    <Parameter Name="manguoigui" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="LayTinhTrangVanBanTheoNguoiGuiResult">
+      <Column Name="abname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayTinhTrangVanBanTheoNguoiGuiTW" Method="LayTinhTrangVanBanTheoNguoiGuiTW">
+    <Parameter Name="manguoigui" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="LayTinhTrangVanBanTheoNguoiGuiTWResult">
+      <Column Name="abnameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="YnNameTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameABCTW" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LayToanBoPhieu" Method="LayToanBoPhieu">
+    <ElementType Name="LayToanBoPhieuResult">
+      <Column Name="GSBH" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="pdno" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="pdDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="pdLX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USERDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ZSBH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CFMID1" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFMID2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="YN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PMARK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFMID0" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pduser" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="pddepid" Type="System.String" DbType="VarChar(22)" CanBeNull="true" />
+      <Column Name="pdyyid" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="yymemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="shmemo" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mytitle" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdmemoch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bixoa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LevelDoing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDungDich" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="trangthaidich" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IdnguoiDich" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Abtype" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CFMDate4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dagui" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="oldpdno" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UseIntent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="pdnsubject" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ListDonViTinh" Method="ListDonViTinh">
+    <Parameter Name="dwbh" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="ListDonViTinhResult">
+      <Column Name="dwbh" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.purtrace" Method="purtrace" IsComposable="true">
+    <Parameter Name="cl" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="gs" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="zl" Type="System.String" DbType="VarChar(16)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.scddcost_c1" Method="scddcost_c1" IsComposable="true">
+    <Parameter Name="VGS" Parameter="vGS" Type="System.String" DbType="VarChar(4)" />
+    <Parameter Name="VDD" Parameter="vDD" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="VART" Parameter="vART" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="VXX" Parameter="vXX" Type="System.String" DbType="VarChar(16)" />
+    <Parameter Name="VJC" Parameter="vJC" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="VD1" Parameter="vD1" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="VD2" Parameter="vD2" Type="System.DateTime" DbType="SmallDateTime" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.SuaPhieuDeNghiTT" Method="SuaPhieuDeNghiTT">
+    <Parameter Name="GSBH" Parameter="gSBH" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pdno" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="pdmemovn" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

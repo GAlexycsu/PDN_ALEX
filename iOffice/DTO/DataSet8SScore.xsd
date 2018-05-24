@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet8SScore" targetNamespace="http://tempuri.org/DataSet8SScore.xsd" xmlns:mstns="http://tempuri.org/DataSet8SScore.xsd" xmlns="http://tempuri.org/DataSet8SScore.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet8SScore" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet8SScore" msprop:Generator_UserDSName="DataSet8SScore">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt8SSumScore" msprop:Generator_TableClassName="dt8SSumScoreDataTable" msprop:Generator_TableVarName="tabledt8SSumScore" msprop:Generator_TablePropName="dt8SSumScore" msprop:Generator_RowDeletingName="dt8SSumScoreRowDeleting" msprop:Generator_RowChangingName="dt8SSumScoreRowChanging" msprop:Generator_RowEvHandlerName="dt8SSumScoreRowChangeEventHandler" msprop:Generator_RowDeletedName="dt8SSumScoreRowDeleted" msprop:Generator_UserTableName="dt8SSumScore" msprop:Generator_RowChangedName="dt8SSumScoreRowChanged" msprop:Generator_RowEvArgName="dt8SSumScoreRowChangeEvent" msprop:Generator_RowClassName="dt8SSumScoreRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Depid" msprop:Generator_ColumnVarNameInTable="columnDepid" msprop:Generator_ColumnPropNameInRow="Depid" msprop:Generator_ColumnPropNameInTable="DepidColumn" msprop:Generator_UserColumnName="Depid" type="xs:string" minOccurs="0" />
+              <xs:element name="DepName" msprop:Generator_ColumnVarNameInTable="columnDepName" msprop:Generator_ColumnPropNameInRow="DepName" msprop:Generator_ColumnPropNameInTable="DepNameColumn" msprop:Generator_UserColumnName="DepName" type="xs:string" minOccurs="0" />
+              <xs:element name="DepName_C" msprop:Generator_ColumnVarNameInTable="columnDepName_C" msprop:Generator_ColumnPropNameInRow="DepName_C" msprop:Generator_ColumnPropNameInTable="DepName_CColumn" msprop:Generator_UserColumnName="DepName_C" type="xs:string" minOccurs="0" />
+              <xs:element name="S8Score" msprop:Generator_ColumnVarNameInTable="columnS8Score" msprop:Generator_ColumnPropNameInRow="S8Score" msprop:Generator_ColumnPropNameInTable="S8ScoreColumn" msprop:Generator_UserColumnName="S8Score" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FromDate" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" msprop:Generator_UserColumnName="FromDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ToDate" msprop:Generator_ColumnVarNameInTable="columnToDate" msprop:Generator_ColumnPropNameInRow="ToDate" msprop:Generator_ColumnPropNameInTable="ToDateColumn" msprop:Generator_UserColumnName="ToDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

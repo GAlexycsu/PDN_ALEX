@@ -1,0 +1,13 @@
+D:\a-web_dev\PDN_Alex\iOffice\bin\iOffice.pdb
+D:\a-web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\a-web_dev\PDN_Alex\iOffice\bin\Telerik.Web.UI.dll
+D:\a-web_dev\PDN_Alex\iOffice\bin\Telerik.Web.UI.Skins.dll
+D:\a-web_dev\PDN_Alex\iOffice\bin\Microsoft.Web.Infrastructure.xml
+D:\a-web_dev\PDN_Alex\iOffice\bin\Telerik.Web.UI.xml
+D:\a-web_dev\PDN_Alex\iOffice\obj\Debug\iOffice.Properties.Resources.resources
+D:\a-web_dev\PDN_Alex\iOffice\obj\Debug\iOffice.csproj.GenerateResource.Cache
+D:\a-web_dev\PDN_Alex\iOffice\obj\Debug\iOffice.pdb
+D:\a-web_dev\PDN_Alex\iOffice\obj\Debug\iOffice.csprojResolveAssemblyReference.cache
+D:\a-web_dev\PDN_Alex\iOffice\bin\iOffice.dll
+D:\a-web_dev\PDN_Alex\iOffice\obj\Debug\iOffice.dll.licenses
+D:\a-web_dev\PDN_Alex\iOffice\obj\Debug\iOffice.dll

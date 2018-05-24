@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet8S" targetNamespace="http://tempuri.org/DataSet8S.xsd" xmlns:mstns="http://tempuri.org/DataSet8S.xsd" xmlns="http://tempuri.org/DataSet8S.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet8S" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet8S" msprop:Generator_UserDSName="DataSet8S">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tb8SScore" msprop:Generator_TableClassName="tb8SScoreDataTable" msprop:Generator_TableVarName="tabletb8SScore" msprop:Generator_TablePropName="tb8SScore" msprop:Generator_RowDeletingName="tb8SScoreRowDeleting" msprop:Generator_RowChangingName="tb8SScoreRowChanging" msprop:Generator_RowEvHandlerName="tb8SScoreRowChangeEventHandler" msprop:Generator_RowDeletedName="tb8SScoreRowDeleted" msprop:Generator_UserTableName="tb8SScore" msprop:Generator_RowChangedName="tb8SScoreRowChanged" msprop:Generator_RowEvArgName="tb8SScoreRowChangeEvent" msprop:Generator_RowClassName="tb8SScoreRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sitemno" msprop:Generator_ColumnVarNameInTable="columnSitemno" msprop:Generator_ColumnPropNameInRow="Sitemno" msprop:Generator_ColumnPropNameInTable="SitemnoColumn" msprop:Generator_UserColumnName="Sitemno" type="xs:string" minOccurs="0" />
+              <xs:element name="Snamevn" msprop:Generator_ColumnVarNameInTable="columnSnamevn" msprop:Generator_ColumnPropNameInRow="Snamevn" msprop:Generator_ColumnPropNameInTable="SnamevnColumn" msprop:Generator_UserColumnName="Snamevn" type="xs:string" minOccurs="0" />
+              <xs:element name="Snamech" msprop:Generator_ColumnVarNameInTable="columnSnamech" msprop:Generator_ColumnPropNameInRow="Snamech" msprop:Generator_ColumnPropNameInTable="SnamechColumn" msprop:Generator_UserColumnName="Snamech" type="xs:string" minOccurs="0" />
+              <xs:element name="Snameen" msprop:Generator_ColumnVarNameInTable="columnSnameen" msprop:Generator_ColumnPropNameInRow="Snameen" msprop:Generator_ColumnPropNameInTable="SnameenColumn" msprop:Generator_UserColumnName="Snameen" type="xs:string" minOccurs="0" />
+              <xs:element name="Sitemscore" msprop:Generator_ColumnVarNameInTable="columnSitemscore" msprop:Generator_ColumnPropNameInRow="Sitemscore" msprop:Generator_ColumnPropNameInTable="SitemscoreColumn" msprop:Generator_UserColumnName="Sitemscore" type="xs:string" minOccurs="0" />
+              <xs:element name="depid" msprop:Generator_ColumnVarNameInTable="columndepid" msprop:Generator_ColumnPropNameInRow="depid" msprop:Generator_ColumnPropNameInTable="depidColumn" msprop:Generator_UserColumnName="depid" type="xs:string" minOccurs="0" />
+              <xs:element name="empid" msprop:Generator_ColumnVarNameInTable="columnempid" msprop:Generator_ColumnPropNameInRow="empid" msprop:Generator_ColumnPropNameInTable="empidColumn" msprop:Generator_UserColumnName="empid" type="xs:string" minOccurs="0" />
+              <xs:element name="sub_score" msprop:Generator_ColumnVarNameInTable="columnsub_score" msprop:Generator_ColumnPropNameInRow="sub_score" msprop:Generator_ColumnPropNameInTable="sub_scoreColumn" msprop:Generator_UserColumnName="sub_score" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

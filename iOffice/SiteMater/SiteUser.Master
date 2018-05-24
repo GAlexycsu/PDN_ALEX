@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteUser.master.cs" Inherits="iOffice.SiteMater.SiteUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Style/file.css" rel="stylesheet" />
+    <link href="../Style/menu1.css" rel="stylesheet" />
+    <link href="../Style/menu2.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-ui-1.8.20.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-ui-1.8.20.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script src="../Scripts/dinhdangngay.js" type="text/javascript"></script>
+    <script src="../Scripts/NgayThang.js" type="text/javascript"></script>
+    <script src="../Scripts/NgayNghi.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/jquery-ui.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <center>
+	<div id="bocuc" title="Hệ thống xét duyệt ">
+		
+			<div id="baner"></div>
+			<div style="height: 45px; background: #0088ca;">
+			   <style>
+                    .menu{list-style: none; margin: 0px; padding: 0px 0px 0px 0px;}
+                    .menu li{display: inline-block; margin: 0px 30px 0px 0px; height: 29px;}
+                    .menu li a{text-decoration: none; color: #fff; text-transform: uppercase;}
+                    .sub{position: absolute; width: 270px; background: #0088ca; list-style: none; margin: 10px 0px 0px 0px; padding: 10px; display:none;}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; padding: 7px;}
+                    .menu > li:hover > .sub{display: block;}
+                    .menu1{list-style: none; margin: 0px; padding: 10px 0px 0px 10px;}
+                    .menu1 li{display: inline-block; margin: 0px 30px 0px 0px; height: 29px;}
+                    .menu1 li a{text-decoration: none; color: #fff; text-transform: uppercase;}
+                    .sub{position: absolute; width: 270px; background: #0088ca; list-style: none; margin: 10px 0px 0px 0px; padding: 10px; display:none;}
+                    .sub li{display: list-item; border-bottom: 1px solid #fff; padding: 7px;}
+                    .menu1 > li:hover > .sub{display: block;}
+               </style>
+               <ul class="menu">
+                                       
+        
+
+                     <li><asp:HyperLink ID="ida" runat="server" NavigateUrl="~/presentationLayer/Users/Home.aspx" Font-Underline="False"></asp:HyperLink></li>
+                   <%-- <li><asp:HyperLink ID="idb" runat="server" NavigateUrl="~/webud/sinhvien/thongbao.aspx" Font-Underline="False"></asp:HyperLink></li>--%>
+                    <li><asp:HyperLink ID="idc" runat="server" NavigateUrl="" Font-Underline="False"> fff</asp:HyperLink>
+                        <ul class="sub">
+                            <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/presentationLayer/changesignature.aspx" Font-Underline="False">Thay đổi chữ ký</asp:HyperLink></li>
+                            <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/presentationLayer/frmDoiMatKhauXetDuyet.aspx" Font-Underline="False">更换审核密码</asp:HyperLink></li>
+                                         
+                       </ul>
+                    </li>
+                   <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/presentationLayer/FrmQuenmatkhauxetduyet.aspx" Font-Underline="False">忘记审核密码</asp:HyperLink></li>
+                     <li><asp:HyperLink ID="idd" runat="server" NavigateUrl="~/presentationLayer/Help1.aspx" Font-Underline="False"></asp:HyperLink></li>
+                      <li><p style="color:white"><asp:Label ID="lblXinChao" runat="server" Text=""></asp:Label> &nbsp;<asp:Label ID="lblTen" runat="server" Text=""></asp:Label></p></li>  
+                    <li> <asp:HyperLink ID="ide" runat="server" NavigateUrl="http://portal.footgear.com.vn" Font-Underline="False"></asp:HyperLink></li>
+ 
+         
+
+               </ul>
+      
+		
+         </div>
+	</div>
+	
+		<!-- menu trai -->
+		<div id="body">
+			<div id="menuleft" style="text-align: left; margin-left:-1px; margin-top:0px; width: 190px; height: 1400px;">
+			<div id="menu9">
+                <ul class="menu">
+
+                   
+                
+                     <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;">  <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/presentationLayer/Users/frmTaoMoi.aspx" Font-Bold="True"></asp:HyperLink></li>
+                    
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left">  <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/presentationLayer/Users/Danhsachphieumoikhoitao.aspx" Font-Bold="True"></asp:HyperLink></li>
+                    
+                 <%-- // <li><asp:HyperLink ID="HyperLink22" runat="server" NavigateUrl="~/presentationLayer/Users/Danhsachtinhtrangvanbandagui.aspx" Font-Bold="True"></asp:HyperLink> </li>--%>
+          
+                  <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/presentationLayer/Users/danhsachvanbanchuadich.aspx" Font-Bold="True"></asp:HyperLink> </li>
+                    
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;"><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/presentationLayer/Users/danhsachvanbandadich.aspx" Font-Bold="True"></asp:HyperLink> </li>
+                    
+                   
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;"><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/presentationLayer/Users/Danhsachvanbandagui.aspx" Font-Bold="True"></asp:HyperLink></li>
+                   
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;"><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/presentationLayer/Users/danhsachvanbankhongduocky.aspx" Font-Bold="True">Danh sách phiếu không được ký</asp:HyperLink> </li>
+                   
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;"><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/presentationLayer/Users/danhsachphieudaduyet.aspx" Font-Bold="True">Danh sách phiếu đã ký</asp:HyperLink> </li>
+
+                    <li style="text-align: left;border: 1px solid #fff;padding: 7px; width:170px; background:#0088ca;color: #fff; float:left;"><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/presentationLayer/Users/frmDanhsachphieubihuy.aspx" Font-Bold="True">Danh Sach Phiếu Đã Hủy</asp:HyperLink> </li>
+                   
+                </ul>
+            </div>
+            </div>
+            <!-- menu trai -->
+			<div id="bodychr">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <br />
+            </div>
+		</div>
+       <div id="z2" style="font-weight: bold; font-size: 16px; width: 1082px; color: blue; margin-left:0px; background-color:#BBD9EE">
+		    <div id="z3" style="font-weight: bold; font-size: 16px; width: 800px; color: blue; margin-left:0px; background-color:#BBD9EE; text-align: center;">
+                <br />
+                <br />
+		              
+		              
+		               © 2014 Bản quyền thuộc về Cty TNHH Tỷ Hùng.<br />
+                
+                 <br />
+                 Điện thoại : 
+		    </div>
+		</div>
+	
+    </center>
+    </form>
+</body>
+</html>

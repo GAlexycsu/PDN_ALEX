@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="iOffice.SiteMater.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Style/jquery-ui.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.8.3.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+ 
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page1">
+        <div class="header">
+            <div class="title">
+                <header id="pageHeader">
+                   <h1 id="logoText">
+                   <strong>  Ty Hung Company</strong>
+                    
+                   </h1>
+                </header>
+               
+            </div>
+            <div class="loginDisplay" style="float:right">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="Default.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink" >
+                <nav id="mainMenu">
+				   <%-- <a class="act"href="../../Default.aspx">Trang chủ</a>
+				    <a href="../../GUI/Venders/WF_GioiThieu.aspx">Giới thiệu</a>
+				  
+				    <a href="~/GUI/Venders/WF_Lienhe.aspx">Liên hệ</a>--%>
+                    <a class="act">
+                       <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                          <Items>
+                             
+                             <asp:MenuItem NavigateUrl="~/GUI/Venders/WF_VenderHome.aspx" Text="Trang chủ"/>
+                             <asp:MenuItem NavigateUrl="~/GUI/Venders/WF_GioiThieu.aspx" Text="Giới thiệu"/>
+                             <asp:MenuItem NavigateUrl="~/GUI/Venders/WF_Lienhe.aspx" Text="Liên Hệ" />
+                          </Items>
+                       </asp:Menu>
+                    </a>
+                   
+                    <%--<asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items >
+                    
+                        
+                        
+                    </Items>
+                </asp:Menu>--%>
+               
+			    </nav>
+            </div>
+        </div>
+        <div class="main1">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear1">
+        </div>
+    </div>
+    <div class="footer1">
+        
+    </div>
+     <div id="divWaiting1"  style="visibility:hidden" >Form </div>
+    </form>
+</body>
+</html>

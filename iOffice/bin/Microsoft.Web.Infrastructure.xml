@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.Web.Infrastructure</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.Web.Infrastructure.HttpContextHelper">
+      <summary>包含用來在 null 內容中執行動作委派的方法。</summary>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.HttpContextHelper.ExecuteInNullContext(System.Action)">
+      <summary>將 HTTP 內容設定為 null，並執行指定的動作委派，然後還原前一個 HTTP 內容。</summary>
+      <param name="action">委派動作。</param>
+    </member>
+    <member name="T:Microsoft.Web.Infrastructure.InfrastructureHelper">
+      <summary>提供基礎結構方法呼叫的協助程式方法。</summary>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.InfrastructureHelper.IsCodeDomDefinedExtension(System.String)">
+      <summary>定義協助程式方法，用來從未完全信任的應用程式呼叫 <see cref="M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension" /> 方法。</summary>
+      <returns>如果設定所指定副檔名的 <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> 實作，則為 true，否則為 false。</returns>
+      <param name="extension">副檔名。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="extension" /> 是 null。</exception>
+      <exception cref="T:System.Security.SecurityException">呼叫端沒有必要的使用權限。</exception>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.InfrastructureHelper.UnloadAppDomain">
+      <summary>定義協助程式方法，用來從未完全信任的應用程式呼叫 <see cref="M:System.Web.HttpRuntime.UnloadAppDomain" /> 方法。</summary>
+    </member>
+    <member name="T:Microsoft.Web.Infrastructure.DynamicModuleHelper.DynamicModuleUtility">
+      <summary>定義類別，此類別提供動態註冊模組的方法。</summary>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.DynamicModuleHelper.DynamicModuleUtility.RegisterModule(System.Type)">
+      <summary>動態註冊 <see cref="T:System.Web.IHttpModule" /> 模組。</summary>
+      <param name="moduleType">要註冊的模型類型。</param>
+    </member>
+    <member name="T:Microsoft.Web.Infrastructure.DynamicValidationHelper.ValidationUtility">
+      <summary>提供公用程式方法，以進行動態要求驗證。</summary>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.DynamicValidationHelper.ValidationUtility.EnableDynamicValidation(System.Web.HttpContext)">
+      <summary>啟用所指定 HTTP 內容的動態要求驗證。</summary>
+      <param name="context">HTTP 內容。</param>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.DynamicValidationHelper.ValidationUtility.GetUnvalidatedCollections(System.Web.HttpContext,System.Func`1@,System.Void)">
+      <summary>取得委派，以擷取未驗證表單集合和未驗證查詢集合。</summary>
+      <param name="context">HTTP 內容。</param>
+      <param name="formGetter">傳回此方法時，會包含從 HTTP 內容的表單中傳回名稱/值集合的委派。傳遞此參數時不需設定初始值。</param>
+      <param name="queryStringGetter">傳回此方法時，會包含從 HTTP 內容的查詢字串中傳回名稱/值集合的委派。傳遞此參數時不需設定初始值。</param>
+    </member>
+    <member name="M:Microsoft.Web.Infrastructure.DynamicValidationHelper.ValidationUtility.IsValidationEnabled(System.Web.HttpContext)">
+      <summary>傳回值，這個值表示是否已啟用此 HTTP 內容的動態要求驗證。</summary>
+      <returns>如果已啟用此 HTTP 內容的動態要求驗證，則為 true，否則為 false。</returns>
+      <param name="context">HTTP 內容。</param>
+    </member>
+  </members>
+</doc>
